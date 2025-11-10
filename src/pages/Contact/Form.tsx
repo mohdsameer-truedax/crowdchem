@@ -183,7 +183,7 @@ const Form = () => {
           onSubmit={handleSubmit}
           method="POST"
           action="#"
-          className="border border-white rounded-2xl py-4 md:py-6 lg:py-[2.1875rem] 2xl:py-[2.1875rem] p-6 pl-6 md:pl-12 2xl:pl-12 pr-8 md:pr-[3.75rem] 2xl:pr-[3.75rem] shadow-2xl max-w-xl md:max-w-[55.21rem] lg:max-w-[62.1rem] xl:max-w-[69rem] xl:max-w-[82.8125rem] bg-background1 font-deca"
+          className="border border-white rounded-2xl py-4 md:py-6 lg:py-[2.1875rem] 2xl:py-[2.1875rem] p-6 pl-6 md:pl-12 2xl:pl-12 pr-8 md:pr-[3.75rem] 2xl:pr-[3.75rem] shadow-2xl max-w-xl md:max-w-[55.21rem] lg:max-w-[62.1rem] xl:max-w-[69rem] 2xl:max-w-[82.8125rem] bg-background1 font-deca"
         >
           {/* Category */}
           <div className="mb-10 md:mb-16 lg:mb-[4.5625rem] 2xl:mb-[4.5625rem] flex flex-wrap gap-4 md:gap-16 desktop:gap-26 items-center justify-start">

@@ -63,7 +63,6 @@ const Application = () => {
     // Wait for AnimatePresence exit and layout animation to complete
     setTimeout(() => {
       const applicationSection = document.getElementById(casestudy.id);
-      console.log(applicationSection)
       if (applicationSection) {
         const elementPosition = applicationSection.getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({ top: elementPosition - 100, behavior: "smooth" });
@@ -71,7 +70,7 @@ const Application = () => {
     }, 350);
   };
   const location = useLocation();
-
+// de2d2e
   useEffect(() => {
     if (location.state?.scrollToId) {
       const el = document.getElementById(location.state.scrollToId);
@@ -110,7 +109,7 @@ const Application = () => {
   }, [location.hash,casestudy]);
   return (
     <div id='application'>
-      <section className="text-black body-font px-4 md:px-8 lg:px-16  pb-12 mt-[2rem] lg:mt-[3.75rem] xl:mt-[4.16rem] 2xl:mt-[5rem]">
+      <section className="text-black body-font px-4 md:px-8 lg:px-16 mx-auto w-full lg:max-w-[71.15rem] xl:max-w-[79.05rem] 2xl:max-w-[94.875rem]  pb-12 mt-[2rem] lg:mt-[3.75rem] xl:mt-[4.16rem] 2xl:mt-[5rem]">
 
         {/* Case Study Grid */}
        <section className="body-font pb-12">

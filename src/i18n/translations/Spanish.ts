@@ -89,7 +89,9 @@ const es = {
   footer: {
     description: "En CrowdChem, buscamos la excelencia en cada descubrimiento, combinando el rigor científico con IA de vanguardia para ampliar los límites de la innovación de materiales. Nuestro compromiso con la precisión, la seguridad y la colaboración impulsa soluciones más inteligentes que dan forma a un futuro más avanzado y sostenible.",
     headquarters: "Sede Global",
-    address: "Japan, 〒140-0013 Tokyo, Shinagawa City, Minamioi, 6 Chome−16−4 戸浪大森ビル 6F",
+    address1: "Japan, 〒140-0013 Tokyo",
+    address2: " Shinagawa City, Minamioi,",
+    address3:"6 Chome−16−4 戸浪大森ビル 6F",
     crowdchem: "CrowdChem",
     industries: "Nuestros Sectores",
     vision: "La Visión",

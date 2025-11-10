@@ -6,36 +6,43 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="px-4  md:px-8 xl:px-16 font-deca text-white bg-background2">
+    <footer className="px-4  md:px-8 xl:px-16 font-deca text-white bg-background2  ">
+         <Link to="/">
+             <ResponsiveImage
+                                id="logo" alt={t("alt.logo")} className="w-[10.3rem] 2xl:pb-[3.31rem] xl:pb-[2.75rem] lg:pb-[2.48rem] pb-[0.5rem] pt-[1rem] lg:pt-[4.21rem] xl:pt-[4.68rem] 2xl:pt-[5.625rem] lg:w-[27.14rem] xl:w-[30.155rem] 2xl:w-[36.1875rem] h-auto l" />
+            </Link>
       <div
         className="
           flex flex-col 
           md:grid md:grid-cols-1 
           lg:flex lg:flex-row 
           md:gap-8 
-          items-start lg:items-center justify-between
+          items-start  justify-between
         "
       >
         {/* Logo & About Section (Left on Desktop, Bottom on Tablet) */}
-        <div className="w-full lg:w-1/2 mt-[1rem] lg:mt-[4.21rem] xl:mt-[4.687rem] 2xl:mt-[5.625rem] flex flex-col order-1 lg:order-1">
-          <div className="flex items-center  mb-[0.5rem] lg:mb-[2.48rem] xl:mb-[2.76rem] 2xl:mb-[3.3125rem] justify-start">
-            <Link to="/">
-             <ResponsiveImage
-                                id="logo" alt={t("alt.logo")} className="w-[10.3rem] lg:w-[27.14rem] xl:w-[30.155rem] 2xl:w-[36.1875rem] h-auto l" />
-            </Link>
+        <div className="w-full lg:w-1/2  flex flex-col md:flex-row order-1 lg:order-1">
+          <div className="flex items-center  justify-start">
+         
           </div>
           <h1  id='vision' className="text-[0.8333rem] sm:text-[1rem] md:text-[0.8333rem] lg:text-[0.9500rem] xl:text-[1.0417rem] 2xl:text-[1.25rem] font-normal mb-12 leading-relaxed w-[80%] desktop:w-[70%] lg:leading-[1.875rem] tracking-[0.08em] text-left">
-            {t("footer.description")}
-          </h1>
-          <p id='contact' className="leading-relaxed text-[0.5833rem] font-light md:w-[40%] md:text-[0.75rem] lg:text-[0.8550rem] xl:text-[0.9375rem] 2xl:text-[1.125rem] lg:leading-[1.875rem] tracking-[0.08em] text-left">
-            <span className="font-medium">{t("footer.headquarters")}</span>
+            {t("footer.description")}<br/><br/>
+               <p id='contact' className="leading-relaxed text-[0.5833rem] font-light  md:text-[0.75rem] lg:text-[0.8550rem] xl:text-[0.9375rem] 2xl:text-[1.125rem] lg:leading-[1.875rem] tracking-[0.08em] text-left">
+             <span className="font-medium">{t("footer.headquarters")}</span>
             <br />
-            {t("footer.address")}
-          </p>
+            {t("footer.address1")}
+            <br/>
+             {t("footer.address2")}
+             <br/>
+              {t("footer.address3")}
+            </p>
+          </h1>
+       
+          
         </div>
 
         {/* Links Section (Right on Desktop, Top on Tablet) */}
-     <div className="flex w-full lg:w-1/2 flex-col md:flex-row pt-8 largerdesktop:pt-16 justify-between gap-10 order-2 lg:order-2">
+     <div className="flex w-full lg:w-1/2 flex-col md:flex-row justify-between gap-10 order-2 lg:order-2">
   {/* Crowdchem */}
   <div className="flex-1 min-w-[9.375rem]">
     <h2 className="title-font text-[0.5833rem] font-medium mb-3 md:text-[0.8333rem] lg:text-[0.9500rem] xl:text-[1.0417rem] 2xl:text-[1.25rem] md:leading-[100%] tracking-[0.08em]">
@@ -45,7 +52,6 @@ const Footer = () => {
       className="list-none font-normal text-[0.6667rem] md:text-[0.6667rem] lg:text-[0.7600rem] xl:text-[0.8333rem] 2xl:text-[1rem] lg:leading-[1.875rem] tracking-[0.08em]"
       id="footer"
     >
-      {/* jeje */}
       <ul>
         <li className="">
           <Link
@@ -98,7 +104,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <p className="text-white text-sm text-center border-gray-700 pt-20 mt-6 pb-2">
+      <p className="text-white text-sm text-center border-gray-700 pt-[1rem] lg:pt-[5.15rem] xl:pt-[5.72rem] 2xl:pt-[6.875rem]  pb-2">
         {t("footer.copyright")}
       </p>
     </footer>
