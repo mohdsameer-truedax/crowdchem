@@ -1,0 +1,17 @@
+[
+  "deu/index.json",
+  "deu/usecases.json",
+  "deu/contact.json",
+  "eng/index.json",
+  "eng/usecases.json",
+  "eng/contact.json",
+  "fre/index.json",
+  "fre/usecases.json",
+  "fre/contact.json",
+  "jap/index.json",
+  "jap/usecases.json",
+  "jap/contact.json",
+  "spa/index.json",
+  "spa/usecases.json",
+  "spa/contact.json"
+]
