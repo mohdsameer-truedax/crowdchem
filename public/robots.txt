@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://main.d2oaupkly02zwi.amplifyapp.com/sitemap.xml
+Sitemap: https://ai.crowdchem.net/sitemap.xml
 Crawl-delay: 5
 
