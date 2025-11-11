@@ -109,7 +109,7 @@ const Application = () => {
   }, [location.hash,casestudy]);
   return (
     <div id='application'>
-      <section className="text-black body-font px-4 md:px-8 lg:px-16 mx-auto w-full lg:max-w-[71.15rem] xl:max-w-[79.05rem] 2xl:max-w-[94.875rem]  pb-12 mt-[2rem] lg:mt-[3.75rem] xl:mt-[4.16rem] 2xl:mt-[5rem]">
+      <section className="text-black body-font px-4 md:px-8 lg:px-16 mx-auto w-full lg:max-w-[71.15rem] xl92r:max-w-[79.05rem] 2xl:max-w-[94.875rem]  pb-12 mt-[2rem] lg:mt-[3.75rem] xl92r:mt-[4.16rem] 2xl:mt-[5rem]">
 
         {/* Case Study Grid */}
        <section className="body-font pb-12">
@@ -160,9 +160,9 @@ const Application = () => {
     sm:text-[2.25rem]
     md:text-[2.25rem]
     lg:text-[2.565rem]
-    xl:text-[2.8125rem]
+    xl92r:text-[2.8125rem]
     2xl:text-[3.375rem]
-    tracking-[0.08em] leading-tight sm:leading-snug md:leading-normal lg:leading-relaxed xl:leading-[3.5rem] 2xl:leading-[4.0625rem]"
+    tracking-[0.08em] leading-tight sm:leading-snug md:leading-normal lg:leading-relaxed xl92r:leading-[3.5rem] 2xl:leading-[4.0625rem]"
 >
   {word}
 </span>
@@ -180,7 +180,7 @@ const Application = () => {
                 className={`absolute cursor-pointer ${
                   isSelected
                     ? 'w-14 h-14 md:w-20 md:h-20 lg:w-[7.4375rem] lg:h-[7.4375rem] text-gray-700 bg-white lg:text-background4 lg:bg-white'
-                    : 'w-20 h-20  md:h-[7.12rem] lg:h-[8rem] xl:h-[8.90rem] 2xl:w-[10.6875rem] md:w-[7.12rem] lg:w-[8rem] xl:w-[8.90rem] 2xl:h-[10.6875rem] text-white bg-background4'
+                    : 'w-20 h-20  md:h-[7.12rem] lg:h-[8rem] xl92r:h-[8.90rem] 2xl:w-[10.6875rem] md:w-[7.12rem] lg:w-[8rem] xl92r:w-[8.90rem] 2xl:h-[10.6875rem] text-white bg-background4'
                 }  rounded-full flex items-center justify-center  transition-colors bottom-12 right-12 z-0`}
                 >
                 {isSelected ? (

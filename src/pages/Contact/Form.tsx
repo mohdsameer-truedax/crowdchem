@@ -155,14 +155,14 @@ const Form = () => {
 
   return (
     <>
-    <div className="py-6 md:py-16 lg:py-[6.875rem] 2xl:py-[6.875rem] px-4 md:px-8 pl-4 sm:pl-8 md:pl-12 lg:pl-20  bg-background1 -mb-1 font-deca">
+    <div className="pt-6 md:pt-16 lg:pt-[6.875rem] 2xl:pt-[6.875rem] px-4 md:px-8 pl-4 sm:pl-8 md:pl-12 lg:pl-20  bg-background1 -mb-1 font-deca">
       <div className="w-full pt-10">
       <div className="text-white mb-4 sm:mb-6 md:mb-8 2xl:mb-8 text-center md:text-left" id="contact-hero">
   <h1 className="title-font font-medium 
     text-[2.5rem]            
     md:text-[2.5rem]         
     lg:text-[2.85rem]        
-    xl:text-[3.125rem]       
+    xl92r:text-[3.125rem]       
     2xl:text-[3.75rem]       
     md:leading-[6.25rem] tracking-[0.04em] font-nunito">
     {t("footer.contactUs")}
@@ -172,7 +172,7 @@ const Form = () => {
     sm:text-[1.5rem]         
     md:text-[1.0rem]         
     lg:text-[1.14rem]        
-    xl:text-[1.25rem]        
+    xl92r:text-[1.25rem]        
     2xl:text-[1.5rem]        
     font-deca md:leading-12 lg:leading-[3.75rem] tracking-[0.08em] font-extralight">
     {t("contact.subtitle")}
@@ -183,11 +183,11 @@ const Form = () => {
           onSubmit={handleSubmit}
           method="POST"
           action="#"
-          className="border border-white rounded-2xl py-4 md:py-6 lg:py-[2.1875rem] 2xl:py-[2.1875rem] p-6 pl-6 md:pl-12 2xl:pl-12 pr-8 md:pr-[3.75rem] 2xl:pr-[3.75rem] shadow-2xl max-w-xl md:max-w-[55.21rem] lg:max-w-[62.1rem] xl:max-w-[69rem] 2xl:max-w-[82.8125rem] bg-background1 font-deca"
+          className="border border-white rounded-2xl py-4 md:py-6 lg:py-[2.1875rem] 2xl:py-[2.1875rem] p-6 pl-6 md:pl-12 2xl:pl-12 pr-8 md:pr-[3.75rem] 2xl:pr-[3.75rem] shadow-2xl max-w-xl md:max-w-[55.21rem] lg:max-w-[62.1rem] xl92r:max-w-[69rem] 2xl:max-w-[82.8125rem] bg-background1 font-deca"
         >
           {/* Category */}
           <div className="mb-10 md:mb-16 lg:mb-[4.5625rem] 2xl:mb-[4.5625rem] flex flex-wrap gap-4 md:gap-16 desktop:gap-26 items-center justify-start">
-            <span className="text-white text-sm md:text-[0.9583rem] lg:text-[1.0925rem] xl:text-[1.1979rem] 2xl:text-[1.4375rem] md:leading-[3.75rem] tracking-[0.08em] font-extralight">
+            <span className="text-white text-sm md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] md:leading-[3.75rem] tracking-[0.08em] font-extralight">
               {t("contact.category")}
             </span>
             {contactCategories.map((cat) => (
@@ -205,7 +205,7 @@ const Form = () => {
                     <div className="w-3 h-3 md:w-4 md:h-4 rounded-full bg-white"></div>
                   )}
                 </div>
-                <span className="text-white text-sm md:text-base md:text-[0.8333rem] lg:text-[0.9500rem] xl:text-[1.0417rem] 2xl:text-[1.25rem] lg:leading-[3.75rem] tracking-[0.08em] font-extralight">
+                <span className="text-white text-sm md:text-base md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] lg:leading-[3.75rem] tracking-[0.08em] font-extralight">
                  {getTranslatedCategoryLabel(cat)}
                 </span>
               </label>
@@ -230,7 +230,7 @@ const Form = () => {
                 onChange={handleInputChange}
                 onBlur={handleBlur}
                 placeholder={`${t("contact.your")} ${t(`contact.${field}`)}`}
-                className={`w-full bg-[#36454F] font-extralight font-deca border rounded-[1.375rem] px-4 md:px-[1.5625rem] 2xl:px-[1.5625rem py-4 md:py-[1.375rem] 2xl:py-[1.375rem] text-white placeholder-gray-400 focus:outline-none transition-colors text-sm md:text-[1.0000rem] lg:text-[1.1400rem] xl:text-[1.2500rem] 2xl:text-[1.5rem] lg:leading-[3.75rem] tracking-[0.08em]
+                className={`w-full lg:h-[4.76rem] xl92r:h-[5.25rem] 2xl:h-[6.31rem] bg-[#36454F] font-extralight font-deca border rounded-[1.375rem] px-4 md:px-[1.5625rem] 2xl:px-[1.5625rem py-4 md:py-[1.375rem] 2xl:py-[1.375rem] text-white placeholder-gray-400 focus:outline-none transition-colors text-sm md:text-[1.0000rem] lg:text-[1.1400rem] xl92r:text-[1.2500rem] 2xl:text-[1.5rem] lg:leading-[3.75rem] tracking-[0.08em]
                   ${errors[field as keyof ContactFormData] ? "border-red-500 focus:border-red-500" : "border-background2 focus:border-[#3a5168]"}`}
               />
               {errors[field as keyof ContactFormData] && (
@@ -243,7 +243,7 @@ const Form = () => {
           <div className="mb-6 md:mb-8 lg:mb-[2.625rem] 2xl:mb-[2.625rem]">
             <label
               htmlFor="message"
-              className="block text-white text-sm md:text-base font-normal mb-2 md:text-[0.8333rem] lg:text-[0.9500rem] xl:text-[1.0417rem] 2xl:text-[1.25rem] lg:leading-[3.75rem] tracking-[0.08em]"
+              className="block text-white text-sm md:text-base font-normal mb-2 md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] lg:leading-[3.75rem] tracking-[0.08em]"
             >
               {t("contact.message")}
             </label>
@@ -255,7 +255,7 @@ const Form = () => {
               onBlur={handleBlur}
               placeholder={`${t("contact.your")} ${t("contact.message")}`}
               rows={6}
-              className={`w-full h-64 lg:h-[34.0rem] 2xl:h-[34.0rem] font-extralight bg-[#36454F] border rounded-[1.375rem] px-4 py-4 md:py-5 text-white placeholder-gray-400 focus:outline-none transition-colors resize-none text-sm md:text-[1.4375rem] lg:leading-[3.75rem] tracking-[0.08em]
+              className={`w-full h-64 lg:h-[25.84rem]  xl92r:h-[28.33rem] 2xl:h-[34.0rem] font-extralight bg-[#36454F] border rounded-[1.375rem] px-4 py-4 md:py-5 text-white placeholder-gray-400 focus:outline-none transition-colors resize-none text-sm md:text-[1.4375rem] lg:leading-[3.75rem] tracking-[0.08em]
                 ${errors.message ? "border-red-500 focus:border-red-500" : "border-background2 focus:border-[#3a5168]"}`}
             />
             {errors.message && <p className="text-red-500 text-xs mt-2">{errors.message}</p>}
@@ -290,14 +290,14 @@ const Form = () => {
   text-[0.958rem]            
   md:text-[0.958rem]         
   lg:text-[1.0925rem]        
-  xl:text-[1.198rem]         
+  xl92r:text-[1.198rem]         
   2xl:text-[1.4375rem]       
   lg:leading-[3.75rem] tracking-[0.08em] font-extralight font-deca">
   {t("contact.description")}{" "}
   <span className="font-semibold cursor-pointer">{t("contact.mail")}</span>
 </p>
 
-        <hr className="border-white mx-40 mb-10 md:mb-16 lg:mb-[4.6875rem] 2xl:mb-[4.6875rem] " />
+        <hr className="border-white mx-40 pb-10 md:pb-16 lg:pb-[4.6875rem] 2xl:pb-[4.6875rem] " />
       </div>
            
     </div>

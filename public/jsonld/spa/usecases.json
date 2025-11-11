@@ -1,12 +1,12 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "url": "https://main.d2oaupkly02zwi.amplifyapp.com/usecases?lang=spa",
+  "url": "http://localhost:5173/usecases?lang=spa",
   "inLanguage": "Spanish",
   "name": "usecases",
   "isPartOf": {
     "@type": "WebSite",
     "name": "CrowdChem",
-    "url": "https://main.d2oaupkly02zwi.amplifyapp.com"
+    "url": "http://localhost:5173"
   }
 }

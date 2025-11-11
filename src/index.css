@@ -23,9 +23,10 @@
   --color-textColor:#1D3F59;
   --font-nunito: "Nunito" ,"sans-serif";
   --font-deca: "Lexend Deca","sans-serif";
-  /* 💻 Custom screen breakpoint for 1920px */
-  --breakpoint-desktop: 1728px;
-  --breakpoint-largerdesktop: 1920px;
+  /* 💻 Custom screen breakpoints (using rem for consistency) */
+  --breakpoint-xl92r: 92rem;
+  --breakpoint-desktop: 108rem;
+  --breakpoint-largerdesktop: 120rem;
 }
 
 @keyframes scroll {
