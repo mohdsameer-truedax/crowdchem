@@ -12,8 +12,6 @@ window.addEventListener('unhandledrejection', (event) => {
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <TranslationProvider>
-      <App />
-    </TranslationProvider>
+    <App />
   </StrictMode>,
 )

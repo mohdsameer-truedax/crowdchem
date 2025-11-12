@@ -6,7 +6,7 @@ import { ResponsiveBackground } from "../../utils/ResponsiveBackground";
 import { ResponsiveImage } from "../../utils/ResponsiveImage";
 
 const Industries = () => {
-  const { t } = useTranslation();
+  const { t ,code} = useTranslation();
   const location = useLocation();
   const navigate = useNavigate()
   useEffect(() => {
@@ -26,7 +26,7 @@ const Industries = () => {
         </div>
        <ResponsiveImage id="industries" alt="industries"  className="w-full h-full py-10 lg:py-15"/>
         <div className="flex justify-center">
-          <button id='explore-usecases' onClick={() => { navigate("/eng/usecases") }} className="inline-flex font-regular text-white cursor-pointer  md:text-[1.2500rem] lg:text-[1.4250rem] xl92r:text-[1.5625rem] 2xl:text-[1.875rem] md:leading-[100%]  tracking-[0.04em] items-center font-deca gap-2 border-3 border-white  py-1 sm:py-4 px-3 sm:px-6 focus:outline-none rounded-lg text-[1rem]">
+          <button id='explore-usecases' onClick={() => { navigate(`/usecases?lang=${code || 'eng'}`); }} className="inline-flex font-regular text-white cursor-pointer  md:text-[1.2500rem] lg:text-[1.4250rem] xl92r:text-[1.5625rem] 2xl:text-[1.875rem] md:leading-[100%]  tracking-[0.04em] items-center font-deca gap-2 border-3 border-white  py-0 sm:py-4 px-3 sm:px-6 focus:outline-none rounded-lg text-[1rem]">
             {t('industries.button')}
             <FaArrowRight />
           </button>

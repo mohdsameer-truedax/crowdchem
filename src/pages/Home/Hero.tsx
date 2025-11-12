@@ -1,3 +1,4 @@
+//hero
 import { FaArrowRight } from "react-icons/fa";
 import { useTranslation } from "../../i18n/useTranslation";
 import { useEffect } from "react";
@@ -24,7 +25,7 @@ const Hero = () => {
       className="2xl:min-h-[90vh] text-white bg-no-repeat bg-cover bg-center flex flex-col"
     >
       {/* Content */}
-      <div className="flex-1 mt-25 sm:mt-40 flex flex-col justify-end items-start pl-6 sm:px-12 md:px-8 xl92r:px-14 2xl:pl-[4.375rem] max-w-[120rem]">
+      <div className="flex-1 mt-29  sm:mt-40 flex flex-col justify-end items-start pl-[0.56rem] sm:px-12 md:px-8 xl92r:px-14 2xl:pl-[4.375rem] max-w-[23.37rem] md:max-w-[120rem]">
         {/* Title */}
         <h1
           id="hero"
@@ -34,7 +35,7 @@ const Hero = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="mb-3 sm:mb-8 text-[0.875rem] font-deca sm:text-lg md:text-[1.125rem] leading-[1.375rem] 2xl:leading-[1.875rem] w-[95%] xl92r:w-[80%] 2xl:w-[65%] tracking-[0.02em] sm:tracking-[0.02em] text-left">
+        <p className="mb-[0.8125rem] sm:mb-8 text-[0.875rem] font-deca sm:text-lg md:text-[1.125rem] leading-[1.375rem] 2xl:leading-[1.875rem] w-[95%] xl92r:w-[80%] 2xl:w-[65%] tracking-[0.02em] sm:tracking-[0.02em] text-left">
           {t("hero.subtitle")}
         </p>
 
@@ -49,9 +50,9 @@ const Hero = () => {
         </button>
       </div>
 
-      <div className="w-[88%]  mx-auto md:mx-8 xl92r:mx-14 2xl:ml-[4.375rem] mt-4 sm:mt-10 mb-16 md:mb-20">
+      <div className="w-[88%]  mx-[0.56rem] md:mx-8 xl92r:mx-14 2xl:ml-[4.375rem] mt-[0.8125rem] sm:mt-10 mb-[2.937rem] md:mb-20">
         {/* ISO Certificate */}
-        <div className="flex justify-start lg:justify-end mb-4">
+        <div className="flex justify-start lg:justify-end mb-2">
           <a
             href="crowdchem/cert/iso.html"
             target="_blank"
@@ -73,9 +74,6 @@ const Hero = () => {
           </a>
         </div>
 
-        <section className="text-gray-600 body-font">
-
-        </section>
 
         {/* Partner Logos */}
 
