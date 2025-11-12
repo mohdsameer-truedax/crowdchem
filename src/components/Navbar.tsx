@@ -1,3 +1,4 @@
+//navbar
 import { useState, useEffect } from "react";
 import { FiMenu, FiSearch, FiX } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
@@ -5,6 +6,7 @@ import { useTranslation } from "../i18n/useTranslation";
 // import TranslationPage from "../i18n/TranslationPage";
 import { ResponsiveImage } from "../utils/ResponsiveImage";
 import SearchModal from "./SearchModal";
+// import TranslationPage from "../i18n/TranslationPage";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -85,7 +87,7 @@ const Navbar = () => {
       }}
       onMouseLeave={() => setIsHovering(false)}
       // use isVisible to control transform/opacity (so the variable is read)
-      className={`text-white shadow-md px-4 sm:px-6 lg:px-8 xl92r:px-12 2xl:px-16 fixed z-9999 py-0 sm:py-0 flex flex-col justify-between h-[3.93rem] md:h-[6.875rem] xl92r:h-[6.875rem] 2xl:h-[7.8125rem] w-full bg-background1 transition-transform duration-300 ease-in-out ${
+      className={`text-white shadow-md px-[0.56rem] md:px-6 lg:px-8 xl92r:px-12 2xl:px-16 fixed z-9999 py-0 sm:py-0 flex flex-col justify-end sm:justify-between h-[3.93rem] md:h-[6.875rem] xl92r:h-[6.875rem] 2xl:h-[7.8125rem] w-full bg-background1 transition-transform duration-300 ease-in-out ${
         isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
       }`}
     >
@@ -96,7 +98,7 @@ const Navbar = () => {
           <ResponsiveImage
                     id="logo"
               alt={t("alt.logo")}
-              className="h-[2rem] w-[5.9375rem] sm:h-20 sm:w-60 lg:h-auto lg:w-[20rem]  xl92r:w-[21.25rem] desktop:w-[22.75rem] transition-all duration-200"
+              className="h-[2rem] w-auto sm:h-20 sm:w-60 lg:h-auto lg:w-[20rem]  xl92r:w-[21.25rem] desktop:w-[22.75rem] transition-all duration-200"
             />
           </Link>
         </div>
@@ -160,7 +162,7 @@ const Navbar = () => {
       )}
 
       {/* Bottom section: Translation */}
-      {/* <div className="flex justify-end mt-auto absolute bottom-2 sm:bottom-0 right-4 sm:right-6 lg:right-8 xl92r:right-16">
+       {/* <div className="flex justify-end mt-auto absolute bottom-2 sm:bottom-0 right-4 sm:right-6 lg:right-8 xl92r:right-16">
         <TranslationPage />
       </div> */}
 
