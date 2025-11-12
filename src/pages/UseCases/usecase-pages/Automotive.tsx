@@ -169,11 +169,12 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
       </p>
       <ul className="list-disc ml-6">
         {/* AI Platform List 1 (Importance map) */}
-        <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ml-4 ${baseTextStyle} mb-10`}>
+        <li className={`text-xs  sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ml-4 ${baseTextStyle} mb-10`}>
           {t('automotive.caseStudy.aiPlatform.list.0')}
         </li>
-        {code === "Japanese"?  <ResponsiveImage id="automotivej1" alt="automotivej1" className='w-full h-full py-10' /> :  <ResponsiveImage id="automotive1" alt="automotive1" className='w-full h-full py-10' />}
-       
+      </ul>
+        {code === "Japanese"?  <ResponsiveImage id="automotivej1" alt="automotivej1" className=' w-full h-full py-10' /> :  <ResponsiveImage id="automotive1" alt="automotive1" className='w-full h-full py-10' />}
+       <ul className="list-disc ml-6">
 
         {/* Using TranslateHtml for AI Platform List 2 */}
         <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[2.4375rem] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
