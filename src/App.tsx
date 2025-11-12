@@ -16,6 +16,7 @@ import { AnalyticsConsent } from "./components/AnalyticsConsent";
 import ScrollToHash from "./components/ScrollToHash";
 import JsonLoader from "./components/JsonLoader";
 import { LangWrapper } from "./routes/LangWrapper";
+import { TranslationProvider } from "./i18n/TranslationProvider";
 
 const LegacyLangRedirect = () => {
   const params = useParams();
@@ -30,39 +31,39 @@ const LegacyLangRedirect = () => {
 
 
 function App() {
-  
+
   return (
     <Router>
+      <TranslationProvider>
         <ScrollToHash/>
         <GAListener />
         <JsonLoader/>
-      {/* Consent modal */}
-      <AnalyticsConsent />
-      <Navbar />
-      <ScrollToTop/>
-      <Routes>
-         <Route path="/" element={<LangWrapper Component={Home} />} />
-                    <Route path="/usecases" element={<LangWrapper Component={UseCases} />} />
+        {/* Consent modal */}
+        <AnalyticsConsent />
+        <Navbar />
+        <ScrollToTop/>
+        <Routes>
+          <Route path="/" element={<LangWrapper Component={Home} />} />
+          <Route path="/usecases" element={<LangWrapper Component={UseCases} />} />
           <Route path="/contact" element={<LangWrapper Component={Contact} />} />
+          <Route path="/news/:slug" element={<LangWrapper Component={NewsPost} />} />
+
+          {/* ✅ Certificate redirect */}
+          <Route path="/crowdchem/cert/iso" element={<CertRedirect />} />
+
+          {/* ✅ Error pages */}
+          <Route path="/404" element={<NotFound />} />
+          <Route path="/500" element={<ServerError />} />
+          <Route path="/offline" element={<Offline />} />
+
+          {/* ✅ Legacy lang redirect - must come after specific routes */}
           <Route path="/:lang/*" element={<LegacyLangRedirect />} />
-        {/* <Route path="/" element={<Home />} /> */}
-        {/* <Route path="/usecases" element={<UseCases />} /> */}
-        {/* <Route path="/contact" element={<Contact />} /> */}
 
-        <Route path="/news/:slug" element={<LangWrapper Component={NewsPost} />} />
-
-        {/* ✅ Certificate redirect */}
-        <Route path="/crowdchem/cert/iso" element={<CertRedirect />} />
-
-        {/* ✅ Error pages */}
-        <Route path="/404" element={<NotFound />} />
-        <Route path="/500" element={<ServerError />} />
-        <Route path="/offline" element={<Offline />} />
-
-        {/* ✅ Catch-all: redirect unknown routes to /404 */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer />
+          {/* ✅ Catch-all: redirect unknown routes to /404 */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </TranslationProvider>
     </Router>
   );
 }
