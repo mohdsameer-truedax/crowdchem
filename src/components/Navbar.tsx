@@ -92,7 +92,7 @@ const Navbar = () => {
       }`}
     >
       {/* Top section: Logo and main nav */}
-      <div className="flex items-center justify-between pt-1">
+      <div className="flex items-center justify-between">
         <div className="flex items-center">
           <Link to={buildRoute("")}>
           <ResponsiveImage

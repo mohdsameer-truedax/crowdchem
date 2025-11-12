@@ -9,14 +9,14 @@ const Collaborate = () => {
       <section className="body-font " style={{ backgroundColor: "#E5E5E5" }}>
         <div className=" mx-auto flex px-5 py-24 items-center justify-center flex-col">
           <div className="text-center  w-full flex flex-col items-center">
-            <h2 className="title-font md:text-[2.625rem] mb-4 sm:mb-6 md:mb-8 lg:mb-10 text-2xl sm:text-3xl md:text-[2.0833rem] lg:text-[2.3750rem] xl92r:text-[2.6042rem] 2xl:text-[3.125rem] lg:leading-[6.25rem]  tracking-[0.00em] text-5xl font-semibold text-black font-nunito"
+            <h2 className="title-font md:text-[2.625rem] mb-4 sm:mb-6 md:mb-8 lg:mb-10 text-2xl sm:text-3xl md:text-[2.0833rem] lg:text-[2.3750rem] xl92r:text-[2.6042rem] 2xl:text-[3.125rem] lg:leading-[4.75rem] xl92r:leading-[5.2rem] 2xl:leading-[6.25rem]  tracking-[0.00em] text-5xl font-semibold text-black font-nunito"
               style={{ color: "#121212" }}>{t('collaborate.title')}</h2>
             <p className="leading-[3.4375rem] text-black text-[1.25rem] 
     sm:text-[1.25rem] 
     md:text-[1.25rem] 
     lg:text-[1.425rem] 
     xl92r:text-[1.5625rem] 
-    2xl:text-[1.875rem] font-deca font-extralight  md:leading-[3.75rem] lg:leading-[3.4375rem] w-full lg:w-3/4 2xl:max-w-4xl tracking-[0.08em]">
+    2xl:text-[1.875rem] font-deca font-extralight  md:leading-[3.75rem] lg:leading-[3.4375rem] w-full md:max-w-[40rem] lg:max-w-[45rem] xl92r:max-w-[50rem] 2xl:max-w-[62rem] tracking-[0.08em]">
               {t('collaborate.subtitle')}
             </p>
             <br/>
