@@ -62,7 +62,7 @@ const Footer = () => {
             {t("footer.studies")}
           </Link>
           </li>
-          <li className="pt-3 md:pt-[1.79vh]">
+          {/* <li className="pt-3 md:pt-[1.79vh]">
            <Link
              to="/" 
             className="bg-transparent text-white hover:text-gray-300  cursor-pointer transition-colors duration-200"
@@ -70,7 +70,7 @@ const Footer = () => {
           >
            CROWDCHEM.NET
           </Link>
-        </li>
+        </li> */}
       </ul>
   </div>
 
