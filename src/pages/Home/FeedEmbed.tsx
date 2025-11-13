@@ -28,7 +28,7 @@ interface EmbedProps {
 const EmbedContainer: React.FC<EmbedProps> = ({ type, url }) => {
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
-    const embedWrapperClasses = "w-full h-48 md:h-[25.375rem] p-2 flex items-center justify-center overflow-hidden rounded-3xl";
+    const embedWrapperClasses = "w-full h-48 md:h-[25.375rem] sm:p-2 flex items-center justify-center overflow-hidden radius-[1rem] sm:rounded-3xl";
     const embedInnerStyles = { height: '100%', width: '100%', maxWidth: '550px' };
 
     useEffect(() => {
@@ -210,7 +210,7 @@ const FeedEmbed = () => {
                 onTouchMove={handleTouchMove}
                 onTouchEnd={handleTouchEnd}
             >
-                <div className={`flex gap-6 ${isPaused ? '' : 'animate-scroll'}`}>
+                <div className={`flex gap-6 ${isPaused ? '' : 'animate-scrol'}`}>
                     {socialData.concat(socialData).map((item, index) => {
                         const timeAgoText = timeAgo(item.date);
                         if (!item.url) return null;
@@ -219,24 +219,24 @@ const FeedEmbed = () => {
                                 key={`${item.id}-${index}`}
                                 onMouseEnter={() => setIsPaused(true)}
                                 onMouseLeave={() => setIsPaused(false)}
-                                className="flex-shrink-0 w-full max-w-[28.9375rem] sm:w-full lg:w-1/3 bg-white rounded-xl hover:shadow-lg transition-all duration-300"
+                                className="flex-shrink-0 w-full sm:max-w-[28.9375rem] sm:w-full lg:w-1/3 bg-white rounded-xl hover:shadow-lg transition-all duration-300"
                             >
-                                <div className="w-full h-[25.5rem]">
+                                <div className="w-full h-[11.31rem] sm:h-[25.5rem]">
                                     <EmbedContainer type={item.type} url={item.url} />
                                 </div>
 
-                                <div className="px-5 pb-5">
-                                    <h3 className="font-medium text-lg md:text-[0.6667rem] lg:text-[0.7600rem] xl92r:text-[0.8333rem] 2xl:text-[1rem] text-black leading-9 tracking-[0.08em]">
+                                <div className="px-0 sm:px-5 pb-5">
+                                    <h3 className="font-medium text-[0.75rem] pt-8 sm:pt-0 md:text-[0.6667rem] lg:text-[0.7600rem] xl92r:text-[0.8333rem] 2xl:text-[1rem] text-black leading-2 sm:leading-9 tracking-[0.08em]">
                                         {timeAgoText}
                                     </h3>
 
-                                    <p className="text-black text-sm md:text-[0.6667rem] lg:text-[0.7600rem] xl92r:text-[0.8333rem] 2xl:text-[1rem] leading-[2.25rem] tracking-[0.08em] mb-1">
-                                        {truncateWords(item.caption, 4)}
+                                    <p className="text-black font-light pt-2 sm:font-normal text-sm md:text-[0.6667rem] lg:text-[0.7600rem] xl92r:text-[0.8333rem] 2xl:text-[1rem] leading-[1.8] sm:leading-[2.25rem] tracking-[0.08em] mb-1">
+                                        {truncateWords(item.caption, 8)}
                                     </p>
 
                                     <button
                                         onClick={() => window.open(item.publicUrl)}
-                                        className="border-4 cursor-pointer text-black border-gray-900 rounded-full md:text-[0.5833rem] lg:text-[0.6650rem] xl92r:text-[0.7292rem] 2xl:text-[0.875rem] leading-[2.25rem] tracking-[0.12em] font-light px-6 text-sm hover:bg-gray-100 transition-colors"
+                                        className="border-3 sm:border-4 cursor-pointer text-black border-gray-900 rounded-full text-[0.875rem] md:text-[0.5833rem] lg:text-[0.6650rem] xl92r:text-[0.7292rem] 2xl:text-[0.875rem] leading-[1.8] sm:leading-[2.25rem] tracking-[0.12em] font-regular sm:font-light px-3 sm:px-6 text-sm hover:bg-gray-100 transition-colors"
                                     >
                                         {t("news.readMore")}
                                     </button>
