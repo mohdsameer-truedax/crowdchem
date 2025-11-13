@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node scripts/index.ts && vite --mode dev",
     "dev": "vite build --mode test && node scripts/index.ts",
-    "build": "vite build --mode prod && npx ts-node scripts/index.ts",
+    "build": "vite build --mode prod && node scripts/index.ts",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest --mode test"
