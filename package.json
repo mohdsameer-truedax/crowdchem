@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite --mode dev",
+    "start": "node scripts/index.ts && vite --mode dev",
     "dev": "node scripts/index.ts && vite build --mode test",
     "build": "node scripts/index.ts && vite build --mode prod",
     "lint": "eslint .",
