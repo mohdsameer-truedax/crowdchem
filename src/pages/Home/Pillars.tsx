@@ -22,7 +22,7 @@ const Pillars = () => {
             </div>
             <div className="flex-grow sm:text-left  text-center mt-[0.8125rem] sm:mt-0 text-white">
               <h2 className="text-[0.875rem] md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] md:text-[1.1667rem] lg:text-[1.3300rem] xl92r:text-[1.4583rem] 2xl:text-[1.75rem] leading-[1.5rem] xl92r:leading-[1.875rem] 2xl:leading-[3rem] tracking-[0.08em] title-font font-medium mb-0 2xl:mb-2">{t('pillars.gnn')}</h2>
-              <p className="text-[0.875rem] mx-auto w-[19rem] md:w-full xl:w-[37.66rem] xl92r:w-[41.29rem] 2xl:w-[49.56rem] md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] md:text-[0.8750rem] lg:text-[0.9975rem] xl92r:text-[1.0938rem] 2xl:text-[1.3125rem] leading-[1.5rem] xl92r:leading-[1.875rem] 2xl:leading-[2.1875rem] tracking-[0.08em] rounded-lg font-light">{t('pillars.gnnDesc')}</p>
+              <p className="text-[0.875rem]  w-[19rem] md:w-full xl:w-[37.66rem] xl92r:w-[41.29rem] 2xl:w-[49.56rem] md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] md:text-[0.8750rem] lg:text-[0.9975rem] xl92r:text-[1.0938rem] 2xl:text-[1.3125rem] leading-[1.5rem] xl92r:leading-[1.875rem] 2xl:leading-[2.1875rem] tracking-[0.08em] rounded-lg font-light">{t('pillars.gnnDesc')}</p>
             </div>
           </div>
            <div className="flex items-center lg:w-3/5 mx-auto  mb-[2.75rem] lg:mb-[2.7rem] xl92r:mb-[3rem] 2xl:mb-[3.625rem] border-gray-200 sm:flex-row flex-col">
@@ -33,7 +33,7 @@ const Pillars = () => {
             </div>
             <div className="flex-grow sm:text-left text-center mt-[0.8125rem] sm:mt-0 text-white">
               <h2 className="text-[0.875rem] md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] md:text-[1.1667rem] lg:text-[1.3300rem] xl92r:text-[1.4583rem] 2xl:text-[1.75rem] leading-[1.5rem] xl92r:leading-[1.875rem] 2xl:leading-[3rem] tracking-[0.08em] title-font font-medium mb-0 2xl:mb-2">{t('pillars.data')}</h2>
-              <p className="text-[0.875rem] mx-auto w-[19rem] md:w-full xl:w-[37.66rem] xl92r:w-[41.29rem] 2xl:w-[49.56rem] md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] md:text-[0.8750rem] lg:text-[0.9975rem] xl92r:text-[1.0938rem] 2xl:text-[1.3125rem] leading-[1.5rem] xl92r:leading-[1.875rem] 2xl:leading-[2.1875rem] tracking-[0.08em]  rounded-lg  font-light">{t('pillars.dataDesc')}</p>
+              <p className="text-[0.875rem] w-[19rem] md:w-full xl:w-[37.66rem] xl92r:w-[41.29rem] 2xl:w-[49.56rem] md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] md:text-[0.8750rem] lg:text-[0.9975rem] xl92r:text-[1.0938rem] 2xl:text-[1.3125rem] leading-[1.5rem] xl92r:leading-[1.875rem] 2xl:leading-[2.1875rem] tracking-[0.08em]  rounded-lg  font-light">{t('pillars.dataDesc')}</p>
             </div>
           </div>
            <div className="flex items-center lg:w-3/5 mx-auto mb-[1.125rem]  sm:mb-10 border-gray-200 sm:flex-row flex-col">
@@ -44,7 +44,7 @@ const Pillars = () => {
             </div>
             <div className="flex-grow sm:text-left text-center mt-[0.8125rem] sm:mt-0 text-white">
               <h2 className="text-[0.875rem] md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] md:text-[1.1667rem] lg:text-[1.3300rem] xl92r:text-[1.4583rem] 2xl:text-[1.75rem] leading-[1.5rem] xl92r:leading-[1.875rem] 2xl:leading-[3rem] tracking-[0.08em] title-font font-medium mb-0 2xl:mb-2">{t('pillars.analysis')}</h2>
-              <p className="text-[0.875rem] mx-auto w-[19rem] md:w-full xl:w-[37.66rem] xl92r:w-[41.29rem] 2xl:w-[49.56rem] md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] md:text-[0.8750rem] lg:text-[0.9975rem] xl92r:text-[1.0938rem] 2xl:text-[1.3125rem] leading-[1.5rem] xl92r:leading-[1.875rem] 2xl:leading-[2.1875rem] tracking-[0.08em]  rounded-lg  font-light">{t('pillars.analysisDesc')}</p>
+              <p className="text-[0.875rem]  w-[19rem] md:w-full xl:w-[37.66rem] xl92r:w-[41.29rem] 2xl:w-[49.56rem] md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] md:text-[0.8750rem] lg:text-[0.9975rem] xl92r:text-[1.0938rem] 2xl:text-[1.3125rem] leading-[1.5rem] xl92r:leading-[1.875rem] 2xl:leading-[2.1875rem] tracking-[0.08em]  rounded-lg  font-light">{t('pillars.analysisDesc')}</p>
             </div>
           </div>
         </div>
