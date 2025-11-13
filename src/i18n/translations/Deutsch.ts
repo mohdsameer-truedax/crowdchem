@@ -312,13 +312,13 @@ const de = {
         ]
       },
       "targetStyleWindows": {
-        "heading": "Target-style windows:",
-        "list": [
-          "Viscosity → smooth application without slump",
-          "Hydrophobized pigment content → high payoff without collapse.",
-          "Quality checks: no severe agglomeration, re-dispersion after standing, high-temp stability, long-wear / non-bleed.",
-        ]
-      },
+    "heading": "Zielspezifische Eigenschaften von Augen-Make-up/Eyeliner:",
+    "list": [
+        "Viskosität → geschmeidiges Auftragen ohne Verlaufen/Absacken (Slump)",
+        "Hydrophobierter Pigmentgehalt → hohe Farbabgabe (Payoff) ohne Zusammenfallen (Collapse).",
+        "Qualitätsprüfungen: keine starke Agglomeration, Redispersion nach Stehenlassen, Hochtemperaturstabilität, langanhaltend / blutet nicht aus (Non-Bleed).",
+    ]
+},
       "aiPlatformLook": {
         "heading": "Wie es mit unserer AI-Plattform aussieht",
         "list": [

@@ -49,11 +49,10 @@ const Footer = () => {
     <h2 className="title-font text-[0.5833rem] font-medium mb-3 md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] lg:leading-[1.875rem] tracking-[0.08em]">
       {t("footer.crowdchem")}
     </h2>
-    <nav
+    <ul
       className="list-none font-normal text-[0.6667rem] md:text-[0.6667rem] lg:text-[0.7600rem] xl92r:text-[0.8333rem] 2xl:text-[1rem] lg:leading-[1.875rem] tracking-[0.08em]"
       id="footer"
     >
-      <ul>
         <li className="">
           <Link
              to="/usecases" 
@@ -62,23 +61,31 @@ const Footer = () => {
           >
             {t("footer.studies")}
           </Link>
+          </li>
+          <li className="pt-3 md:pt-[1.79vh]">
+           <Link
+             to="/" 
+            className="bg-transparent text-white hover:text-gray-300  cursor-pointer transition-colors duration-200"
+            aria-label="Scroll to Case Studies section"
+          >
+           CROWDCHEM.NET
+          </Link>
         </li>
       </ul>
-    </nav>
   </div>
 
   {/* Connect */}
   <div className="flex-1 min-w-[9.375rem]">
-    <h2 className="title-font font-medium font-deca text-[0.5833rem] md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] lg:leading-[1.875rem] tracking-[0.08em]">
+    <h2 className="title-font font-medium font-deca mb-3 text-[0.5833rem] md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] lg:leading-[1.875rem] tracking-[0.08em]">
       {t("footer.connect")}
     </h2>
-    <ul className="list-none text-[0.6667rem] md:text-[0.6667rem] lg:text-[0.7600rem] xl92r:text-[0.8333rem] 2xl:text-[1rem] lg:leading-[1.625rem] tracking-[0.08em]">
-      <li className="pb-5 pt-2">
+    <ul className="list-none font-normal text-[0.6667rem] md:text-[0.6667rem] lg:text-[0.7600rem] xl92r:text-[0.8333rem] 2xl:text-[1rem] lg:leading-[1.875rem] tracking-[0.08em]">
+      <li className="pb-3 md:pb-[1.79vh]">
         <Link to="/contact" className="hover:text-gray-300 cursor-pointer">
           {t("footer.contactUs")}
         </Link>
       </li>
-      <li className="pb-5">
+      <li className="pb-3 md:pb-[1.79vh]">
         <a
           href="https://www.linkedin.com/company/crowdchem"
           target="_blank"

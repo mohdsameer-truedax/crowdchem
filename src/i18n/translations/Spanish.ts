@@ -310,14 +310,14 @@ const es = {
           "Una fase de aceite volátil que apoye un secado rápido y una sensación agradable."
         ]
       },
-      "targetStyleWindows": {
-        "heading": "Target-style windows:",
-        "list": [
-          "Viscosity → smooth application without slump",
-          "Hydrophobized pigment content → high payoff without collapse.",
-          "Quality checks: no severe agglomeration, re-dispersion after standing, high-temp stability, long-wear / non-bleed.",
-        ]
-      },
+     "targetStyleWindows": {
+    "heading": "Ventanas de estilo objetivo (Target-style windows):",
+    "list": [
+        "Viscosidad → aplicación suave sin descolgamiento (slump)",
+        "Contenido de pigmento hidrofobizado → alto rendimiento de color (payoff) sin colapso.",
+        "Controles de calidad: sin aglomeración grave, re-dispersión después de reposo, estabilidad a alta temperatura, larga duración / sin sangrado (non-bleed).",
+    ]
+},
       "aiPlatformLook": {
         "heading": "Aspecto con nuestra plataforma de IA",
         "list": [

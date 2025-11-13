@@ -291,11 +291,11 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
             {query.length > 0 && (
               results.length === 0 ? (
                 <p className="text-white md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-center leading-[3.75rem] tracking-0.08em font-semibold">
-                  {t("search.noresult")} "{query}"...
+                  {t("search.noresult")} “{query.toLocaleUpperCase()}”...
                 </p>
               ) : (
                 <p className="text-white md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] leading-[3.75rem] tracking-0.08em font-semibold">
-                  {t("search.result")} "{query}"...
+                  {t("search.result")} “{query.toLocaleUpperCase()}”...
                 </p>
               )
             )}

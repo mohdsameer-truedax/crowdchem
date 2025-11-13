@@ -311,14 +311,14 @@ const fr = {
           "Une phase d'huile volatile qui soutient un séchage rapide et une sensation agréable."
         ]
       },
-      "targetStyleWindows": {
-        "heading": "Target-style windows:",
-        "list": [
-          "Viscosity → smooth application without slump",
-          "Hydrophobized pigment content → high payoff without collapse.",
-          "Quality checks: no severe agglomeration, re-dispersion after standing, high-temp stability, long-wear / non-bleed.",
-        ]
-      },
+     "targetStyleWindows": {
+    "heading": "Fenêtres d'objectif (Target-style windows) :",
+    "list": [
+        "Viscosité → application lisse sans affaissement (slump)",
+        "Teneur en pigments hydrophobisés → rendu élevé sans effondrement (collapse).",
+        "Contrôles qualité : pas d'agglomération sévère, re-dispersion après repos, stabilité à haute température, longue tenue / ne coule pas (non-bleed).",
+    ]
+},
       "aiPlatformLook": {
         "heading": "À quoi ressemble cela avec notre plateforme d'IA",
         "list": [
