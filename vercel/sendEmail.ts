@@ -47,10 +47,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(500).json({ error: 'server.error', message: 'API key not configured' });
     }
 
+    if (!process.env.RESEND_RECEIVER_EMAIL) {
+      return res.status(500).json({ error: 'server.error', message: 'Resend receiver email not configured' });
+    }
+
     const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: "Your Site <onboarding@resend.dev>",
-      to: "mohdsameer@truedax.io",
+      to: process.env.RESEND_RECEIVER_EMAIL,
       subject: `Message from ${validationResult.data.name}`,
       html: `
         <h3>New Contact Submission</h3>
