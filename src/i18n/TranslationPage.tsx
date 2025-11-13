@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaGlobe, FaChevronDown } from "react-icons/fa";
-import { useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "./useTranslation";
 import { translations } from "./translations";
 import type { Language } from "./constant";
@@ -8,9 +7,6 @@ import type { Language } from "./constant";
 const TranslationPage = () => {
   const { language, setLanguage } = useTranslation();
   const [open, setOpen] = useState(false);
-  const navigate = useNavigate();
-  const location = useLocation();
-  // const { lang } = useParams();
 
   const languageOrder = ['English', '日本語', 'Deutsch', 'Français', 'Español'];
   const languages: { code: Language; label: string }[] = languageOrder
@@ -21,24 +17,9 @@ const TranslationPage = () => {
     }));
 
   const handleSelect = (newLang: Language) => {
+    console.log("TranslationPage - handleSelect:", newLang);
     setLanguage(newLang);
     setOpen(false);
-
-    const pathParts = location.pathname.split("/").filter(Boolean);
-    const currentPage = pathParts[0] || "";
-
-    const allowed = ['', 'usecases', 'contact'];
-    const targetPage = allowed.includes(currentPage) ? currentPage : '';
-    const base = targetPage ? `/${targetPage}` : '/';
-
-    // Only add lang param if not English
-    if (newLang.toLowerCase() === 'english') {
-      navigate({ pathname: base }, { replace: true });
-    } else {
-      const next = new URLSearchParams(location.search);
-      next.set("lang", newLang.toLowerCase().slice(0, 3));
-      navigate({ pathname: base, search: `?${next.toString()}` }, { replace: true });
-    }
   };
 
 

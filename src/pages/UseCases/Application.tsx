@@ -109,7 +109,7 @@ const Application = () => {
   }, [location.hash,casestudy]);
   return (
     <div id='application'>
-      <section className="text-black body-font px-4 md:px-8 lg:px-16 mx-auto w-full lg:max-w-[71.15rem] xl92r:max-w-[79.05rem] 2xl:max-w-[94.875rem]  pb-12 mt-[2rem] lg:mt-[3.75rem] xl92r:mt-[4.16rem] 2xl:mt-[5rem]">
+      <section className="text-black body-font px-4 md:px-8 lg:px-16 mx-auto w-full lg:max-w-[71.15rem] xl92r:max-w-[79.05rem] 2xl:max-w-[94.875rem]  pb-12 mt-[2rem] lg:mt-[7.16vh]">
 
         {/* Case Study Grid */}
        <section className="body-font pb-12">

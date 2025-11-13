@@ -214,9 +214,9 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
             components={{ 1: BoldText, 2: BoldText }}
           />
         </li>
-
+</ul>
      {code === "Japanese"?  <ResponsiveImage id="materialsj1" alt="materialsj1" className='w-full h-full py-10' /> : <ResponsiveImage id="materials1" alt="materials1" className='w-full h-full py-10' />}  
-
+  <ul className="list-disc ml-6">
         {/* AI Platform List 2 (Explainable shortlist) */}
         <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[2.4375rem] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
           <TranslateHtml

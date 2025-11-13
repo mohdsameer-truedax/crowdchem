@@ -1,3 +1,4 @@
+//navbar
 import { useState, useEffect } from "react";
 import { FiMenu, FiSearch, FiX } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
@@ -89,7 +90,7 @@ const Navbar = () => {
       }`}
     >
       {/* Top section: Logo and main nav */}
-      <div className="flex items-center justify-between pt-1">
+      <div className="flex items-center justify-between">
         <div className="flex items-center">
           <Link to={buildRoute("")}>
           <ResponsiveImage
