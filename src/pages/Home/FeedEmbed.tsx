@@ -210,7 +210,7 @@ const FeedEmbed = () => {
                 onTouchMove={handleTouchMove}
                 onTouchEnd={handleTouchEnd}
             >
-                <div className={`flex gap-6 ${isPaused ? '' : 'animate-scrol'}`}>
+                <div className={`flex gap-6 ${isPaused ? '' : 'animate-scroll'}`}>
                     {socialData.concat(socialData).map((item, index) => {
                         const timeAgoText = timeAgo(item.date);
                         if (!item.url) return null;
