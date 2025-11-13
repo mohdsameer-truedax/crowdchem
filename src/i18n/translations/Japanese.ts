@@ -312,13 +312,13 @@ const ja = {
         ]
       },
       "targetStyleWindows": {
-        "heading": "Target-style windows:",
-        "list": [
-          "Viscosity → smooth application without slump",
-          "Hydrophobized pigment content → high payoff without collapse.",
-          "Quality checks: no severe agglomeration, re-dispersion after standing, high-temp stability, long-wear / non-bleed.",
-        ]
-      },
+    "heading": "目標とするスタイルの特性 (Target-style windows):",
+    "list": [
+        "粘度 → だれ (slump) ずに滑らかに塗布できること",
+        "疎水化された顔料の含有量 → 崩れ (collapse) ずに高い発色 (payoff) が得られること。",
+        "品質チェック: 深刻な凝集がないこと、静置後の再分散性、高温安定性、ロングウェア / にじみ (non-bleed) がないこと。",
+    ]
+},
       "aiPlatformLook": {
         "heading": "当社のAIプラットフォームではどのように見えるか",
         "list": [
