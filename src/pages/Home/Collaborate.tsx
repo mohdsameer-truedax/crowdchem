@@ -20,7 +20,7 @@ const Collaborate = () => {
               {t('collaborate.subtitle')}
             </p>
             <br/>
-            <p className="mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-[1.5rem] text-black  font-deca font-extralight ttext-[1.25rem] 
+            <p className="mb-4 text-[0.875rem]  sm:mb-6 md:mb-8 lg:mb-10 leading-[1.5rem] text-black  font-deca font-extralight ttext-[1.25rem] 
     sm:text-[1.25rem] 
     md:text-[1.25rem] 
     lg:text-[1.425rem] 

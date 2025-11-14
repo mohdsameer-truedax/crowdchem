@@ -57,7 +57,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
         </div>
 
         {/* Right Column: Case Study Details & Close Button */}
-        <div className="w-1/2 text-[#000000] pt-0 2xl:pt-10">
+        <div className="w-1/2 text-[#000000] pt-0 2xl:pt-20">
           {/* Close Button is structural, no text to translate */}
           <div className="flex justify-end">
             <button onClick={() => onClose(caseStudy)} className="cursor-pointer text-gray-600 flex items-center justify-center right-4 top-0 w-14 h-14 md:w-16 md:h-16 z-0">
@@ -87,7 +87,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
               {t('automotive.caseStudy.overview.heading')}
             </p>
             {/* Overview Content */}
-            <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] font-extralight ${baseTextStyle} tracking-[0.03em]`}>
+            <p className={`text-xs w-[33.6vw] sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] font-extralight ${baseTextStyle} tracking-[0.03em]`}>
               {t('automotive.caseStudy.overview.content')}
             </p>
           </div>

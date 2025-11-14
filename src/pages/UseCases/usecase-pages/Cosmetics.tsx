@@ -62,7 +62,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
         </div>
 
         {/* Right Column: Case Study Details & Close Button */}
-        <div className="w-1/2 text-[#000000] pt-0 2xl:pt-10">
+        <div className="w-1/2 text-[#000000] pt-0 2xl:pt-20">
           {/* Close Button Group (No translation needed) */}
           <div className="flex justify-end">
             <button onClick={() => onClose(caseStudy)} className="cursor-pointer text-gray-600 flex items-center justify-center right-4 top-0 w-14 h-14 md:w-16 md:h-16 z-0">

@@ -55,7 +55,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
         </div>
 
         {/* Right Column: Case Study Details & Close Button */}
-        <div className="w-1/2 text-[#000000] pt-0 2xl:pt-10">
+        <div className="w-1/2 text-[#000000] pl-0 2xl:pl-3 pt-0 2xl:pt-20">
           {/* Close Button Group */}
           <div className="flex justify-end">
             <button onClick={() => onClose(caseStudy)} className="cursor-pointer text-gray-600 flex items-center justify-center right-4 top-0 w-14 h-14 md:w-16 md:h-16 z-0">
@@ -81,7 +81,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
             </p>
 
             {/* Overview Heading */}
-            <p className={`text-xs sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] font-normal ${baseTextStyle} mt-8`}>
+            <p className={`text-xs  w-[31.9vw] sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] font-normal ${baseTextStyle} mt-8`}>
               {t('advancedMaterials.caseStudy.overview.heading')}
             </p>
             {/* Overview Content 1 */}
@@ -110,7 +110,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
           </p>
         </div>
         {/* Right Column: Overview Content 3 (Heat resistance) */}
-        <div className="w-1/2">
+        <div className="w-1/2 w-[34w] pl-0 2xl:pl-3">
           <p className={`text-xs sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] mt-10 font-extralight ${baseTextStyle} tracking-[0.03em]`}>
             <TranslateHtml
               i18nKey="advancedMaterials.caseStudy.overview.content3"
