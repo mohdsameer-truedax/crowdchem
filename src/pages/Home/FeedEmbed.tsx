@@ -231,7 +231,7 @@ const FeedEmbed = () => {
                                     </h3>
 
                                     <p className="text-black font-light pt-2  sm:font-normal text-[0.75rem] md:text-[0.6667rem] lg:text-[0.7600rem] xl92r:text-[0.8333rem] 2xl:text-[1rem] leading-[1.8] sm:leading-[2.25rem] tracking-[0.08em] mb-1">
-                                        {truncateWords(item.caption, 8)}
+                                        {truncateWords(item.caption, 4)}
                                     </p>
 
                                     <button

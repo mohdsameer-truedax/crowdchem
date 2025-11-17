@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <ResponsiveBackground
       id="hero-bg"
-      className="max-h-[100vh] sm:max-h-none min-h-[60vh] xl:min-h-[90vh]  text-white bg-no-repeat bg-cover bg-center flex flex-col"
+      className="max-h-[100vh] sm:max-h-none sm:min-h-[60vh] xl:min-h-[85vh]  text-white bg-no-repeat bg-cover bg-center flex flex-col"
     >
       {/* Content */}
       <div className="flex-1 mt-25  sm:mt-40 xl:mt-35 flex flex-col justify-end items-start pl-[0.5625rem] sm:pl-6 sm:px-12 md:px-8 xl92r:px-14 2xl:pl-[4.375rem] max-w-[93.73vw] md:max-w-[165.88vw]">
@@ -48,7 +48,7 @@ const Hero = () => {
           <FaArrowRight className="ml-2" />
         </button>
       </div>
-      <div className="w-[88%]  mx-auto md:mx-8 xl92r:mx-14 ml-[0.5625rem] 2xl:ml-[4.375rem] mt-3 sm:mt-4 lg:mt-6 2xl:mt-10 mb-12 lg:mb-20 2xl:mb-20">
+      <div className="w-[88%]  mx-auto md:mx-8 xl92r:mx-14 ml-[0.5625rem] 2xl:ml-[4.375rem] mt-3 sm:mt-4 lg:mt-6 2xl:mt-10 mb-12 lg:mb-[7.16vh]">
         {/* ISO Certificate */}
         <div className="flex justify-start lg:justify-end mb-4">
           <a

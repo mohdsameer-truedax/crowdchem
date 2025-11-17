@@ -9,7 +9,7 @@ const Pillars = () => {
     <div>
       <section className="body-font  px-[1.31rem] sm:px-12 md:px-8 xl92r:px-14  2xl:pl-[4.375rem] pb-6 sm:pb-12"
       style={{backgroundColor:"#091B37"}}>
-        <div className="py-[1.25rem] lg:py-[2.7rem] xl92r:py-[3rem] 2xl:py-[3.625rem] mx-auto flex flex-wrap items-center">
+        <div className="py-[1.25rem] lg:py-[5.19vh] mx-auto flex flex-wrap items-center">
           <div id='pillars'>
             <h1 className="title-font font-nromal text-[1.125rem] leading-[2.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] md:text-[2.5000rem] lg:text-[2.8500rem] xl92r:text-[3.1250rem] 2xl:text-[3.75rem] lg:leading-[6.25rem]  tracking-[0.05em] font-nunito text-white">{t('pillars.title')} </h1>
           </div>

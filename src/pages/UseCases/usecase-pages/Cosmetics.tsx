@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { type CaseStudy } from '../../../data/CaseStudy';
 import { ResponsiveImage } from '../../../utils/ResponsiveImage';
 import { FiX } from 'react-icons/fi';
@@ -6,11 +6,13 @@ import { FiX } from 'react-icons/fi';
 import { useTranslation } from '../../../i18n/TranslationContext'; 
 import { TranslateHtml } from '../../../i18n/TranslateHtml';
 import { translations } from '../../../i18n/translations';
+import { FaChevronDown, FaMinus } from 'react-icons/fa';
 
 
 const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (caseStudy: CaseStudy) => void }) => {
   // Access the translation function
   const { t, code, language } = useTranslation();
+ const [moreMobileButon, setMoreMobileButon] = useState(false)
 
   interface TableRow {
     area: string;
@@ -25,7 +27,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
   const tableTypes = ['triangle', 'cross', 'cross', 'cross', 'triangle'];
   
   // Define common text styles
-  const baseTextStyle = 'ml-2 text-[#000000] font-deca leading-[2.1875rem] tracking-[0.03em]';
+  const baseTextStyle = 'ml-2 text-[#000000] font-deca leading-[1.5] sm:leading-[2.1875rem] tracking-[0.03em]';
 
   // Component to define the styling for the bolded text (interpolation component)
   const BoldText = <span className='font-light' />;
@@ -51,44 +53,65 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
   return (
     <div>
       {/* Main content container */}
-      <div id={caseStudy.id} className="flex gap-2 md:gap-4 ">
+      <div id={caseStudy.id} className="sm:flex gap-2 md:gap-4 ">
         {/* Left Column: Image */}
-        <div className="w-1/2 pt-10">
-          <ResponsiveImage
-            id={caseStudy.id}
-            alt={t('alt.applicationImage')}
-            className="w-full h-[25rem] lg:h-[34.5rem] 2xl:h-[47rem] rounded-2xl lg:rounded-[2.9375rem]"
-          />
-        </div>
-
+         <div className="relative w-full sm:w-1/2 pt-0  sm:pt-10 rounded-[2.9375rem]">
+                 <ResponsiveImage
+                   id={caseStudy.id}
+                   alt={t('alt.applicationImage')}
+                   className="w-full h-[27.25vh] sm:h-[25rem] lg:h-[34.5rem] 2xl:h-[47rem] rounded-[2.9375rem]"
+                 />
+                 <div className="absolute sm:hidden inset-0 flex items-center rounded-[2.9375rem] justify-center bg-black/40 opacity-100 transition-all duration-500">
+                           <h3 className="text-white text-[1.125rem] font-deca font-medium text-center px-4">
+                             {`${caseStudy.title}`
+                               .split(' ')
+                               .map((word, i) => (
+                               <span
+         key={i}
+         className="block
+           text-[1.125rem] leading-tight sm:leading-snug md:leading-normal lg:leading-relaxed xl92r:leading-[3.5rem] 2xl:leading-[4.0625rem]"
+       >
+         {word}
+       </span>
+                               ))}
+                           </h3>
+                             <button
+                                         onClick={() => onClose(caseStudy)}
+                                           className={`absolute cursor-pointer w-[4.625rem] h-[4.625rem] text-background4 bg-white lg:text-background4 lg:bg-white   rounded-full flex items-center justify-center  transition-colors bottom-4 right-4 sm:bottom-12 sm:right-12 z-0`}
+                                           >
+                                             <FaMinus className="w-4 h-5 " />
+                                      
+                                         </button>
+                         </div>
+               </div>
         {/* Right Column: Case Study Details & Close Button */}
-        <div className="w-1/2 text-[#000000] pt-0 2xl:pt-20">
+        <div className="w-full sm:w-1/2 text-[#000000] pt-4 sm:pt-0 2xl:pt-20">
           {/* Close Button Group (No translation needed) */}
-          <div className="flex justify-end">
+          <div className="hidden sm:flex justify-end">
             <button onClick={() => onClose(caseStudy)} className="cursor-pointer text-gray-600 flex items-center justify-center right-4 top-0 w-14 h-14 md:w-16 md:h-16 z-0">
               <FiX className="w-6 md:w-[5.9375rem] h-auto" style={{ color: '#5B5A5A69' }} />
             </button>
           </div>
 
           {/* Text Content Group */}
-          <div className='w-[95%]'>
+          <div className='w-[95%] pl-1.5 sm:pl-0'>
             {/* CASE INDEX */}
-            <p className="text-base sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.2500rem] lg:text-[1.4250rem] xl92r:text-[1.5625rem] 2xl:text-[1.875rem] ml-2 text-[#272626] lg:leading-[100%] tracking-[0.00em] font-normal font-deca" style={{ color: '#272626' }}>
+            <p className="text-xs sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.2500rem] lg:text-[1.4250rem] xl92r:text-[1.5625rem] 2xl:text-[1.875rem] ml-2 text-[#272626] lg:leading-[100%] tracking-[0.00em] font-light sm:font-normal font-deca" style={{ color: '#272626' }}>
               {t('cosmetics.caseStudy.indexPrefix')} {caseStudy.index}
             </p>
 
             {/* TITLE (Prop) */}
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-[2rem] md:text-[2.0000rem] lg:text-[2.2800rem] xl92r:text-[2.5000rem] 2xl:text-[3rem] ml-2 lg:leading-[100%] tracking-[0.05em] font-medium font-nunito md:mt-6">
+            <p className="text-xs sm:text-xl pt-1 sm:pt-0 md:text-2xl lg:text-[2rem] md:text-[2.0000rem] lg:text-[2.2800rem] xl92r:text-[2.5000rem] 2xl:text-[3rem] ml-2 lg:leading-[100%] tracking-[0.05em] font-semibold sm:font-medium font-nunito md:mt-6">
               {caseStudy.title}
             </p>
 
             {/* Subtitle */}
-            <p className="text-xs sm:text-sm md:text-base lg:text-lg md:text-[1.0833rem] lg:text-[1.2350rem] xl92r:text-[1.3542rem] 2xl:text-[1.625rem] ml-2 text-[#000000] font-medium font-deca leading-[2.375rem] mt-8 tracking-[0.01em]">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg md:text-[1.0833rem] lg:text-[1.2350rem] xl92r:text-[1.3542rem] 2xl:text-[1.625rem] ml-2 text-[#000000] font-medium font-deca leading-[1.5] sm:leading-[2.375rem] mt-2 sm:mt-8 tracking-[0.01em]">
               {t('cosmetics.caseStudy.subtitle')}
             </p>
 
             {/* Overview Heading */}
-            <p className={`text-xs sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] font-normal ${baseTextStyle} mt-8`}>
+            <p className={`text-xs sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] font-normal ${baseTextStyle} mt-4 sm:mt-8`}>
               {t('cosmetics.caseStudy.overview.heading')}
             </p>
             {/* Overview Content (FIXED with TranslateHtml) */}
@@ -103,11 +126,11 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       </div>
 
       {/* Challenge Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-4`}>
+      <p className={`text-xs px-2 sm:px-0 sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-4`}>
         {t('cosmetics.caseStudy.challenge.heading')}
       </p>
       {/* Challenge Content (FIXED with TranslateHtml) */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ${baseTextStyle} mt-0`}>
+      <p className={`text-xs px-2 sm:px-0 sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ${baseTextStyle} mt-0`}>
         <TranslateHtml
           i18nKey="cosmetics.caseStudy.challenge.content"
           components={{ 1: BoldText }}
@@ -115,13 +138,16 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       </p>
 
       {/* Objective Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-4`}>
+      <p className={`text-xs px-2 sm:px-0 sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-4`}>
         {t('cosmetics.caseStudy.objective.heading')}
       </p>
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ${baseTextStyle} mt-0`}>
+      <p className={`text-xs pl-2 sm:pl-0 pr-4 sm:pr-0 sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ${baseTextStyle} mt-0`}>
         {t('cosmetics.caseStudy.objective.content')}
       </p>
-
+      <div className={`morebutton flex ${moreMobileButon ? 'hidden' : ''} items-center justify-center gap-x-1 cursor-pointer text-[0.875rem] sm:hidden font-deca text-center text-[#676767] mt-4`} onClick={()=> setMoreMobileButon(true)}>
+        MORE <FaChevronDown  />
+      </div>
+<div className={`more sm:block ${moreMobileButon ? 'block' : 'hidden'}`}>
       {/* Importance Section */}
       <div className=''>
         <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-4`}>
@@ -386,6 +412,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
         <p className="text-base sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-6xl pb-40 font-bold font-nunito leading-[100%] mt-4 tracking-[0.02em] text-center">
           {t('cosmetics.caseStudy.finalQuote')}
         </p>
+      </div>
       </div>
     </div>
   );
