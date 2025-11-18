@@ -234,7 +234,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
       <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[2.4375rem] sm:mt-10 tracking-[0.03em] ml-2 text-[#000000]`}>
         {t('advancedMaterials.caseStudy.aiPlatformLook.heading')}
       </p>
-      <ul className="list-disc ml-4 sm:ml-6">
+      <ul className="list-disc ml-5 sm:ml-6">
         {/* AI Platform List 1 */}
         <li className={`text-xs
   md:text-[0.958rem]
@@ -247,10 +247,10 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
           />
         </li>
 </ul>
-     {code === "Japanese"?  <ResponsiveImage id="materialsj1" alt="materialsj1" className='w-full h-full px-0 sm:py-10' /> : <ResponsiveImage id="materials1" alt="materials1" className='w-full h-full py-10' />}  
-  <ul className="list-disc ml-6">
+     {code === "Japanese"?  <ResponsiveImage id="materialsj1" alt="materialsj1" className='w-full h-full py-0 sm:py-10' /> : <ResponsiveImage id="materials1" alt="materials1" className='w-full h-full mx-1 sm:mx-0 py-6 sm:py-10' />}  
+  <ul className="list-disc ml-[12.5px]  sm:ml-6">
         {/* AI Platform List 2 (Explainable shortlist) */}
-        <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[2.4375rem] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
+        <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.5] sm:leading-[2.4375rem] mt-0 sm:mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
           <TranslateHtml
             i18nKey="advancedMaterials.caseStudy.aiPlatformLook.list.1"
             components={{ 1: BoldText, 2: BoldText }}
@@ -258,7 +258,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
         </li>
         
         {/* AI Platform List 3 (Operating window + guardrails) */}
-        <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[2.4375rem] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
+        <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.5] sm:leading-[2.4375rem] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
           <TranslateHtml
             i18nKey="advancedMaterials.caseStudy.aiPlatformLook.list.2"
             components={{ 1: BoldText, 2: BoldText, 3: BoldText, 4: BoldText }}
@@ -267,9 +267,9 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
       </ul>
 
       {/* Image and Caption Group */}
-      <div className='flex flex-col items-center justify-center mt-20'>
-        <ResponsiveImage id="materials2" alt="materials2" className='w-full h-full pt-10' />
-        <p className="text-xs sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] md:text-[0.6250rem] lg:text-[0.7125rem] xl92r:text-[0.7813rem] 2xl:text-[0.9375rem] ml-2 text-[#000000] font-extralight font-deca pb-10 leading-[2.4375rem] mt-4 tracking-[0.03em] max-w-4xl text-center">
+      <div className='flex flex-col items-center justify-center mt-5 sm:mt-20'>
+        <ResponsiveImage id="materials2" alt="materials2" className='w-full h-full sm:pt-10 mx-1 sm:mx-0' />
+        <p className="text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] md:text-[0.6250rem] lg:text-[0.7125rem] xl92r:text-[0.7813rem] 2xl:text-[0.9375rem] ml-2 text-[#000000] font-extralight font-deca pb-0 sm:pb-10 leading-[1.5] sm:leading-[2.4375rem] mt-4 tracking-[0.03em] max-w-4xl text-center">
           <TranslateHtml
             i18nKey="advancedMaterials.caseStudy.imageCaption"
             components={{ 1: BoldText, 2: BoldText }}
@@ -281,19 +281,19 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
       <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-4`}>
         {t('advancedMaterials.caseStudy.meaning.heading')}
       </p>
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-5 sm:ml-6">
         {/* Meaning List Items */}
         {renderInterpListItem('meaning', 0)}
         {/* NOTE: List item 1 for meaning uses {createInterpListItem} */}
         {renderInterpListItem('meaning', 1)}
       </ul>
-      <p className="text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] ml-2 text-[#000000] font-extralight font-deca pb-10 leading-[2.4375rem] mt-4 tracking-[0.03em]">
+      <p className="text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] ml-2 text-[#000000] font-extralight font-deca pb-10 leading-[1.5] sm:leading-[2.4375rem] mt-4 tracking-[0.03em]">
         {t('advancedMaterials.caseStudy.meaning.context')}
       </p>
 
       {/* Quote 2 */}
-      <div className='flex flex-col items-center my-10'>
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-[#000000B2] italic font-bold font-nunito leading-[3.125rem] tracking-[0.01em] text-center max-w-6xl 2xl:max-w-7xl">
+      <div className='pl-1.5 sm:pl-0 pr-3.5 sm:pr-0 flex flex-col items-center my-0 sm:my-10'>
+        <p className="text-[1.5rem] sm:text-lg md:text-xl lg:text-2xl md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-[#000000B2] italic font-bold font-nunito leading-[1.5] sm:leading-[3.125rem] tracking-[0.01em] text-center max-w-6xl 2xl:max-w-7xl">
           {t('advancedMaterials.caseStudy.quote2')}
         </p>
       </div>
@@ -301,7 +301,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
       <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-4`}>
         {t('advancedMaterials.caseStudy.businessValue.heading')}
       </p>
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-5 sm:ml-6">
         {/* Business Value List Items */}
         {renderInterpListItem('businessValue', 0)}
         {renderInterpListItem('businessValue', 1)}
@@ -312,8 +312,8 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
       <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-10`}>
         {t('advancedMaterials.caseStudy.finalResults.heading')}
       </p>
-     
-<div className="overflow-hidden rounded-xl border border-gray-800 w-full 2xl:w-[75rem] mx-auto">
+           <div className='pl-1 sm:pl-0'>
+<div className="overflow-hidden rounded-xl border border-gray-800 mt-4 sm:mt-0 w-full 2xl:w-[75rem] mx-auto">
 <table className="min-w-full table-fixed border border-gray-800 rounded-lg overflow-hidden divide-y divide-gray-800">
 
         {/* Table Header */}
@@ -323,19 +323,19 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
               scope="col"
               className="w-1/3 px-2 sm:px-3 md:px-4 lg:px-5 xl92r:px-6 py-2 text-left text-xs sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] font-medium text-gray-800 opacity-58 xl92r:tracking-[0.07em] xl92r:leading-[2.3125rem]"
             >
-              {t('advancedMaterials.caseStudy.finalResults.table.headers.area')}
+              {t('automotive.caseStudy.finalResults.table.headers.area')}
             </th>
             <th 
               scope="col"
               className="w-1/3 px-2 sm:px-3 md:px-4 lg:px-5 xl92r:px-6 py-2 text-left text-xs sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] font-medium text-gray-800 opacity-58 xl92r:tracking-[0.07em] xl92r:leading-[2.3125rem]"
             >
-              {t('advancedMaterials.caseStudy.finalResults.table.headers.before')}
+              {t('automotive.caseStudy.finalResults.table.headers.before')}
             </th>
             <th 
               scope="col"
               className="w-1/3 px-2 sm:px-3 md:px-4 lg:px-5 xl92r:px-6 py-2 text-left text-xs sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] font-medium text-gray-800 opacity-58 xl92r:tracking-[0.07em] xl92r:leading-[2.3125rem]"
             >
-              {t('advancedMaterials.caseStudy.finalResults.table.headers.after')}
+              {t('automotive.caseStudy.finalResults.table.headers.after')}
             </th>
           </tr>
         </thead>
@@ -348,7 +348,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
               className={`divide-x divide-gray-800 text-center`}
             >
               {/* Column 1: Area (Standard Cell) */}
-              <td className=" px-0 sm:px-1 md:px-2 lg:px-4 xl92r:px-6 py-2 text-xs sm:text-sm md:text-base lg:text-lg md:text-[1.0000rem] lg:text-[1.1400rem] xl92r:text-[1.2500rem] 2xl:text-[1.5rem] font-light text-black text-center opacity-100">
+              <td className=" px-0 sm:px-1 md:px-2 lg:px-4 xl92r:px-6 py-2 text-[0.625rem] sm:text-sm md:text-base lg:text-lg md:text-[1.0000rem] lg:text-[1.1400rem] xl92r:text-[1.2500rem] 2xl:text-[1.5rem] font-light text-black text-center opacity-100">
                 {row.area}
               </td>
 
@@ -356,9 +356,9 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
               <td className="px-0 py-2 font-light text-black opacity-100">
                 <div className="flex items-center">
                   <div className="w-1/4 flex justify-center items-center">
-                    <ResponsiveImage id={tableTypes[index]} alt='type'/>
+                    <ResponsiveImage id={tableTypes[index]} alt='type' className='w-4 sm:w-full'/>
                   </div>
-                  <div className="w-3/4 text-xs sm:text-sm md:text-base lg:text-lg md:text-[1.0000rem] lg:text-[1.1400rem] xl92r:text-[1.2500rem] 2xl:text-[1.5rem] text-left">
+                  <div className="w-3/4 text-[0.625rem] sm:text-sm md:text-base lg:text-lg md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] text-left">
                     {row.process}
                   </div>
                 </div>
@@ -368,9 +368,9 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
               <td className="px-0 py-2 font-light text-black opacity-100">
                 <div className="flex items-center">
                   <div className="w-1/4 flex justify-center items-center">
-                    <ResponsiveImage id='tick' alt='tick'/>
+                    <ResponsiveImage id='tick' alt='tick' className='w-4 sm:w-full'/>
                   </div>
-                  <div className="w-3/4 text-xs sm:text-sm md:text-base lg:text-lg md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] text-left">
+                  <div className="w-3/4 text-[0.625rem] sm:text-sm md:text-base lg:text-lg md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] text-left">
                     {row.after}
                   </div>
                 </div>
@@ -379,12 +379,17 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
           ))}
         </tbody>
       </table>
-</div>
+</div></div>
 
       {/* Final Quote */}
       <div className='flex justify-center mt-4'>
-        <p className="text-base sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-7xl pb-40 font-bold font-nunito leading-[100%] mt-4 tracking-[0.02em] text-center">
+        <p className="relative text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-7xl pb-5 sm:pb-40 font-bold font-nunito leading-[2.05rem] sm:leading-[100%] mt-4 tracking-[0.02em] text-center">
           {t('advancedMaterials.caseStudy.finalQuote')}
+          <div className=" sm:hidden justify-end">
+                      <button onClick={() => onClose(caseStudy)} className="absolute  -bottom-1 -right-4 cursor-pointer text-gray-600 flex items-center justify-center  w-20 h-10 md:w-16 md:h-16 z-0">
+                        <FiX className="w-[3rem] md:w-[5.9375rem] h-auto" style={{ color: '#5B5A5A69' }} />
+                      </button>
+                    </div>
         </p>
       </div>
       </div>

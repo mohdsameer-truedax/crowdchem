@@ -41,7 +41,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
 
   // Helper for list items that require interpolation (using <1>, <2> markers)
   const renderInterpListItem = (keyPath: string, index: number) => (
-    <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ${baseTextStyle} mt-4 ml-4`}>
+    <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ${baseTextStyle} ${index !== 0 && keyPath=== 'levers' ? 'mt-4' : 'mt-1'} sm:mt-4 ml-4`}>
       <TranslateHtml
         i18nKey={`cosmetics.caseStudy.${keyPath}.list.${index}`}
         // The '1' component replaces the <1>...</1> markers
@@ -147,16 +147,16 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       <div className={`morebutton flex ${moreMobileButon ? 'hidden' : ''} items-center justify-center gap-x-1 cursor-pointer text-[0.875rem] sm:hidden font-deca text-center text-[#676767] mt-4`} onClick={()=> setMoreMobileButon(true)}>
         MORE <FaChevronDown  />
       </div>
-<div className={`more sm:block ${moreMobileButon ? 'block' : 'hidden'}`}>
+<div className={`more sm:block pl-1.5 pr-3.5 sm:px-0 ${moreMobileButon ? 'block' : 'hidden'}`}>
       {/* Importance Section */}
       <div className=''>
         <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-4`}>
           {t('cosmetics.caseStudy.importance.heading')}
         </p>
-        <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ${baseTextStyle} mt-4`}>
+        <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ${baseTextStyle} mt-0 sm:mt-4`}>
           {t('cosmetics.caseStudy.importance.context')}
         </p>
-        <ul className="list-disc ml-6">
+        <ul className="list-disc ml-4 sm:ml-6">
           {renderSimpleListItem('importance', 0)}
           {renderSimpleListItem('importance', 1)}
           {renderSimpleListItem('importance', 2)}
@@ -165,16 +165,16 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       </div>
 
       {/* R&D and Levers Section (Flex Container) */}
-      <div className="flex gap-2 md:gap-4 pt-6">
+      <div className="sm:flex gap-2 md:gap-4 pt-6">
         {/* Left Sub-Column: How we get you to your desired result */}
-        <div className='w-1/2'>
-          <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-4`}>
+        <div className='w-full sm:w-1/2'>
+          <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-0 sm:mt-4`}>
             {t('cosmetics.caseStudy.rdAssistance.heading')}
           </p>
-          <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ${baseTextStyle} mt-4`}>
+          <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ${baseTextStyle} mt-0 sm:mt-4`}>
             {t('cosmetics.caseStudy.rdAssistance.content')}
           </p>
-          <ul className="list-disc ml-6">
+          <ul className="list-disc ml-5 sm:ml-6">
             <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ${baseTextStyle} mt-4`}>
               {t('cosmetics.caseStudy.rdAssistance.list.0')}
             </li>
@@ -196,11 +196,11 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
         </div>
 
         {/* Right Sub-Column: The levers that move the needle */}
-        <div className='w-1/2'>
+        <div className='w-full sm:w-1/2'>
           <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-4`}>
             {t('cosmetics.caseStudy.levers.heading')}
           </p>
-          <ul className="list-disc ml-6">
+          <ul className="list-disc ml-4 sm:ml-6">
             {/* Levers List Items (FIXED with TranslateHtml) */}
             {renderInterpListItem('levers', 0)}
             {renderInterpListItem('levers', 1)}
@@ -224,29 +224,29 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       </p>
 
       {/* What are we looking for Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[2.4375rem] mt-4 tracking-[0.03em] ml-2 text-[#000000]`}>
+      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[1.5] sm:leading-[2.4375rem] mt-4 tracking-[0.03em] ml-2 text-[#000000]`}>
         {t('cosmetics.caseStudy.whatWeAreLookingFor.heading')}
       </p>
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-4 sm:ml-6">
         {renderSimpleListItem('whatWeAreLookingFor', 0)}
         {renderSimpleListItem('whatWeAreLookingFor', 1)}
         {renderSimpleListItem('whatWeAreLookingFor', 2)}
         {renderSimpleListItem('whatWeAreLookingFor', 3)}
       </ul>
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[2.4375rem] mt-4 tracking-[0.03em] ml-2 text-[#000000]`}>
+      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.5] sm:leading-[2.4375rem] mt-4 tracking-[0.03em] ml-2 text-[#000000]`}>
         {t('cosmetics.caseStudy.targetStyleWindows.heading')}
       </p>
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-4 sm:ml-6">
         {renderSimpleListItem('targetStyleWindows', 0)}
         {renderSimpleListItem('targetStyleWindows', 1)}
         {renderSimpleListItem('targetStyleWindows', 2)}
       </ul>
       
       {/* How it looks with our AI platform Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[2.4375rem] mt-4 tracking-[0.03em] ml-2 text-[#000000]`}>
+      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[1.5] sm:leading-[2.4375rem] mt-4 tracking-[0.03em] ml-2 text-[#000000]`}>
         {t('cosmetics.caseStudy.aiPlatformLook.heading')}
       </p>
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-4 sm:ml-6">
         {/* AI Platform List 1 (FIXED with TranslateHtml) */}
         <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ml-4 ${baseTextStyle} mb-2`}>
           <TranslateHtml
@@ -255,12 +255,12 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
           />
         </li>
       </ul>
-        {code === "Japanese"?  <ResponsiveImage id="cosmeticsj1" alt="cosmeticsj1" className='w-full h-full py-10' /> : <ResponsiveImage id="cosmetics1" alt="cosmetics1" className='w-full h-full py-10' />} 
+        {code === "Japanese"?  <ResponsiveImage id="cosmeticsj1" alt="cosmeticsj1" className='w-full h-full py-10' /> : <ResponsiveImage id="cosmetics1" alt="cosmetics1" className='w-full h-full mx-1 sm:mx-0 py-4 sm:py-10' />} 
   
 
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-4 sm:ml-6">
         {/* Explainable shortlist (FIXED with TranslateHtml) */}
-        <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[2.4375rem] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
+        <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.5] sm:leading-[2.4375rem] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
           <TranslateHtml
             i18nKey="cosmetics.caseStudy.aiPlatformLook.list.1"
             components={{ 1: BoldText }}
@@ -268,7 +268,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
         </li>
         
         {/* Operating window + guardrails (FIXED with TranslateHtml) */}
-        <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[2.4375rem] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
+        <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.5] sm:leading-[2.4375rem] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
           <TranslateHtml
             i18nKey="cosmetics.caseStudy.aiPlatformLook.list.2"
             components={{ 1: BoldText }}
@@ -277,18 +277,18 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       </ul>
 
       {/* Image and Caption Group */}
-      <div className='flex flex-col items-center justify-center mt-20'>
-        <ResponsiveImage id="cosmetics2" alt="cosmetics2" className='w-full h-full pt-10' />
-        <p className="text-xs sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] xl92r:text-[0.875rem] 2xl:text-[0.9375rem] ml-2 text-[#000000] font-extralight font-deca pb-10 leading-[2.4375rem] mt-4 tracking-[0.03em] max-w-4xl text-center">
+      <div className='flex flex-col items-center justify-center mt-5 sm:mt-20'>
+        <ResponsiveImage id="cosmetics2" alt="cosmetics2" className='w-full h-full sm:pt-10 px-10 sm:px-0 mx-1 sm:mx-0' />
+        <p className="text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] xl92r:text-[0.875rem] 2xl:text-[0.9375rem] ml-2 text-[#000000] font-extralight font-deca pb-4 sm:pb-10 leading-[1.5] sm:leading-[2.4375rem] mt-4 tracking-[0.03em] max-w-4xl text-center">
           {t('cosmetics.caseStudy.imageCaption')}
         </p>
       </div>
 
       {/* What does this mean? Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-4`}>
+      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-0 sm:mt-4`}>
         {t('cosmetics.caseStudy.meaning.heading')}
       </p>
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-4 sm:ml-6">
         {/* Meaning list items (FIXED with TranslateHtml) */}
         <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] font-extralight ${baseTextStyle} ml-4 mt-0`}>
           <TranslateHtml
@@ -308,7 +308,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-4`}>
         {t('cosmetics.caseStudy.targetResults.heading')}
       </p>
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-4 sm:ml-6">
         {renderSimpleListItem('targetResults', 0)}
         {renderSimpleListItem('targetResults', 1)}
         {renderSimpleListItem('targetResults', 2)}
@@ -316,8 +316,8 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       </ul>
 
       {/* Quote 1 */}
-      <div className='flex justify-center my-10'>
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-[#000000B2] italic font-bold font-nunito leading-[2.4375rem] mt-4 tracking-[0.01em] text-center">
+      <div className='flex justify-center mt-6 mb-10 sm:my-10 px-2.5 sm:px-0'>
+        <p className="text-[1.5rem] sm:text-lg md:text-xl lg:text-2xl md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-[#000000B2] italic font-bold font-nunito leading-[2.05rem] sm:leading-[2.4375rem] mt-4 tracking-[0.01em] text-center">
           {t('cosmetics.caseStudy.quote1')}
         </p>
       </div>
@@ -326,7 +326,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-4`}>
         {t('cosmetics.caseStudy.businessResults.heading')}
       </p>
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-4 sm:ml-6">
         {/* Business Results (FIXED with TranslateHtml) */}
         {renderInterpListItem('businessResults', 0)}
         {renderInterpListItem('businessResults', 1)}
@@ -335,11 +335,11 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       </ul>
 
       {/* Final Results Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-10`}>
+      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem]  font-regular ${baseTextStyle} mt-10`}>
         {t('cosmetics.caseStudy.finalResults.heading')}
       </p>
-     
-<div className="overflow-hidden rounded-xl border border-gray-800 w-full 2xl:w-[75rem] mx-auto">
+      <div className='pl-1 sm:pl-0'>
+<div className="overflow-hidden rounded-xl border border-gray-800 mt-4 sm:mt-0 w-full 2xl:w-[75rem] mx-auto">
 <table className="min-w-full table-fixed border border-gray-800 rounded-lg overflow-hidden divide-y divide-gray-800">
 
         {/* Table Header */}
@@ -349,19 +349,19 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
               scope="col"
               className="w-1/3 px-2 sm:px-3 md:px-4 lg:px-5 xl92r:px-6 py-2 text-left text-xs sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] font-medium text-gray-800 opacity-58 xl92r:tracking-[0.07em] xl92r:leading-[2.3125rem]"
             >
-              {t('cosmetics.caseStudy.finalResults.table.headers.area')}
+              {t('automotive.caseStudy.finalResults.table.headers.area')}
             </th>
             <th 
               scope="col"
               className="w-1/3 px-2 sm:px-3 md:px-4 lg:px-5 xl92r:px-6 py-2 text-left text-xs sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] font-medium text-gray-800 opacity-58 xl92r:tracking-[0.07em] xl92r:leading-[2.3125rem]"
             >
-              {t('cosmetics.caseStudy.finalResults.table.headers.before')}
+              {t('automotive.caseStudy.finalResults.table.headers.before')}
             </th>
             <th 
               scope="col"
               className="w-1/3 px-2 sm:px-3 md:px-4 lg:px-5 xl92r:px-6 py-2 text-left text-xs sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] font-medium text-gray-800 opacity-58 xl92r:tracking-[0.07em] xl92r:leading-[2.3125rem]"
             >
-              {t('cosmetics.caseStudy.finalResults.table.headers.after')}
+              {t('automotive.caseStudy.finalResults.table.headers.after')}
             </th>
           </tr>
         </thead>
@@ -374,7 +374,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
               className={`divide-x divide-gray-800 text-center`}
             >
               {/* Column 1: Area (Standard Cell) */}
-              <td className=" px-0 sm:px-1 md:px-2 lg:px-4 xl92r:px-6 py-2 text-xs sm:text-sm md:text-base lg:text-lg md:text-[1.0000rem] lg:text-[1.1400rem] xl92r:text-[1.2500rem] 2xl:text-[1.5rem] font-light text-black text-center opacity-100">
+              <td className=" px-0 sm:px-1 md:px-2 lg:px-4 xl92r:px-6 py-2 text-[0.625rem] sm:text-sm md:text-base lg:text-lg md:text-[1.0000rem] lg:text-[1.1400rem] xl92r:text-[1.2500rem] 2xl:text-[1.5rem] font-light text-black text-center opacity-100">
                 {row.area}
               </td>
 
@@ -382,9 +382,9 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
               <td className="px-0 py-2 font-light text-black opacity-100">
                 <div className="flex items-center">
                   <div className="w-1/4 flex justify-center items-center">
-                    <ResponsiveImage id={tableTypes[index]} alt='type'/>
+                    <ResponsiveImage id={tableTypes[index]} alt='type' className='w-4 sm:w-full'/>
                   </div>
-                  <div className="w-3/4 text-xs sm:text-sm md:text-base lg:text-lg md:text-[1.0000rem] lg:text-[1.1400rem] xl92r:text-[1.2500rem] 2xl:text-[1.5rem] text-left">
+                  <div className="w-3/4 text-[0.625rem] sm:text-sm md:text-base lg:text-lg md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] text-left">
                     {row.process}
                   </div>
                 </div>
@@ -394,9 +394,9 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
               <td className="px-0 py-2 font-light text-black opacity-100">
                 <div className="flex items-center">
                   <div className="w-1/4 flex justify-center items-center">
-                    <ResponsiveImage id='tick' alt='tick'/>
+                    <ResponsiveImage id='tick' alt='tick' className='w-4 sm:w-full'/>
                   </div>
-                  <div className="w-3/4 text-xs sm:text-sm md:text-base lg:text-lg md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] text-left">
+                  <div className="w-3/4 text-[0.625rem] sm:text-sm md:text-base lg:text-lg md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] text-left">
                     {row.after}
                   </div>
                 </div>
@@ -405,14 +405,19 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
           ))}
         </tbody>
       </table>
-</div>
+</div></div>
 
-      {/* Final Quote */}
-      <div className='flex justify-center mt-4'>
-        <p className="text-base sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-6xl pb-40 font-bold font-nunito leading-[100%] mt-4 tracking-[0.02em] text-center">
-          {t('cosmetics.caseStudy.finalQuote')}
-        </p>
-      </div>
+        {/* Final Quote */}
+        <div className='flex justify-center mt-4 px-2'>
+          <p className="relative text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-7xl pb-5 sm:pb-40 font-bold font-nunito leading-[2.05rem] sm:leading-[100%] mt-4 tracking-[0.02em] text-center">
+            {t('cosmetics.caseStudy.finalQuote')}
+            <div className=" sm:hidden justify-end">
+                        <button onClick={() => onClose(caseStudy)} className="absolute  -bottom-5 -right-4 cursor-pointer text-gray-600 flex items-center justify-center  w-20 h-10 md:w-16 md:h-16 z-0">
+                          <FiX className="w-[3rem] md:w-[5.9375rem] h-auto" style={{ color: '#5B5A5A69' }} />
+                        </button>
+                      </div>
+          </p>
+        </div>
       </div>
     </div>
   );

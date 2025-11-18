@@ -293,6 +293,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
         {t('automotive.caseStudy.finalResults.heading')}
       </p>
      
+     <div className='px-2 sm:px-0'>
 <div className="overflow-hidden rounded-xl border border-gray-800 mt-4 sm:mt-0 w-full 2xl:w-[75rem] mx-auto">
 <table className="min-w-full table-fixed border border-gray-800 rounded-lg overflow-hidden divide-y divide-gray-800">
 
@@ -359,7 +360,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
           ))}
         </tbody>
       </table>
-</div>
+</div></div>
 
       {/* Final Quote */}
       <div className='flex justify-center mt-4 sm:mt-20 mb-0 sm:mb-10'>

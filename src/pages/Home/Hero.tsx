@@ -28,7 +28,7 @@ const Hero = () => {
         {/* Title */}
         <h1
           id="hero"
-          className="text-[1.25rem] mt-0 xl:mt-10 xl92r:mt-0 md:text-[2.5000rem] lg:text-[2.8500rem] xl92r:text-[3.1250rem] 2xl:text-[3.75rem] font-semibold sm:font-regular  font-nunito leading-[1.875rem] md:leading-[3.125rem] lg:leading-[1.12] 2xl:leading-[1.67] mb-0.5 sm:mb-4 text-left"
+          className="text-[1.25rem] mt-0 xl:mt-10 xl92r:mt-0 md:text-[2.5000rem] lg:text-[2.8500rem] xl92r:text-[3.1250rem] 2xl:text-[3.75rem] font-semibold sm:font-regular  font-nunito leading-[1.875rem] md:leading-[3.125rem] lg:leading-[1.12] 2xl:leading-[1.67] mb-0 sm:mb-4 text-left"
         >
           {t("hero.title")}
         </h1>
@@ -48,7 +48,7 @@ const Hero = () => {
           <FaArrowRight className="ml-2" />
         </button>
       </div>
-      <div className="w-[88%]  mx-auto md:mx-8 xl92r:mx-14 ml-[0.5625rem] 2xl:ml-[4.375rem] mt-3 sm:mt-4 lg:mt-6 2xl:mt-10 mb-12 lg:mb-[7.16vh]">
+      <div className="w-[88%]  mx-auto md:mx-8 xl92r:mx-14 ml-[0.5625rem] 2xl:ml-[4.375rem] mt-3 sm:mt-4 lg:mt-6 2xl:mt-10 mb-5 sm:mb-12 lg:mb-[7.16vh]">
         {/* ISO Certificate */}
         <div className="flex justify-start lg:justify-end mb-4">
           <a

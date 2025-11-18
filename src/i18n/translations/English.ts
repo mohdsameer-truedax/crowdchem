@@ -451,7 +451,7 @@ const en = {
         "heading": "What does this mean?",
         "list": [
           "<1>Density</1>: lighter to the left, heavier to the right. Lighter helps insulation/weight; too light risks collapse in forming.",
-          "<1>Bubble diameter:</1> Dry: higher = better grip/steering on dry pavement"
+          "<1>Bubble diameter:</1> Smaller = finer micro-foam. Finer bubbles give a smoother “skin” that seals/laminates better and holds shape in forming"
         ],
         "context": "The operating window is where our targets converge; clean thermoforming and a smooth, sealable surface. Achieved with mid-light density and small, even cells."
       },
