@@ -126,21 +126,21 @@ const Application = () => {
             }}
             id={caseStudy.id}
             // two per row, no gap on outer sides, only between them
-            className={`p-0 ${
-              isSelected ? 'w-full' : 'w-full md:w-[49%] max-w-[30.54rem] lg:max-w-[34.35rem] 2xl:max-w-[45.8125rem] h-auto lg:max-h-[35.25rem]  2xl:max-h-[47.0rem]'
+            className={`p-0 mx-auto sm:mx-0 ${
+              isSelected ? 'w-full' : 'w-full md:w-[49%] max-w-[84.61vw] sm:max-w-[30.54rem] lg:max-w-[34.35rem] 2xl:max-w-[45.8125rem] h-auto lg:max-h-[35.25rem]  2xl:max-h-[47.0rem]'
             }`}
             layout
           >
             <motion.div
-              className={`relative rounded-[2.9375rem] ${isSelected ? 'p-0' : ''}`}
+              className={`relative rounded-[2.9375rem] ${isSelected ? 'px-3.5 sm:p-0' : ''}`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: caseStudy.index * 0.05 }}
             >
               {/* Image (collapsed state) */}
               {selectedCase?.id !== caseStudy.id && (
-                <div className="relative group max-w-[30.54rem] lg:max-w-[34.35rem] 2xl:max-w-[45.8125rem]
-    h-auto lg:max-h-[35.25rem]  2xl:max-h-[47.0rem] overflow-hidden rounded-2xl lg:rounded-[2.9375rem] transition-all duration-500">
+                <div className="relative group max-w-[84.61vw] sm:max-w-[30.54rem] lg:max-w-[34.35rem] 2xl:max-w-[45.8125rem]
+   max-h-[27.25vh] sm:h-auto lg:max-h-[35.25rem]  2xl:max-h-[47.0rem] overflow-hidden rounded-[2.56rem] sm:rounded-2xl lg:rounded-[2.9375rem] transition-all duration-500">
                   <ResponsiveImage
                     id={caseStudy.id}
                     alt={t("alt.applicationImage")}
@@ -162,7 +162,7 @@ const Application = () => {
     lg:text-[2.565rem]
     xl92r:text-[2.8125rem]
     2xl:text-[3.375rem]
-    tracking-[0.08em] leading-tight sm:leading-snug md:leading-normal lg:leading-relaxed xl92r:leading-[3.5rem] 2xl:leading-[4.0625rem]"
+    tracking-[0.08em] leading-tight sm:leading-[1.5]"
 >
   {word}
 </span>
@@ -179,14 +179,14 @@ const Application = () => {
                 }
                 className={`absolute cursor-pointer ${
                   isSelected
-                    ? 'w-14 h-14 md:w-20 md:h-20 lg:w-[7.4375rem] lg:h-[7.4375rem] text-gray-700 bg-white lg:text-background4 lg:bg-white'
-                    : 'w-20 h-20  md:h-[7.12rem] lg:h-[8rem] xl92r:h-[8.90rem] 2xl:w-[10.6875rem] md:w-[7.12rem] lg:w-[8rem] xl92r:w-[8.90rem] 2xl:h-[10.6875rem] text-white bg-background4'
-                }  rounded-full flex items-center justify-center  transition-colors bottom-12 right-12 z-0`}
+                    ? 'w-14 h-14 md:w-20 md:h-20 lg:w-[7.4375rem] lg:h-[7.4375rem] text-gray-700 bg-white lg:text-background4 lg:bg-white hidden sm:flex'
+                    : 'w-[4.625rem] h-[4.625rem]  md:h-[7.12rem] lg:h-[8rem] xl92r:h-[8.90rem] 2xl:w-[10.6875rem] md:w-[7.12rem] lg:w-[8rem] xl92r:w-[8.90rem] 2xl:h-[10.6875rem] text-white bg-background4'
+                }  rounded-full flex items-center justify-center  transition-colors bottom-4 right-4 sm:bottom-12 sm:right-12 z-0`}
                 >
                 {isSelected ? (
                   <FaMinus className="w-6 h-6 lg:w-10 lg:h-10" />
                 ) : (
-                  <FaPlus className="w-12 h-12 lg:w-[3.125rem] lg:h-auto" />
+                  <FaPlus className="w-6 h-6 sm:w-12 sm:h-12 lg:w-[3.125rem] lg:h-auto" />
               )}
               </button>
 
@@ -195,7 +195,7 @@ const Application = () => {
                 {isSelected && (
                  <motion.div
   id={caseStudy.id}
-  className="w-full h-full rounded-[3.3125rem] z-0 pb-10 px-6 lg:px-8 pt-6 bg-[#D9D9D9]/95"
+  className="w-full h-full rounded-[3.3125rem] z-0 pb-10 px-0 sm:px-6 lg:px-8 pt-0 sm:pt-6 bg-[#D9D9D9]/95"
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   exit={{ opacity: 0 }}

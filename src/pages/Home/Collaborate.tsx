@@ -16,11 +16,11 @@ const Collaborate = () => {
     md:text-[1.25rem] 
     lg:text-[1.425rem] 
     xl92r:text-[1.5625rem] 
-    2xl:text-[1.875rem] font-deca font-extralight md:leading-[3.75rem] lg:leading-[3.4375rem] max-w-[17.5rem] md:max-w-[40rem] lg:max-w-[45rem] xl92r:max-w-[50rem] 2xl:max-w-[62rem] tracking-[0.08em]">
+    2xl:text-[1.875rem] font-deca font-extralight md:leading-[3.75rem] lg:leading-[3.4375rem] w-[71.79vw] md:max-w-[40rem] lg:max-w-[45rem] xl92r:max-w-[50rem] 2xl:max-w-[62rem] tracking-[0.08em]">
               {t('collaborate.subtitle')}
             </p>
             <br/>
-            <p className="mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-[1.5rem] text-black  font-deca font-extralight ttext-[1.25rem] 
+            <p className="mb-4 text-[0.875rem] max-w-[71.79vw] sm:max-w-none  sm:mb-6 md:mb-8 lg:mb-10 leading-[1.5rem] text-black  font-deca font-extralight ttext-[1.25rem] 
     sm:text-[1.25rem] 
     md:text-[1.25rem] 
     lg:text-[1.425rem] 

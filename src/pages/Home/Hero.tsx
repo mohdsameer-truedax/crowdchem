@@ -21,20 +21,20 @@ const Hero = () => {
   return (
     <ResponsiveBackground
       id="hero-bg"
-      className="max-h-[100vh] sm:max-h-none min-h-[60vh] xl:min-h-[90vh]  text-white bg-no-repeat bg-cover bg-center flex flex-col"
+      className="max-h-[100vh] sm:max-h-none sm:min-h-[60vh] xl:min-h-[85vh]  text-white bg-no-repeat bg-cover bg-center flex flex-col"
     >
       {/* Content */}
-      <div className="flex-1 mt-25  sm:mt-40 xl:mt-35 flex flex-col justify-end items-start pl-[0.5625rem] sm:pl-6 sm:px-12 md:px-8 xl92r:px-14 2xl:pl-[4.375rem] md:max-w-[165.88vw]">
+      <div className="flex-1 mt-25  sm:mt-40 xl:mt-35 flex flex-col justify-end items-start pl-[0.5625rem] sm:pl-6 sm:px-12 md:px-8 xl92r:px-14 2xl:pl-[4.375rem] max-w-[93.73vw] md:max-w-[165.88vw]">
         {/* Title */}
         <h1
           id="hero"
-          className="text-[1.25rem] mt-0 xl:mt-10 xl92r:mt-0 md:text-[2.5000rem] lg:text-[2.8500rem] xl92r:text-[3.1250rem] 2xl:text-[3.75rem]  font-nunito leading-[1.875rem] md:leading-[3.125rem] lg:leading-[1.12] 2xl:leading-[1.67] mb-0.5 sm:mb-4 text-left"
+          className="text-[1.25rem] mt-0 xl:mt-10 xl92r:mt-0 md:text-[2.5000rem] lg:text-[2.8500rem] xl92r:text-[3.1250rem] 2xl:text-[3.75rem] font-semibold sm:font-regular  font-nunito leading-[1.875rem] md:leading-[3.125rem] lg:leading-[1.12] 2xl:leading-[1.67] mb-0 sm:mb-4 text-left"
         >
           {t("hero.title")}
         </h1>
 
         {/* Subtitle */}
-        <p className="mb-3 sm:mb-8 text-[0.875rem] font-deca sm:text-lg md:text-[1.125rem] leading-[1.375rem] 2xl:leading-[1.875rem] w-[90%] lg:w-[70vw] xl92r:w-[60.5vw]  tracking-[0.02em] sm:tracking-[0.02em] text-left">
+        <p className="mb-3 sm:mb-8 text-[0.875rem] font-normal font-deca sm:text-lg md:text-[1.125rem] leading-[1.375rem] 2xl:leading-[1.875rem] w-[88.47vw] lg:w-[70vw] xl92r:w-[60.5vw]  tracking-[0.02em] sm:tracking-[0.02em] text-left">
           {t("hero.subtitle")}
         </p>
 
@@ -48,7 +48,7 @@ const Hero = () => {
           <FaArrowRight className="ml-2" />
         </button>
       </div>
-      <div className="w-[88%]  mx-auto md:mx-8 xl92r:mx-14 ml-[0.5625rem] 2xl:ml-[4.375rem] mt-3 sm:mt-4 lg:mt-6 2xl:mt-10 mb-12 lg:mb-20 2xl:mb-20">
+      <div className="w-[88%]  mx-auto md:mx-8 xl92r:mx-14 ml-[0.5625rem] 2xl:ml-[4.375rem] mt-3 sm:mt-4 lg:mt-6 2xl:mt-10 mb-5 sm:mb-12 lg:mb-[7.16vh]">
         {/* ISO Certificate */}
         <div className="flex justify-start lg:justify-end mb-4">
           <a
@@ -78,7 +78,7 @@ const Hero = () => {
 
         {/* Partner Logos */}
 
-        <div className="bg-white rounded-lg shadow-lg">
+        <div className="bg-white rounded-lg shadow-lg w-[91.22vw] sm:w-full">
           {/* <div className="flex flex-col justify-center ">
             <h2 className="text-background2 font-semibold  text-[0.583rem] lg:text-[0.656rem]  xl:text-[0.729rem] 2xl:text-[0.875rem] font-nunito mb-0">
               {t("hero.partners")}

@@ -101,7 +101,7 @@ const ja = {
     contactUs: "お問い合わせ",
     careers: "X",
     linkedin: "LinkedIn",
-    copyright: "© 2025 CrowdChem. 無断複写・転載を禁じます。"
+    copyright: "2025 CrowdChem. 無断複写・転載を禁じます。"
   },
   search: { // ⬅️ NEW SECTION
     title: "検索", // Kensaku (Search)

@@ -99,7 +99,7 @@ const en = {
     contactUs: "CONTACT US",
     careers: "X",
     linkedin: "LINKEDIN",
-    copyright: "© 2025 CrowdChem. All rights reserved."
+    copyright: "2025 CrowdChem. All rights reserved."
   },
   search:{
     title:"SEARCH",
@@ -231,7 +231,7 @@ const en = {
           },
           {
             "area": "Manufacturability",
-            "process": "Edge cutting/burning at low oil",
+            "process": "Edge cutting /burning at low oil",
             "after": "Clean extrusion under low-oil rules with Ti-BR"
           },
           {
@@ -441,7 +441,7 @@ const en = {
       "aiPlatformLook": {
         "heading": "How it is presented to you",
         "list": [
-          "<1>An automated one-page importance map.</1> We show the levers that matter most for your goals, what to adjust, where it sits in the formula, and how it affects <2>surface smoothness, lamination/seal, and insulation.</2> It’s a simple visual: the redder the lever, the more it moves your targets",
+          "<1>An automated one-page importance map.</1> We show the levers that matter most for your goals, what to adjust, where it sits in the formula, and how it affects <2>surface smoothness, lamination/ seal, and insulation.</2> It’s a simple visual: the redder the lever, the more it moves your targets",
           "An <1>explainable shortlist (3–5 routes)</1> from a sea of options, to a small set of <2>component families</2> with confidence and brief “why this works”.Clear choices, no black box.",
           "An <1>operating window</1> ready for run tests (how <2>cell size, density,</2> and <3>formability</3> line up) and <4>a compact validation plan</4> your team already knows: check apparent density, confirm cell size, and run basic compression/thermoform screens. Fast to prove, easy to scale."
         ]
@@ -451,7 +451,7 @@ const en = {
         "heading": "What does this mean?",
         "list": [
           "<1>Density</1>: lighter to the left, heavier to the right. Lighter helps insulation/weight; too light risks collapse in forming.",
-          "<1>Bubble diameter:</1> Dry: higher = better grip/steering on dry pavement"
+          "<1>Bubble diameter:</1> Smaller = finer micro-foam. Finer bubbles give a smoother “skin” that seals/laminates better and holds shape in forming."
         ],
         "context": "The operating window is where our targets converge; clean thermoforming and a smooth, sealable surface. Achieved with mid-light density and small, even cells."
       },

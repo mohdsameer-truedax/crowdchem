@@ -100,7 +100,7 @@ const es = {
     contactUs: "Contáctenos",
     careers: "X",
     linkedin: "LinkedIn",
-    copyright: "© 2025 CrowdChem. Todos los derechos reservados."
+    copyright: "2025 CrowdChem. Todos los derechos reservados."
   },
   search: {
     title: "Búsqueda",

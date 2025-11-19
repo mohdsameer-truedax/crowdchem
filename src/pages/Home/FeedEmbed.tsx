@@ -226,17 +226,17 @@ const FeedEmbed = () => {
                                 </div>
 
                                 <div className="px-0 sm:px-5 pb-5">
-                                    <h3 className="font-medium text-[0.75rem] pt-8 sm:pt-0 md:text-[0.6667rem] lg:text-[0.7600rem] xl92r:text-[0.8333rem] 2xl:text-[1rem] text-black leading-2 sm:leading-9 tracking-[0.08em]">
+                                    <h3 className="font-regular sm:font-medium text-[0.75rem] pt-8 sm:pt-0 md:text-[0.6667rem] lg:text-[0.7600rem] xl92r:text-[0.8333rem] 2xl:text-[1rem] text-black leading-2 sm:leading-9 tracking-[0.08em]">
                                         {timeAgoText}
                                     </h3>
 
-                                    <p className="text-black font-light pt-2 sm:font-normal text-sm md:text-[0.6667rem] lg:text-[0.7600rem] xl92r:text-[0.8333rem] 2xl:text-[1rem] leading-[1.8] sm:leading-[2.25rem] tracking-[0.08em] mb-1">
-                                        {truncateWords(item.caption, 8)}
+                                    <p className="text-black font-light pt-2  sm:font-normal text-[0.75rem] md:text-[0.6667rem] lg:text-[0.7600rem] xl92r:text-[0.8333rem] 2xl:text-[1rem] leading-[1.8] sm:leading-[2.25rem] tracking-[0.08em] mb-1">
+                                        {truncateWords(item.caption, 4)}
                                     </p>
 
                                     <button
                                         onClick={() => window.open(item.publicUrl)}
-                                        className="border-3 sm:border-4 cursor-pointer text-black border-gray-900 rounded-full text-[0.875rem] md:text-[0.5833rem] lg:text-[0.6650rem] xl92r:text-[0.7292rem] 2xl:text-[0.875rem] leading-[1.8] sm:leading-[2.25rem] tracking-[0.12em] font-regular sm:font-light px-3 sm:px-6 text-sm hover:bg-gray-100 transition-colors"
+                                        className="border-3 sm:border-4 cursor-pointer text-black border-gray-900 rounded-full text-[0.75rem] md:text-[0.5833rem] lg:text-[0.6650rem] xl92r:text-[0.7292rem] 2xl:text-[0.875rem] leading-[1.8] sm:leading-[2.25rem] tracking-[0.12em] font-regular sm:font-light px-3 sm:px-6 text-sm hover:bg-gray-100 transition-colors"
                                     >
                                         {t("news.readMore")}
                                     </button>
