@@ -250,27 +250,28 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
     <div className="fixed inset-0 z-50 bg-background1 overflow-y-auto h-full min-h-screen">
       {/* Header */}
 
-      <div className="flex  items-center justify-between p-4 sm:p-6 lg:p-8 xl92r:p-0 px-0 2xl:px-16">
+      <div className="flex items-start  sm:items-center justify-between px-2 sm:px-0 p-6 sm:p-6 lg:p-8 xl92r:p-0 px-0 sm:px-4 lg:px-8 xl92r:px-12 2xl:px-16">
         <Link to={buildRoute("/")} onClick={onClose}>
           <ResponsiveImage
             id="logo" 
             alt={t("alt.logo")}
-            className="h-16 w-48 sm:h-20 sm:w-60 lg:h-auto lg:w-[20rem] xl92r:h-auto xl92r:w-[21.25rem] 2xl:h-auto 2xl:w-[22.75rem] transition-all duration-200"
+            className="h-8 w-auto sm:h-20 sm:w-60 lg:h-auto lg:w-[20rem] xl92r:h-auto xl92r:w-[21.25rem] 2xl:h-auto 2xl:w-[22.75rem] transition-all duration-200"
           />
         </Link>
-        <div className="flex items-center space-x-6">
-          <div  onClick={onClose} className="text-[3.75rem] xl92r:text-[4.0625rem] font-deca font-light cursor-pointer text-yellow-600 hover:text-yellow-800 transition-colors duration-200">X</div>
+        <div className="flex items-center space-x-6 pr-4 sm:pr-0">
+          <div  onClick={onClose} className="text-[1rem] sm:text-[3.75rem] pt-1 sm:pt-0 xl92r:text-[4.0625rem] font-deca font-light cursor-pointer text-yellow-600 hover:text-yellow-800 leading-[1] sm:leading-[1.5] transition-colors duration-200">X</div>
           {/* <FiX
            
             className="text-[60px] xl:text-[65px] font-deca font-light cursor-pointer text-yellow-600 hover:text-yellow-800 transition-colors duration-200"
           /> */}
-          {/* <TranslationPage /> */}
+         {/* <div className="pt-1 sm:pt-0"> <TranslationPage /></div> */}
+
         </div>
       </div>
 
       {/* Search Content */}
-      <div className="px-4 md:px-6 lg:px-12 xl92r:px-16 py-10">
-        <h1 className="font-regular md:text-[2.0833rem] lg:text-[2.3750rem] xl92r:text-[2.6042rem] 2xl:text-[3.125rem] leading-[3.75rem] tracking-[0.08em] mb-6 text-white font-nunito">
+      <div className="px-4  md:px-6 lg:px-12 xl92r:px-16 py-2 sm:py-10">
+        <h1 className="font-regular text-[0.69rem] md:text-[2.0833rem] lg:text-[2.3750rem] xl92r:text-[2.6042rem] 2xl:text-[3.125rem] sm:leading-[3.75rem] tracking-[0.08em] mb-0.5 sm:mb-6 text-white font-nunito">
           {t("search.title")}
         </h1>
 
@@ -283,18 +284,18 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
             onChange={(e: ChangeEvent<HTMLInputElement>) =>
               setQuery(e.target.value)
             }
-            className="w-full bg-[#36454F] font-extralight border border-yellow-600 rounded-lg px-4 py-4 md:py-5 text-white placeholder-gray-400 focus:outline-none transition-colors text-[1.875rem] md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] leading-[3.75rem] tracking-[0.08em]"
+            className="w-[83.84vw] sm:w-full bg-[#36454F] font-extralight border border-yellow-600 rounded-lg pl-1 sm:px-4 py-1 sm:py-4 md:py-5 text-white placeholder-gray-400 focus:outline-none transition-colors text-[0.63rem] sm:text-[1.875rem] md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] sm:leading-[3.75rem] tracking-[0.08em] [&::-webkit-search-cancel-button]:scale-50 sm:[&::-webkit-search-cancel-button]:scale-100"
             autoFocus
           />
 
-          <div className="mt-10 grid gap-6 font-nunito">
+          <div className="sm:mt-10 mt-5 grid sm:gap-6 font-nunito">
             {query.length > 0 && (
               results.length === 0 ? (
-                <p className="text-white md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-center leading-[3.75rem] tracking-0.08em font-semibold">
+                <p className="text-white text-[0.7rem] md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-center sm:leading-[3.75rem] tracking-0.08em font-semibold">
                   {t("search.noresult")} “{query.toLocaleUpperCase()}”...
                 </p>
               ) : (
-                <p className="text-white md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] leading-[3.75rem] tracking-0.08em font-semibold">
+                <p className="text-white text-[0.7rem] md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] sm:leading-[3.75rem] tracking-0.08em font-semibold">
                   {t("search.result")} “{query.toLocaleUpperCase()}”...
                 </p>
               )
@@ -314,17 +315,20 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                 <div
                   key={r.id}
                   onClick={() => handleSelect(r)}
-                  className="hover:text-yellow-600 transition-all duration-300 text-white cursor-pointer"
+                  className="hover:text-yellow-600 transition-all mt-4 sm:mt-0 duration-300 text-white cursor-pointer"
                 >
-                  <h2 className="text-3xl font-nunito font-bold mb-2 md:text-[2.0833rem] lg:text-[2.3750rem] xl92r:text-[2.6042rem] 2xl:text-[3.125rem] leading-[3.75rem] tracking-0.08em">
+                  <h2 className="text-[0.75rem] sm:text-3xl font-nunito font-bold sm:mb-2 md:text-[2.0833rem] lg:text-[2.3750rem] xl92r:text-[2.6042rem] 2xl:text-[3.125rem] sm:leading-[3.75rem] tracking-0.08em">
                     {r.page === '/usecases' ? <>USE STUDIES</> : 
                      r.page.includes('/twitter/') ? <>TWITTER</> :
                      r.page.includes('/linkedin/') ? <>LINKEDIN</> : <>OTHER</>}
+                     {/*i resolved the home page bug , all three use case padding is done from my side and i started working on mobile
+                      responsiveness for usecase page.
+                     */}
                   </h2>
-                  <h2 className="text-3xl font-deca font-medium mb-2 md:text-[1.875rem] lg:text-[2.1375rem] xl92r:text-[2.3438rem] 2xl:text-[2.8125rem] leading-[3.75rem] tracking-0.08em">
+                  <h2 className="text-[0.75rem] sm:text-3xl font-deca font-medium mb-2 md:text-[1.875rem] lg:text-[2.1375rem] xl92r:text-[2.3438rem] 2xl:text-[2.8125rem] sm:leading-[3.75rem] tracking-0.08em">
                     {highlightText(r.title)}
                   </h2>
-                  <p className="text-lg mb-2 font-deca md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] leading-12 tracking-0.08em font-light">
+                  <p className="text-[0.75rem] sm:text-lg mb-4 font-deca md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] sm:leading-12 tracking-0.08em font-light">
                     {highlightText(r.excerpt)}
                   </p>
                 </div>
