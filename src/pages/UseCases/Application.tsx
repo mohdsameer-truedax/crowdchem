@@ -162,7 +162,7 @@ const Application = () => {
     lg:text-[2.565rem]
     xl92r:text-[2.8125rem]
     2xl:text-[3.375rem]
-    tracking-[0.08em] leading-tight sm:leading-snug md:leading-normal lg:leading-relaxed xl92r:leading-[3.5rem] 2xl:leading-[4.0625rem]"
+    tracking-[0.08em] leading-tight sm:leading-[1.5]"
 >
   {word}
 </span>
