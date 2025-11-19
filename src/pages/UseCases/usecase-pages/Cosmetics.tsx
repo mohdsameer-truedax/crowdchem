@@ -335,7 +335,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       </ul>
 
       {/* Final Results Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem]  pb-[3.07vh] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-10`}>
+      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem]  sm:pb-[3.07vh] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-10`}>
         {t('cosmetics.caseStudy.finalResults.heading')}
       </p>
       <div className='pl-1 sm:pl-0'>

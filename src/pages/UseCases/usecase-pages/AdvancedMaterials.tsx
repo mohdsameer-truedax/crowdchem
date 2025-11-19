@@ -134,7 +134,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
       <div className="sm:flex gap-2 md:gap-4 pt-0">
         {/* Left Column: Quote 1 */}
         <div className='w-full sm:w-1/2 px-2 sm:px-0'>
-          <p className={`text-[1rem] text-left sm:text-sm md:text-base lg:text-lg md:text-[1.0000rem] lg:text-[1.1400rem] xl92r:text-[1.2500rem] 2xl:text-[1.5rem] font-nunito italic font-bold mt-3 sm:mt-10 ${baseTextStyle} tracking-[0.03em]`}>
+          <p className={`text-[1rem] text-center sm:text-left sm:text-sm md:text-base lg:text-lg md:text-[1.0000rem] lg:text-[1.1400rem] xl92r:text-[1.2500rem] 2xl:text-[1.5rem] font-nunito italic font-bold mt-3 sm:mt-10 ${baseTextStyle} tracking-[0.03em]`}>
             {t('advancedMaterials.caseStudy.quote1')}.
           </p>
         </div>
@@ -231,7 +231,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
       </p>
 
       {/* How it looks with our AI platform Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[1.865] sm:mt-10 tracking-[0.03em] ml-2 text-[#000000]`}>
+      <p className={`text-xs sm:text-sm pt-4 sm:pt-0 md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[1.865] sm:mt-10 tracking-[0.03em] ml-2 text-[#000000]`}>
         {t('advancedMaterials.caseStudy.aiPlatformLook.heading')}
       </p>
       <ul className="list-disc ml-5 sm:ml-6">
@@ -310,7 +310,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
       </ul>
 
       {/* Final Results Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] pb-[3.07vh] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-10`}>
+      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] sm:pb-[3.07vh] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-10`}>
         {t('advancedMaterials.caseStudy.finalResults.heading')}
       </p>
            <div className='pl-1 sm:pl-0'>

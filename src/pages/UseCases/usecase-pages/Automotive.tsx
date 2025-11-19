@@ -96,7 +96,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
             </p>
 
             {/* TITLE (Prop) */}
-            <p className="text-xs pt-1 sm:pt-0 sm:text-xl md:text-2xl lg:text-[2rem] md:text-[2.0000rem] lg:text-[2.2800rem] xl92r:text-[2.5000rem] 2xl:text-[3rem] ml-2 lg:leading-[1] tracking-[0.05em] font-medium font-nunito md:mt-[2.14vh]">
+            <p className="text-xs pt-1 sm:pt-0 sm:text-xl md:text-2xl lg:text-[2rem] md:text-[2.0000rem] lg:text-[2.2800rem] xl92r:text-[2.5000rem] 2xl:text-[3rem] ml-2 lg:leading-[1] tracking-[0.05em] font-semibold sm:font-medium font-nunito md:mt-[2.14vh]">
               {caseStudy.title}
             </p>
 
@@ -137,7 +137,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
       </div>
 <div className={`more sm:block ${moreMobileButon ? 'block' : 'hidden'}`}>
       {/* R&D and Levers Section (Flex Container) */}
-      <div className="sm:flex gap-2 md:gap-4 pl-1.5 pr-3.5 sm:px-0 sm:pt-[1.38vw]">
+      <div className="sm:flex gap-2 md:gap-4 pl-1.5 pr-3.5 sm:px-0 pt-2 sm:pt-[1.38vw]">
         {/* Left Sub-Column: How can we assist your R&D */}
         <div className='w-full sm:w-1/2'>
           <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-[0.92vw]`}>
@@ -155,7 +155,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
         </div>
 
         {/* Right Sub-Column: The levers that move the needle */}
-        <div className='w-full sm:w-1/2'>
+        <div className='w-full sm:w-1/2 pt-3 sm:pt-0'>
           <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-[0.92vw]`}>
             {t('automotive.caseStudy.levers.heading')}
           </p>
@@ -276,7 +276,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
 
       {/* Quote 2 */}
       <div className='flex justify-center my-6 sm:my-10'>
-        <p className="text-[1.5rem] pl-1.5 pr-3.5 sm:px-0 sm:text-lg md:text-xl lg:text-2xl xl92r:text-[2rem] 2xl:text-[2.5rem] ml-2 text-[#000000B2] italic font-bold font-nunito leading-[1.865] mt-4 tracking-[0.01em] text-center">
+        <p className="text-[1.5rem] pl-1.5 pr-3.5 sm:px-0 sm:text-lg md:text-xl lg:text-2xl xl92r:text-[2rem] 2xl:text-[2.5rem] ml-2 text-[#000000B2] italic font-bold font-nunito leading-[1.5] sm:leading-[1.865] mt-4 tracking-[0.01em] text-center">
           {t('automotive.caseStudy.quote2')}
         </p>
       </div>
@@ -293,7 +293,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
       </ul>
 
       {/* Final Results Section */}
-      <p className={`pl-1.5 pr-3.5 sm:px-0 text-xs sm:text-sm md:text-base pb-[3.07vh] lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-10`}>
+      <p className={`pl-1.5 pr-3.5 sm:px-0 text-xs sm:text-sm md:text-base sm:pb-[3.07vh] lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-10`}>
         {t('automotive.caseStudy.finalResults.heading')}
       </p>
      
