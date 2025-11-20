@@ -339,7 +339,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
         {t('cosmetics.caseStudy.finalResults.heading')}
       </p>
       <div className='pl-1 sm:pl-0'>
-<div className="overflow-hidden rounded-xl border border-gray-800 mt-4 sm:mt-0 w-full 2xl:w-[75rem] mx-auto">
+<div className="overflow-hidden rounded-xl border border-gray-800 mt-2 sm:mt-0 w-full 2xl:w-[75rem] mx-auto">
 <table className="min-w-full table-fixed border border-gray-800 rounded-lg overflow-hidden divide-y divide-gray-800">
 
         {/* Table Header */}
@@ -408,11 +408,11 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
 </div></div>
 
         {/* Final Quote */}
-        <div className='flex justify-center mt-4 px-2 pb-10 sm:pb-0'>
+        <div className='flex justify-center mt-4 px-2 pb-20 sm:pb-0'>
           <p className="relative text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-7xl pb-5 sm:pb-40 font-bold font-nunito leading-[1.5] sm:leading-[1] mt-4 tracking-[0.02em] text-center">
             {t('cosmetics.caseStudy.finalQuote')}
             <div className=" sm:hidden justify-end">
-                        <button onClick={() => onClose(caseStudy)} className="absolute  -bottom-5 -right-4 cursor-pointer text-gray-600 flex items-center justify-center  w-20 h-10 md:w-16 md:h-16 z-0">
+                        <button onClick={() => onClose(caseStudy)} className="absolute  -bottom-15 -right-4 cursor-pointer text-gray-600 flex items-center justify-center  w-20 h-10 md:w-16 md:h-16 z-0">
                           <FiX className="w-[3rem] md:w-[5.9375rem] h-auto" style={{ color: '#5B5A5A69' }} />
                         </button>
                       </div>

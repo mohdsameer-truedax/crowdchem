@@ -276,7 +276,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
 
       {/* Quote 2 */}
       <div className='flex justify-center my-6 sm:my-10'>
-        <p className="text-[1.5rem] pl-1.5 pr-3.5 sm:px-0 sm:text-lg md:text-xl lg:text-2xl xl92r:text-[2rem] 2xl:text-[2.5rem] ml-2 text-[#000000B2] italic font-bold font-nunito leading-[1.5] sm:leading-[1.865] mt-4 tracking-[0.01em] text-center">
+        <p className="text-[1.5rem] pl-1.5 pr-3.5 sm:px-0 sm:text-lg md:text-xl lg:text-2xl xl92r:text-[2rem] 2xl:text-[2.5rem] ml-2 text-[#000000B2] italic font-bold font-nunito leading-[1.41] sm:leading-[1.865] mt-4 tracking-[0.01em] text-center">
           {t('automotive.caseStudy.quote2')}
         </p>
       </div>
@@ -298,7 +298,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
       </p>
      
      <div className='px-2 sm:px-0'>
-<div className="overflow-hidden rounded-xl border border-gray-800 mt-4 sm:mt-0 w-full 2xl:w-[75rem] mx-auto">
+<div className="overflow-hidden rounded-xl border border-gray-800 mt-2 sm:mt-0 w-full 2xl:w-[75rem] mx-auto">
 <table className="min-w-full table-fixed border border-gray-800 rounded-lg overflow-hidden divide-y divide-gray-800">
 
         {/* Table Header */}
