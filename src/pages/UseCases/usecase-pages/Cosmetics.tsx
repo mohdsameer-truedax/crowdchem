@@ -6,7 +6,7 @@ import { FiX } from 'react-icons/fi';
 import { useTranslation } from '../../../i18n/TranslationContext'; 
 import { TranslateHtml } from '../../../i18n/TranslateHtml';
 import { translations } from '../../../i18n/translations';
-import { FaChevronDown, FaMinus } from 'react-icons/fa';
+import { FaChevronDown } from 'react-icons/fa';
 
 
 const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (caseStudy: CaseStudy) => void }) => {
@@ -79,7 +79,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
                                          onClick={() => onClose(caseStudy)}
                                            className={`absolute cursor-pointer w-[4.625rem] h-[4.625rem] text-background4 bg-white lg:text-background4 lg:bg-white   rounded-full flex items-center justify-center  transition-colors bottom-4 right-4 sm:bottom-12 sm:right-12 z-0`}
                                            >
-                                             <FaMinus className="w-4 h-5 " />
+                                             <div className="w-4 h-1.5 bg-background4" ></div>
                                       
                                          </button>
                          </div>
@@ -197,7 +197,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
 
         {/* Right Sub-Column: The levers that move the needle */}
         <div className='w-full sm:w-1/2'>
-          <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-4`}>
+          <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-4 mb-1 sm:mb-0`}>
             {t('cosmetics.caseStudy.levers.heading')}
           </p>
           <ul className="list-disc ml-4 sm:ml-6 sm:space-y-8">
@@ -212,7 +212,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       </div>
 
       {/* Keep it private and traceable Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-4`}>
+      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular ${baseTextStyle} mt-4 mb-0.5 sm:mb-0`}>
         {t('cosmetics.caseStudy.traceability.heading')}
       </p>
       <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ${baseTextStyle} mt-0`}>
@@ -224,7 +224,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       </p>
 
       {/* What are we looking for Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[1.5] sm:leading-[1.865] mt-4 tracking-[0.03em] ml-2 text-[#000000]`}>
+      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[1.5] sm:leading-[1.865] mt-4 tracking-[0.03em] ml-2 text-[#000000] mb-0.5 sm:mb-0`}>
         {t('cosmetics.caseStudy.whatWeAreLookingFor.heading')}
       </p>
       <ul className="list-disc ml-4 sm:ml-6">
@@ -278,7 +278,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
 
       {/* Image and Caption Group */}
             <div className='flex flex-col items-center justify-center mt-5 sm:mt-2'>
-        <ResponsiveImage id="cosmetics2" alt="cosmetics2" className='w-full h-full sm:pt-0 px-10 sm:px-0 mx-1 sm:mx-0' />
+        <ResponsiveImage id="cosmetics2" alt="cosmetics2" className='w-full h-full sm:w-[55.90vw] sm:h-auto sm:pt-0 px-10 sm:px-0 mx-1 sm:mx-0' />
               <p className="text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] xl92r:text-[0.875rem] 2xl:text-[0.9375rem] ml-2 text-[#000000] font-extralight font-deca pb-4 sm:pb-10 leading-[1.5] sm:leading-[2.61] mt-4 sm:mt-0 tracking-[0.03em] max-w-4xl text-center">
     {t('cosmetics.caseStudy.imageCaption')}
         </p>
@@ -413,8 +413,10 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
             {t('cosmetics.caseStudy.finalQuote')}
             <div className=" sm:hidden justify-end">
                         <button onClick={() => onClose(caseStudy)} className="absolute  -bottom-15 -right-4 cursor-pointer text-gray-600 flex items-center justify-center  w-20 h-10 md:w-16 md:h-16 z-0">
-                          <FiX className="w-[3rem] md:w-[5.9375rem] h-auto" style={{ color: '#5B5A5A69' }} />
-                        </button>
+                     
+<svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.8516 26L11.2516 13.8L11.1016 13.6L0.401563 -2.02656e-06H3.55156L12.9516 12L13.1016 12.2L24.0016 26H20.8516ZM0.00156255 26L10.9516 12.05L12.4516 13.85L3.05156 26H0.00156255ZM13.3016 13.15L11.8016 11.35L20.5516 -2.02656e-06H23.6016L13.3016 13.15Z" fill="#5B5A5A" fill-opacity="0.41"/>
+</svg>   </button>
                       </div>
           </p>
         </div>

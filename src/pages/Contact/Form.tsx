@@ -155,21 +155,23 @@ const Form = () => {
 
   return (
     <>
-    <div className="pt-6 md:pt-16 lg:pt-[6.21vh] px-4 md:px-8 pl-4 sm:pl-8 md:pl-12 lg:pl-20  bg-background1 -mb-1 font-deca">
+    <div className="pt-20 md:pt-26 lg:pt-[6.21vh]  sm:px-4 md:px-8  sm:pl-8 md:pl-12 lg:pl-20  bg-background1 -mb-1 font-deca">
       <div className="w-full lg:pt-[9.03vh]">
-      <div className="text-white mb-4 sm:mb-6 md:mb-8 lg:mb-[7.23vh] text-center md:text-left" id="contact-hero">
+      <div className="text-white mb-4 sm:mb-6 md:mb-8 pl-3 sm:pl-0 lg:mb-[7.23vh] text-left" id="contact-hero">
   <h1 className="title-font font-medium 
-    text-[2.5rem]            
+  text-[1.5rem]
+    sm:text-[2.5rem]            
     md:text-[2.5rem]         
-    lg:text-[2.85rem]        
+    lg:text-[2.85rem]       
     xl92r:text-[3.125rem]       
     2xl:text-[3.75rem]     
-    leading-[1.67]
+    leading-[1]
+    sm:leading-[1.67]
      tracking-[0.04em] font-nunito">
     {t("footer.contactUs")}
   </h1>
   <p className="
-    text-[1.0rem]            
+    text-[0.688rem]            
     sm:text-[1.5rem]         
     md:text-[1.0rem]         
     lg:text-[1.14rem]        
@@ -184,33 +186,37 @@ const Form = () => {
           onSubmit={handleSubmit}
           method="POST"
           action="#"
-          className="border border-white rounded-2xl py-4 md:py-6 lg:py-[1.98vh] p-6 pl-6 md:pl-12 lg:pl-12 pr-8 md:pr-[3.75rem] lg:pr-[3.75rem] shadow-2xl max-w-xl md:max-w-[55.21rem] lg:max-w-[62.1rem] xl92r:max-w-[69rem] 2xl:max-w-[82.8125rem] bg-background1 font-deca"
+          className="border border-white mx-auto sm:mx-0 rounded-2xl py-4 md:py-6 lg:py-[1.98vh] p-6 pl-4.5 sm:pl-6 md:pl-12 lg:pl-12 pr-4 sm:pr-8 md:pr-[3.75rem] lg:pr-[3.75rem] shadow-2xl max-w-[89.75vw] md:max-w-[55.21rem] lg:max-w-[62.1rem] xl92r:max-w-[69rem] 2xl:max-w-[82.8125rem] bg-background1 font-deca"
         >
           {/* Category */}
-          <div className="mb-10 md:mb-16 lg:mb-[4.12vh] flex flex-wrap gap-4 md:gap-16 desktop:gap-26 items-center justify-start">
-            <span className="text-white text-sm md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] leading-[2.5] tracking-[0.08em] font-extralight">
-              {t("contact.category")}
-            </span>
-            {contactCategories.map((cat) => (
-              <label key={cat} className="flex items-center gap-6 cursor-pointer">
-                <input
-                  type="radio"
-                  name="category"
-                  value={cat}
-                  checked={formData.category === cat}
-                  onChange={() => handleCategoryChange(cat)}
-                  className="sr-only"
-                />
-                <div className="w-5 h-5 md:w-6 md:h-6 rounded-full border-2 border-white flex items-center justify-center">
-                  {formData.category === cat && (
-                    <div className="w-3 h-3 md:w-4 md:h-4 rounded-full bg-white"></div>
-                  )}
-                </div>
-                <span className="text-white text-sm md:text-base md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] leading-[2.5]tracking-[0.08em] font-extralight">
-                 {getTranslatedCategoryLabel(cat)}
-                </span>
-              </label>
-            ))}
+          <div className="mb-4 sm:mb-10 md:mb-16 lg:mb-[4.12vh]">
+            <div className="flex flex-col md:flex-row md:flex-wrap gap-2 sm:gap-4 md:gap-16 desktop:gap-26 md:items-center md:justify-start">
+              <span className="text-white text-[0.7rem] sm:text-sm md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] leading-[2.5] tracking-[0.08em] font-extralight">
+                {t("contact.category")}
+              </span>
+              <div className="flex flex-wrap gap-4 md:contents">
+                {contactCategories.map((cat) => (
+                  <label key={cat} className="flex items-center gap-2 sm:gap-6 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="category"
+                      value={cat}
+                      checked={formData.category === cat}
+                      onChange={() => handleCategoryChange(cat)}
+                      className="sr-only"
+                    />
+                    <div className="w-2.5 h-2.5 sm:w-5 sm:h-5 md:w-6 md:h-6 rounded-full border-2 border-white flex items-center justify-center">
+                      {formData.category === cat && (
+                        <div className="w-1 h-1 sm:w-3 sm:h-3 md:w-4 md:h-4 rounded-full bg-white"></div>
+                      )}
+                    </div>
+                    <span className="text-white text-[0.7rem] sm:text-sm md:text-base md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] leading-[2.5]tracking-[0.08em] font-extralight">
+                     {getTranslatedCategoryLabel(cat)}
+                    </span>
+                  </label>
+                ))}
+              </div>
+            </div>
             {errors.category && <p className="text-red-500 text-xs mt-2">{errors.category}</p>}
           </div>
 
@@ -219,7 +225,7 @@ const Form = () => {
             <div className="mb-3 md:mb-[1.125rem] 2xl:mb-[1.125rem]" key={field}>
               <label
                 htmlFor={field}
-                className="block text-white text-sm md:text-base font-normal mb-2 md:mb-3 2xl:mb-3 leading-[3.75] tracking-[0.08em]"
+                className="block text-white text-[0.7rem] sm:text-sm md:text-base font-normal sm:mb-2 md:mb-3 2xl:mb-3 leading-[2] sm:leading-[3.75] tracking-[0.08em]"
               >
                 {t(`contact.${field}`)}
               </label>
@@ -231,20 +237,20 @@ const Form = () => {
                 onChange={handleInputChange}
                 onBlur={handleBlur}
                 placeholder={`${t("contact.your")} ${t(`contact.${field}`)}`}
-                className={`w-full lg:h-[4.76rem] xl92r:h-[5.25rem] 2xl:h-[6.31rem] bg-[#36454F] font-extralight font-deca border rounded-[1.375rem] px-4 md:px-[1.5625rem] 2xl:px-[1.5625rem py-4 md:py-[1.375rem] 2xl:py-[1.375rem] text-white placeholder-gray-400 focus:outline-none transition-colors text-sm md:text-[1.0000rem] lg:text-[1.1400rem] xl92r:text-[1.2500rem] 2xl:text-[1.5rem] leading-[2.5] tracking-[0.08em]
+                className={`w-full h-[2.96vh] lg:h-[4.76rem] xl92r:h-[5.25rem] 2xl:h-[6.31rem] bg-[#36454F] font-extralight font-deca border rounded-[0.375rem] sm:rounded-[1.375rem] px-2 sm:px-4 md:px-[1.5625rem] 2xl:px-[1.5625rem sm:py-4 md:py-[1.375rem] 2xl:py-[1.375rem] text-white placeholder-gray-400 focus:outline-none transition-colors text-[0.675rem] sm:text-sm md:text-[1.0000rem] lg:text-[1.1400rem] xl92r:text-[1.2500rem] 2xl:text-[1.5rem] sm:leading-[2.5] tracking-[0.08em]
                   ${errors[field as keyof ContactFormData] ? "border-red-500 focus:border-red-500" : "border-background2 focus:border-[#3a5168]"}`}
               />
               {errors[field as keyof ContactFormData] && (
-                <p className="text-red-500 text-xs mt-2">{errors[field as keyof ContactFormData]}</p>
+                <p className="text-red-500 text-[0.55rem] sm:text-xs mt-1 sm:mt-2">{errors[field as keyof ContactFormData]}</p>
               )}
             </div>
           ))}
 
           {/* Message */}
-          <div className="mb-6 md:mb-8 lg:mb-[2.625rem] 2xl:mb-[2.625rem]">
+          <div className="mb-3 sm:mb-6 md:mb-8 lg:mb-[2.625rem] 2xl:mb-[2.625rem]">
             <label
               htmlFor="message"
-              className="block text-white text-sm md:text-base font-normal mb-2 md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] leading-[2.5] tracking-[0.08em]"
+              className="block text-white text-[0.7rem] sm:text-sm md:text-base font-normal mb-2 md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] leading-[2.5] tracking-[0.08em]"
             >
               {t("contact.message")}
             </label>
@@ -256,19 +262,19 @@ const Form = () => {
               onBlur={handleBlur}
               placeholder={`${t("contact.your")} ${t("contact.message")}`}
               rows={6}
-              className={`w-full h-64 lg:h-[25.84rem]  xl92r:h-[28.33rem] 2xl:h-[34.0rem] font-extralight bg-[#36454F] border rounded-[1.375rem] px-4 py-4 md:py-5 text-white placeholder-gray-400 focus:outline-none transition-colors resize-none text-sm md:text-[1.4375rem] leading-[2.5]tracking-[0.08em]
+              className={`w-full h-[14.81vh] sm:h-64 lg:h-[25.84rem]  xl92r:h-[28.33rem] 2xl:h-[34.0rem] font-extralight bg-[#36454F] border rounded-[0.375rem] sm:rounded-[1.375rem] px-2 sm:px-4 py-1 sm:py-4 md:py-5 text-white placeholder-gray-400 focus:outline-none transition-colors resize-none text-[0.675rem] sm:text-sm md:text-[1.4375rem] sm:leading-[2.5] tracking-[0.08em]
                 ${errors.message ? "border-red-500 focus:border-red-500" : "border-background2 focus:border-[#3a5168]"}`}
             />
-            {errors.message && <p className="text-red-500 text-xs mt-2">{errors.message}</p>}
+            {errors.message && <p className="text-red-500 text-[0.55rem] sm:text-xs mt-2">{errors.message}</p>}
           </div>
 
           {/* Submit */}
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-end">
             <button
               type="button"
               onClick={handleSubmit}
               disabled={loading || isInvalid}
-              className={`bg-[#D9D9D9] text-background2 cursor-pointer px-15 py-2 md:py-0 rounded-[1.125rem] shadow-lg transition-all text-sm md:text-base lg:text-[1.4375rem] leading-[2.5] tracking-[0.08em] font-regular
+              className={`bg-[#D9D9D9] text-background2 cursor-pointer px-5.5 sm:px-15 py-0.5 md:py-0 rounded-[0.375rem] sm:rounded-[1.125rem] shadow-lg transition-all text-[0.7rem] sm:text-sm md:text-base lg:text-[1.4375rem] leading-[2.5] tracking-[0.08em] font-regular
                 ${loading || isInvalid
                   ? "opacity-50 cursor-not-allowed"
                   : ""
@@ -279,26 +285,29 @@ const Form = () => {
           </div>
 
           {success && (
-            <p className={`mt-4 text-sm ${success.startsWith("✅") ? "text-green-400" : "text-red-400"}`}>
+            <p className={`mt-4 text-[0.5rem] sm:text-sm ${success.startsWith("✅") ? "text-green-400" : "text-red-400"}`}>
               {success}
             </p>
           )}
         </form>
 
-      <p className=" mt-8 
-  pb-10 md:pb-16 lg:pb-[4.125rem] 2xl:pb-[4.125rem] 
+      <p className="mt-6 sm:mt-8  pb-8
+  sm:pb-10 md:pb-16 lg:pb-[4.125rem] 2xl:pb-[4.125rem] 
+  w-[66.66vw] sm:w-full mx-auto sm:mx-0
   text-white text-center md:text-left 
-  text-[0.958rem]            
+  text-[0.7rem]
+  sm:text-[0.958rem]            
   md:text-[0.958rem]         
   lg:text-[1.0925rem]        
   xl92r:text-[1.198rem]         
   2xl:text-[1.4375rem]       
-  leading-[2.5] tracking-[0.08em] font-extralight font-deca">
+  leading-[1.5]
+  sm:leading-[2.5] tracking-[0.08em] font-extralight font-deca">
   {t("contact.description")}{" "}
   <span className="font-semibold cursor-pointer">{t("contact.mail")}</span>
 </p>
 
-        <hr className="border-white mx-40 pb-10 md:pb-16 lg:pb-[4.6875rem] 2xl:pb-[4.6875rem] " />
+        <hr className="border-white mx-12 sm:mx-40 pb-10 md:pb-16 lg:pb-[4.6875rem] 2xl:pb-[4.6875rem] " />
       </div>
            
     </div>

@@ -6,7 +6,7 @@ import { FiX } from 'react-icons/fi';
 import { useTranslation } from '../../../i18n/TranslationContext'; 
 import { TranslateHtml } from '../../../i18n/TranslateHtml';
 import { translations } from '../../../i18n/translations';
-import { FaChevronDown, FaMinus } from 'react-icons/fa';
+import { FaChevronDown } from 'react-icons/fa';
 
 
 const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (caseStudy: CaseStudy) => void }) => {
@@ -71,7 +71,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
                                          onClick={() => onClose(caseStudy)}
                                            className={`absolute cursor-pointer w-[4.625rem] h-[4.625rem] text-background4 bg-white lg:text-background4 lg:bg-white   rounded-full flex items-center justify-center  transition-colors bottom-4 right-4 sm:bottom-12 sm:right-12 z-0`}
                                            >
-                                             <FaMinus className="w-4 h-5 " />
+                                              <div className="w-4 h-1.5 bg-background4" ></div>
                                       
                                          </button>
                          </div>
@@ -264,8 +264,8 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
           />
         </li>
       </ul>
-         <div className='flex flex-col items-center justify-center mt-5 sm:mt-[6.08vh]'>
-        <ResponsiveImage id="materials2" alt="materials2" className='w-full h-full sm:pt-10 mx-1 sm:mx-0' />
+         <div className='flex flex-col items-center justify-center sm:mt-[7.16vh]'>
+        <ResponsiveImage id="materials2" alt="materials2" className='w-full h-full sm:w-[55.90vw] sm:h-auto pt-6 sm:pt-[3.58vh] mx-1 px-10 sm:px-0 sm:mx-0' />
         <p className="text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] md:text-[0.6250rem] lg:text-[0.7125rem] xl92r:text-[0.7813rem] 2xl:text-[0.9375rem] ml-2 text-[#000000] font-extralight font-deca pb-0 sm:pb-10 leading-[1.5] sm:leading-[2.45] mt-4 tracking-[0.03em] max-w-4xl text-center">
 
       {/* Image and Caption Group */}
@@ -291,7 +291,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
       </p>
 
         <div className='pl-1.5 sm:pl-0 pr-3.5 sm:pr-0 flex flex-col items-center my-0 sm:my-[3.41vh]'>
-        <p className="text-[1.5rem] sm:text-lg md:text-xl lg:text-2xl md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-[#000000B2] italic font-bold font-nunito leading-[1.41] sm:leading-[1.25] tracking-[0.01em] text-center max-w-6xl 2xl:max-w-7xl">
+        <p className="pb-8 sm:pb-0 text-[1.5rem] sm:text-lg md:text-xl lg:text-2xl md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-[#000000B2] italic font-bold font-nunito leading-[1.5] sm:leading-[1.25] tracking-[0.01em] text-center max-w-6xl 2xl:max-w-7xl">
 
 
       {/* Quote 2 */}
@@ -314,7 +314,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
         {t('advancedMaterials.caseStudy.finalResults.heading')}
       </p>
            <div className='pl-1 sm:pl-0'>
-<div className="overflow-hidden rounded-xl border border-gray-800 mt-2 sm:mt-0 w-full 2xl:w-[75rem] mx-auto">
+<div className="overflow-hidden rounded-xl border border-gray-800 mt-4 sm:mt-0 w-full 2xl:w-[75rem] mx-auto">
 <table className="min-w-full table-fixed border border-gray-800 rounded-lg overflow-hidden divide-y divide-gray-800">
 
         {/* Table Header */}
@@ -383,13 +383,15 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
 </div></div>
 
       {/* Final Quote */}
-      <div className='flex justify-center mt-4 sm:mt-12 pb-12 sm:pb-0'>
+      <div className='flex justify-center mt-4 sm:mt-12 pb-10 sm:pb-0'>
         <p className="relative text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-7xl pb-5 sm:pb-40 font-bold font-nunito leading-[1.5] sm:leading-[1] mt-4 tracking-[0.02em] text-center">
-          {t('advancedMaterials.caseStudy.finalQuote')}.
+          {t('advancedMaterials.caseStudy.finalQuote')}
           <div className=" sm:hidden justify-end">
-                      <button onClick={() => onClose(caseStudy)} className="absolute  -bottom-3 -right-4 cursor-pointer text-gray-600 flex items-center justify-center  w-20 h-10 md:w-16 md:h-16 z-0">
-                        <FiX className="w-[3rem] md:w-[5.9375rem] h-auto" style={{ color: '#5B5A5A69' }} />
-                      </button>
+                      <button onClick={() => onClose(caseStudy)} className="absolute  -bottom-1 -right-4 cursor-pointer text-gray-600 flex items-center justify-center  w-20 h-10 md:w-16 md:h-16 z-0">
+                   
+<svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.8516 26L11.2516 13.8L11.1016 13.6L0.401563 -2.02656e-06H3.55156L12.9516 12L13.1016 12.2L24.0016 26H20.8516ZM0.00156255 26L10.9516 12.05L12.4516 13.85L3.05156 26H0.00156255ZM13.3016 13.15L11.8016 11.35L20.5516 -2.02656e-06H23.6016L13.3016 13.15Z" fill="#5B5A5A" fill-opacity="0.41"/>
+</svg>  </button>
                     </div>
         </p>
       </div>
