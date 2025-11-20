@@ -104,7 +104,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
             </p>
 
             {/* Overview Heading */}
-            <p className={`text-xs  sm:w-[31.9vw] lg:w-[33.68vw] sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] font-normal ${baseTextStyle} mt-4 sm:mt-[2.86vh]`}>
+            <p className={`text-xs  sm:w-[31.9vw] lg:w-[33.68vw] sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] font-normal ${baseTextStyle} mt-8 sm:mt-[2.86vh]`}>
               {t('advancedMaterials.caseStudy.overview.heading')}
             </p>
             {/* Overview Content 1 */}
@@ -134,7 +134,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
       <div className="sm:flex gap-2 md:gap-4 pt-0">
         {/* Left Column: Quote 1 */}
         <div className='w-full sm:w-1/2 px-2 sm:px-0'>
-          <p className={`text-[1rem] text-left sm:text-sm md:text-base lg:text-lg md:text-[1.0000rem] lg:text-[1.1400rem] xl92r:text-[1.2500rem] 2xl:text-[1.5rem] font-nunito italic font-bold mt-3 sm:mt-10 ${baseTextStyle} tracking-[0.03em]`}>
+          <p className={`text-[1rem] text-center sm:text-left sm:text-sm md:text-base lg:text-lg md:text-[1.0000rem] lg:text-[1.1400rem] xl92r:text-[1.2500rem] 2xl:text-[1.5rem] font-nunito italic font-bold mt-3 sm:mt-10 ${baseTextStyle} tracking-[0.03em]`}>
             {t('advancedMaterials.caseStudy.quote1')}.
           </p>
         </div>
@@ -148,7 +148,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
           </p>
         </div>
       </div>
-  <div className={`morebutton flex ${moreMobileButon ? 'hidden' : ''} items-center justify-center gap-x-1 cursor-pointer text-[0.875rem] sm:hidden font-deca text-center text-[#676767] mt-4`} onClick={()=> setMoreMobileButon(true)}>
+  <div className={`morebutton flex ${moreMobileButon ? 'hidden' : ''} items-center justify-center pb-1 gap-x-1 cursor-pointer text-[0.875rem] sm:hidden font-deca text-center text-[#676767] mt-4`} onClick={()=> setMoreMobileButon(true)}>
         MORE <FaChevronDown  />
       </div>
 <div className={`more sm:block pl-1.5 pr-3.5 sm:px-0  ${moreMobileButon ? 'block' : 'hidden'}`}>
@@ -231,7 +231,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
       </p>
 
       {/* How it looks with our AI platform Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[1.865] sm:mt-10 tracking-[0.03em] ml-2 text-[#000000]`}>
+      <p className={`text-xs sm:text-sm pt-4 sm:pt-0 md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[1.865] sm:mt-10 tracking-[0.03em] ml-2 text-[#000000]`}>
         {t('advancedMaterials.caseStudy.aiPlatformLook.heading')}
       </p>
       <ul className="list-disc ml-5 sm:ml-6">
@@ -310,7 +310,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
       </ul>
 
       {/* Final Results Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] pb-[3.07vh] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-10`}>
+      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] sm:pb-[3.07vh] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-10`}>
         {t('advancedMaterials.caseStudy.finalResults.heading')}
       </p>
            <div className='pl-1 sm:pl-0'>
@@ -383,7 +383,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
 </div></div>
 
       {/* Final Quote */}
-      <div className='flex justify-center mt-4 sm:mt-12'>
+      <div className='flex justify-center mt-4 sm:mt-12 pb-10 sm:pb-0'>
         <p className="relative text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-7xl pb-5 sm:pb-40 font-bold font-nunito leading-[1.5] sm:leading-[1] mt-4 tracking-[0.02em] text-center">
           {t('advancedMaterials.caseStudy.finalQuote')}
           <div className=" sm:hidden justify-end">

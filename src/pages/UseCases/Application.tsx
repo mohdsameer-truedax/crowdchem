@@ -195,7 +195,7 @@ const Application = () => {
                 {isSelected && (
                  <motion.div
   id={caseStudy.id}
-  className="w-full h-full rounded-[3.3125rem] z-0 pb-10 px-0 sm:px-6 lg:px-8 pt-0 sm:pt-6 bg-[#D9D9D9]/95"
+  className="w-full h-full rounded-[3.3125rem] z-0 sm:pb-10 px-0 sm:px-6 lg:px-8 pt-0 sm:pt-6 bg-[#D9D9D9]/95"
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   exit={{ opacity: 0 }}

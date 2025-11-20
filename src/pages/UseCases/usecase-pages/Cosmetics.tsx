@@ -111,7 +111,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
             </p>
 
             {/* Overview Heading */}
-            <p className={`text-xs sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] font-normal ${baseTextStyle} mt-4 sm:mt-8`}>
+            <p className={`text-xs sm:text-sm md:text-base lg:text-lg md:text-[0.9583rem] lg:text-[1.0925rem] xl92r:text-[1.1979rem] 2xl:text-[1.4375rem] font-normal ${baseTextStyle} mt-8 sm:mt-8`}>
               {t('cosmetics.caseStudy.overview.heading')}
             </p>
             {/* Overview Content (FIXED with TranslateHtml) */}
@@ -144,7 +144,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       <p className={`text-xs pl-2 sm:pl-0 pr-4 sm:pr-0 sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight ${baseTextStyle} mt-0`}>
         {t('cosmetics.caseStudy.objective.content')}
       </p>
-      <div className={`morebutton flex ${moreMobileButon ? 'hidden' : ''} items-center justify-center gap-x-1 cursor-pointer text-[0.875rem] sm:hidden font-deca text-center text-[#676767] mt-4`} onClick={()=> setMoreMobileButon(true)}>
+      <div className={`morebutton flex ${moreMobileButon ? 'hidden' : ''} items-center justify-center pb-1 gap-x-1 cursor-pointer text-[0.875rem] sm:hidden font-deca text-center text-[#676767] mt-4`} onClick={()=> setMoreMobileButon(true)}>
         MORE <FaChevronDown  />
       </div>
 <div className={`more sm:block pl-1.5 pr-3.5 sm:px-0 ${moreMobileButon ? 'block' : 'hidden'}`}>
@@ -335,7 +335,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       </ul>
 
       {/* Final Results Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem]  pb-[3.07vh] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-10`}>
+      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem]  sm:pb-[3.07vh] 2xl:text-[1.4375rem] font-regular ${baseTextStyle} mt-10`}>
         {t('cosmetics.caseStudy.finalResults.heading')}
       </p>
       <div className='pl-1 sm:pl-0'>
@@ -408,7 +408,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
 </div></div>
 
         {/* Final Quote */}
-        <div className='flex justify-center mt-4 px-2'>
+        <div className='flex justify-center mt-4 px-2 pb-10 sm:pb-0'>
           <p className="relative text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-7xl pb-5 sm:pb-40 font-bold font-nunito leading-[1.5] sm:leading-[1] mt-4 tracking-[0.02em] text-center">
             {t('cosmetics.caseStudy.finalQuote')}
             <div className=" sm:hidden justify-end">
