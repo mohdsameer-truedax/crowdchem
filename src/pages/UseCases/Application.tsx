@@ -181,7 +181,7 @@ const Application = () => {
                   isSelected
                     ? 'w-14 h-14 md:w-20 md:h-20 lg:w-[7.4375rem] lg:h-[7.4375rem] text-gray-700 bg-white lg:text-background4 lg:bg-white hidden sm:flex'
                     : 'w-[4.625rem] h-[4.625rem]  md:h-[7.12rem] lg:h-[8rem] xl92r:h-[8.90rem] 2xl:w-[10.6875rem] md:w-[7.12rem] lg:w-[8rem] xl92r:w-[8.90rem] 2xl:h-[10.6875rem] text-white bg-background4'
-                }  rounded-full flex items-center justify-center  transition-colors bottom-4 right-4 sm:bottom-12 sm:right-12 z-0`}
+                }  rounded-full flex items-center justify-center  transition-colors bottom-4 right-4 sm:bottom-12 sm:right-12 z-10`}
                 >
                 {isSelected ? (
                   <FaMinus className="w-6 h-6 lg:w-10 lg:h-10" />
