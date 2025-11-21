@@ -12,7 +12,7 @@ import { FaChevronDown } from 'react-icons/fa';
 
 const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (caseStudy: CaseStudy) => void }) => {
   // Access the translation function
-  const { t, code, language } = useTranslation();
+  const { t, language } = useTranslation();
    const [moreMobileButon, setMoreMobileButon] = useState(false)
   interface TableRow {
     area: string;
@@ -192,7 +192,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
           {t('automotive.caseStudy.aiPlatform.list.0')}
         </li>
       </ul>
-        {code === "Japanese"?  <ResponsiveImage id="automotivej1" alt="automotivej1" className=' w-full h-full py-[2.04vh]' /> :  <ResponsiveImage id="automotive1" alt="automotive1" className='w-full h-full pt-0 pb-4  sm:py-[2.04vh] px-1 sm:px-0' />}
+        <ResponsiveImage id="automotive1" alt="automotive1" languageSpecific={true} className='w-full h-full pt-0 pb-4 sm:py-[2.04vh] px-1 sm:px-0' />
        <ul className="list-disc ml-5 sm:ml-6 pl-0.5 pr-3.5 sm:px-0">
 
         {/* Using TranslateHtml for AI Platform List 2 */}

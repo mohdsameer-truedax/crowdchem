@@ -1,9 +1,9 @@
 //navbar
 import { useState, useEffect } from "react";
-import { FiMenu, FiSearch, FiX } from "react-icons/fi";
+import {  FiSearch } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "../i18n/useTranslation";
-// import TranslationPage from "../i18n/TranslationPage";
+import TranslationPage from "../i18n/TranslationPage";
 import { ResponsiveImage } from "../utils/ResponsiveImage";
 import SearchModal from "./SearchModal";
 const Navbar = () => {
@@ -143,9 +143,9 @@ const Navbar = () => {
       )}
 
       {/* Bottom section: Translation */}
-       {/* <div className="flex justify-end mt-auto absolute -bottom-4.5 sm:bottom-0 right-4 sm:right-6 lg:right-8 xl92r:right-16">
+       <div className="flex justify-end mt-auto absolute -bottom-4.5 sm:bottom-0 right-4 sm:right-6 lg:right-8 xl92r:right-16">
         <TranslationPage />
-      </div> */}
+      </div>
 
       {/* Search Modal */}
       <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />

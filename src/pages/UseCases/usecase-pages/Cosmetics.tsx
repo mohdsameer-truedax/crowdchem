@@ -11,7 +11,7 @@ import { FaChevronDown } from 'react-icons/fa';
 
 const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (caseStudy: CaseStudy) => void }) => {
   // Access the translation function
-  const { t, code, language } = useTranslation();
+  const { t, language } = useTranslation();
  const [moreMobileButon, setMoreMobileButon] = useState(false)
 
   interface TableRow {
@@ -255,7 +255,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
           />
         </li>
       </ul>
-        {code === "Japanese"?  <ResponsiveImage id="cosmeticsj1" alt="cosmeticsj1" className='w-full h-full py-10' /> : <ResponsiveImage id="cosmetics1" alt="cosmetics1" className='w-full h-full mx-1 sm:mx-0 py-6 pb-4 sm:py-[2.14vh]' />} 
+        <ResponsiveImage id="cosmetics1" alt="cosmetics1" languageSpecific={true} className='w-full h-full mx-1 sm:mx-0 py-6 pb-4 sm:py-[2.14vh]' /> 
   
 
       <ul className="list-disc ml-4 sm:ml-6">

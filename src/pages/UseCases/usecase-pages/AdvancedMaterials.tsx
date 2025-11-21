@@ -11,7 +11,7 @@ import { FaChevronDown } from 'react-icons/fa';
 
 const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (caseStudy: CaseStudy) => void }) => {
   // Access the translation function
-  const { t, code, language } = useTranslation();
+  const { t, language } = useTranslation();
    const [moreMobileButon, setMoreMobileButon] = useState(false)
   interface TableRow {
     area: string;
@@ -247,7 +247,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
           />
         </li>
 </ul>
-     {code === "Japanese"?  <ResponsiveImage id="materialsj1" alt="materialsj1" className='w-full h-full px-0 py-0 sm:py-[2.04vh]' /> : <ResponsiveImage id="materials1" alt="materials1" className='w-full h-full mx-1 sm:mx-0 py-8 sm:py-[2.04vh]' />}  
+     <ResponsiveImage id="materials1" alt="materials1" languageSpecific={true} className='w-full h-full mx-1 sm:mx-0 py-8 sm:py-[2.04vh]' />  
   <ul className="list-disc ml-[12.5px]  sm:ml-6">
             <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.75] sm:leading-[1.695] mt-0 sm:mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
         {/* AI Platform List 2 (Explainable shortlist) */}
