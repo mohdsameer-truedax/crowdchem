@@ -27,7 +27,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
   const tableTypes = ['triangle', 'cross', 'cross', 'cross', 'triangle', 'cross'];
   
   // Define common text styles
-  const baseTextStyle = 'ml-2 text-[#000000] font-deca leading-[1.5] sm:leading-[1.608] tracking-[0.03em]';
+  const baseTextStyle = 'ml-2 text-[#000000] font-deca leading-[1.75] sm:leading-[1.608] tracking-[0.03em]';
 
   // Component to define the styling for the bolded text (interpolation component)
   const BoldText = <span className='font-light' />;
@@ -100,7 +100,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
             </p>
 
             {/* Subtitle */}
-            <p className="text-xs sm:text-sm md:text-base lg:text-lg md:text-[1.0833rem] lg:text-[1.2350rem] xl92r:text-[1.3542rem] 2xl:text-[1.625rem] ml-2 text-[#000000] font-medium font-deca leading-[1.5] sm:leading-[1.461] mt-2  sm:mt-[2.86vh] tracking-[0.01em]">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg md:text-[1.0833rem] lg:text-[1.2350rem] xl92r:text-[1.3542rem] 2xl:text-[1.625rem] ml-2 text-[#000000] font-medium font-deca leading-[1.75] sm:leading-[1.461] mt-2  sm:mt-[2.86vh] tracking-[0.01em]">
               {t('automotive.caseStudy.subtitle')}
             </p>
 
@@ -192,7 +192,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
           {t('automotive.caseStudy.aiPlatform.list.0')}
         </li>
       </ul>
-        {code === "Japanese"?  <ResponsiveImage id="automotivej1" alt="automotivej1" className=' w-full h-full py-[2.04vh]' /> :  <ResponsiveImage id="automotive1" alt="automotive1" className='w-full h-full py-2  sm:py-[2.04vh] px-1 sm:px-0' />}
+        {code === "Japanese"?  <ResponsiveImage id="automotivej1" alt="automotivej1" className=' w-full h-full py-[2.04vh]' /> :  <ResponsiveImage id="automotive1" alt="automotive1" className='w-full h-full pt-0 pb-4  sm:py-[2.04vh] px-1 sm:px-0' />}
        <ul className="list-disc ml-5 sm:ml-6 pl-0.5 pr-3.5 sm:px-0">
 
         {/* Using TranslateHtml for AI Platform List 2 */}
@@ -200,7 +200,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
   md:text-[0.958rem]
   lg:text-[1.0925rem]
   xl92r:text-[1.198rem]
-  2xl:text-[1.4375rem] font-extralight font-deca leading-[1.5] sm:leading-[1.865] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
+  2xl:text-[1.4375rem] font-extralight font-deca leading-[1.75] sm:leading-[1.865] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
           <TranslateHtml
             i18nKey="automotive.caseStudy.aiPlatform.list.1"
             components={{ 1: BoldText }}
@@ -214,7 +214,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
   lg:text-[1.0925rem]
   xl92r:text-[1.198rem]
   2xl:text-[1.4375rem]
-  font-extralight font-deca leading-[1.5] sm:leading-[1.865] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
+  font-extralight font-deca leading-[1.75] sm:leading-[1.865] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
   <TranslateHtml
     i18nKey="automotive.caseStudy.aiPlatform.list.2"
     components={{ 1: BoldText }}
@@ -225,7 +225,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
       {/* Image and Caption Group */}
       <div className='flex flex-col items-center justify-center sm:mt-[7.16vh]'>
         <ResponsiveImage id="automotive2" alt="automotive2" className='w-full h-full sm:w-[55.90vw] sm:h-auto pt-6 sm:pt-[3.58vh] px-11 sm:px-0 ' />
-        <p className="w-full sm:w-[55.90vw] pl-1.5 pr-3.5 sm:px-0 text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] xl92r:text-[0.875rem] 2xl:text-[0.9375rem] ml-2 sm:ml-0 text-[#000000] font-extralight font-deca pb-4 sm:pb-[3.41vh] leading-[1.5] sm:leading-[2.45] mt-3 sm:mt-4 tracking-[0.03em] max-w-4xl text-center">
+        <p className="w-full sm:w-[55.90vw] pl-1.5 pr-3.5 sm:px-0 text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] xl92r:text-[0.875rem] 2xl:text-[0.9375rem] ml-2 sm:ml-0 text-[#000000] font-extralight font-deca pb-4 sm:pb-[3.41vh] leading-[1.75] sm:leading-[2.45] mt-3 sm:mt-4 tracking-[0.03em] max-w-4xl text-center">
           {t('automotive.caseStudy.imageCaption')}
         </p>
       </div>
@@ -257,7 +257,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
 
       {/* Quote 1 */}
       <div className='flex justify-center my-6  sm:my-10'>
-        <p className="text-[1.5rem] pl-1.5 pr-3.5 sm:px-0 sm:text-lg md:text-xl lg:text-2xl md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-[#000000B2] italic font-bold font-nunito leading-[1.5] sm:leading-[1.865] mt-4 mb-4 sm:mb-0 tracking-[0.01em] text-center">
+        <p className="text-[1.5rem] pl-1.5 pr-3.5 sm:px-0 sm:text-lg md:text-xl lg:text-2xl md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-[#000000B2] italic font-bold font-nunito leading-[1.75] sm:leading-[1.865] mt-4 mb-4 sm:mb-0 tracking-[0.01em] text-center">
           {t('automotive.caseStudy.quote1')}
         </p>
       </div>
@@ -367,7 +367,7 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
 
       {/* Final Quote */}
       <div className='flex justify-center mt-4 sm:mt-20 mb-0 sm:mb-10 pb-25 sm:pb-0'>
-        <p className="relative pl-1.5 pr-3.5 sm:px-0 text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-6xl pb-0 sm:pb-40 font-bold font-nunito leading-[1.5] sm:leading-[1] mt-4 tracking-[0.02em] text-center">
+        <p className="relative pl-1.5 pr-3.5 sm:px-0 text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-6xl pb-0 sm:pb-40 font-bold font-nunito leading-[1.75] sm:leading-[1] mt-4 tracking-[0.02em] text-center">
           {t('automotive.caseStudy.finalQuote')}
             <div className=" sm:hidden justify-end">
             <button onClick={() => onClose(caseStudy)} className="absolute  -bottom-17 right-1 cursor-pointer text-gray-600 flex items-center justify-center  w-20 h-10 md:w-16 md:h-16 z-0">

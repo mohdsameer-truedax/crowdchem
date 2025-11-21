@@ -329,7 +329,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                     {highlightText(r.title)}
                   </h2>
                   <p className="text-[0.75rem] sm:text-lg mb-4 font-deca md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] leading-[1.75] sm:leading-12 tracking-0.08em font-light">
-                    {highlightText(r.excerpt)}
+                    {highlightText(r.excerpt)}...
                   </p>
                 </div>
               );

@@ -116,27 +116,10 @@ const Navbar = () => {
             {t("nav.contact")}
           </Link>
           <button onClick={() => setIsSearchOpen(true)} aria-label="Search" className="hover:text-yellow-800">
-            <FiSearch className="w-[1.02rem] h-[1.1875rem] lg:w-6 lg:h-6 xl92r:w-8 xl92r:h-8 cursor-pointer text-yellow-600 hover:text-yellow-800 transition-colors duration-200" />
+            <FiSearch strokeWidth={3} className="w-[1.72rem] h-[1.4875rem] lg:w-6 lg:h-6 xl92r:w-8 xl92r:h-8 cursor-pointer text-[#FCA311] hover:text-yellow-800 transition-colors duration-200" />
           </button>
         </div>
 
-        {/* Mobile section */}
-        <div className="hidden flex items-center space-x-4 sm:space-x-6">
-          <button onClick={() => setIsSearchOpen(true)} aria-label="Search" className="hover:text-yellow-800">
-            <FiSearch className="w-5 h-5 sm:w-[31px] sm:h-[36px] text-yellow-600 cursor-pointer hover:text-yellow-800 transition-colors duration-200" />
-          </button>
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label={isOpen ? "Close menu" : "Open menu"}
-            className="p-1 hover:bg-white/10 rounded transition-colors duration-200"
-          >
-            {isOpen ? (
-              <FiX className="w-6 h-6 sm:w-7 sm:h-7" />
-            ) : (
-              <FiMenu className="w-6 h-6 sm:w-7 sm:h-7" />
-            )}
-          </button>
-        </div>
       </div>
 
       {/* Mobile menu */}
