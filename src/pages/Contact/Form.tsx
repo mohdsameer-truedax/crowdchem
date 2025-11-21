@@ -207,7 +207,7 @@ const Form = () => {
                     />
                     <div className="w-2.5 h-2.5 sm:w-5 sm:h-5 md:w-6 md:h-6 rounded-full border-2 border-white flex items-center justify-center">
                       {formData.category === cat && (
-                        <div className="w-1 h-1 sm:w-3 sm:h-3 md:w-4 md:h-4 rounded-full bg-white"></div>
+                        <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-4 md:h-4 rounded-full bg-white"></div>
                       )}
                     </div>
                     <span className="text-white text-[0.7rem] sm:text-sm md:text-base md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] leading-[2.5]tracking-[0.08em] font-extralight">
@@ -222,7 +222,7 @@ const Form = () => {
 
           {/* Inputs */}
           {["name", "email", "company"].map((field) => (
-            <div className="mb-3 md:mb-[1.125rem] 2xl:mb-[1.125rem]" key={field}>
+            <div className="mb-4 md:mb-[1.125rem] 2xl:mb-[1.125rem]" key={field}>
               <label
                 htmlFor={field}
                 className="block text-white text-[0.7rem] sm:text-sm md:text-base font-normal sm:mb-2 md:mb-3 2xl:mb-3 leading-[2] sm:leading-[3.75] tracking-[0.08em]"
@@ -250,7 +250,7 @@ const Form = () => {
           <div className="mb-3 sm:mb-6 md:mb-8 lg:mb-[2.625rem] 2xl:mb-[2.625rem]">
             <label
               htmlFor="message"
-              className="block text-white text-[0.7rem] sm:text-sm md:text-base font-normal mb-2 md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] leading-[2.5] tracking-[0.08em]"
+              className="block text-white text-[0.7rem] sm:text-sm md:text-base font-normal sm:mb-2 md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] leading-[2.5] tracking-[0.08em]"
             >
               {t("contact.message")}
             </label>

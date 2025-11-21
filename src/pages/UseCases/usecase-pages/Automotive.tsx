@@ -224,8 +224,8 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
 
       {/* Image and Caption Group */}
       <div className='flex flex-col items-center justify-center sm:mt-[7.16vh]'>
-        <ResponsiveImage id="automotive2" alt="automotive2" className='w-full h-full sm:w-[55.90vw] sm:h-auto pt-6 sm:pt-[3.58vh] px-10 px-2 sm:px-0' />
-        <p className="pl-1.5 pr-3.5 sm:px-0 text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] xl92r:text-[0.875rem] 2xl:text-[0.9375rem] ml-2 text-[#000000] font-extralight font-deca pb-4 sm:pb-[3.41vh] leading-[1.5] sm:leading-[2.45] mt-3 sm:mt-4 tracking-[0.03em] max-w-4xl text-center">
+        <ResponsiveImage id="automotive2" alt="automotive2" className='w-full h-full sm:w-[55.90vw] sm:h-auto pt-6 sm:pt-[3.58vh] px-11 sm:px-0 ' />
+        <p className="w-full sm:w-[55.90vw] pl-1.5 pr-3.5 sm:px-0 text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] xl92r:text-[0.875rem] 2xl:text-[0.9375rem] ml-2 sm:ml-0 text-[#000000] font-extralight font-deca pb-4 sm:pb-[3.41vh] leading-[1.5] sm:leading-[2.45] mt-3 sm:mt-4 tracking-[0.03em] max-w-4xl text-center">
           {t('automotive.caseStudy.imageCaption')}
         </p>
       </div>
@@ -366,11 +366,11 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
 </div></div>
 
       {/* Final Quote */}
-      <div className='flex justify-center mt-4 sm:mt-20 mb-0 sm:mb-10 pb-20 sm:pb-0'>
+      <div className='flex justify-center mt-4 sm:mt-20 mb-0 sm:mb-10 pb-25 sm:pb-0'>
         <p className="relative pl-1.5 pr-3.5 sm:px-0 text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-6xl pb-0 sm:pb-40 font-bold font-nunito leading-[1.5] sm:leading-[1] mt-4 tracking-[0.02em] text-center">
           {t('automotive.caseStudy.finalQuote')}
             <div className=" sm:hidden justify-end">
-            <button onClick={() => onClose(caseStudy)} className="absolute  -bottom-8 right-1 cursor-pointer text-gray-600 flex items-center justify-center  w-20 h-10 md:w-16 md:h-16 z-0">
+            <button onClick={() => onClose(caseStudy)} className="absolute  -bottom-17 right-1 cursor-pointer text-gray-600 flex items-center justify-center  w-20 h-10 md:w-16 md:h-16 z-0">
            
 <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.8516 26L11.2516 13.8L11.1016 13.6L0.401563 -2.02656e-06H3.55156L12.9516 12L13.1016 12.2L24.0016 26H20.8516ZM0.00156255 26L10.9516 12.05L12.4516 13.85L3.05156 26H0.00156255ZM13.3016 13.15L11.8016 11.35L20.5516 -2.02656e-06H23.6016L13.3016 13.15Z" fill="#5B5A5A" fill-opacity="0.41"/>
