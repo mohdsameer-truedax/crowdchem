@@ -259,7 +259,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
           />
         </Link>
         <div className="flex items-center space-x-6 pr-4 sm:pr-0">
-          <div  onClick={onClose} className="text-[1rem] sm:text-[3.75rem] pt-1 sm:pt-0 xl92r:text-[4.0625rem] font-deca font-light cursor-pointer text-yellow-600 hover:text-yellow-800 leading-[1] sm:leading-[1.5] transition-colors duration-200">X</div>
+          <div  onClick={onClose} className="text-[1.15rem] sm:text-[3.75rem] pt-2 sm:pt-0 xl92r:text-[4.0625rem] font-deca font-light cursor-pointer text-[#FCA311] hover:text-yellow-800 leading-[1] sm:leading-[1.5] transition-colors duration-200">X</div>
           {/* <FiX
            
             className="text-[60px] xl:text-[65px] font-deca font-light cursor-pointer text-yellow-600 hover:text-yellow-800 transition-colors duration-200"
@@ -315,20 +315,20 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                 <div
                   key={r.id}
                   onClick={() => handleSelect(r)}
-                  className="hover:text-yellow-600 transition-all mt-4 sm:mt-0 duration-300 text-white cursor-pointer"
+                  className="hover:text-yellow-600 transition-all mt-5 sm:mt-0 duration-300 text-white cursor-pointer"
                 >
                   <h2 className="text-[0.75rem] sm:text-3xl font-nunito font-bold sm:mb-2 md:text-[2.0833rem] lg:text-[2.3750rem] xl92r:text-[2.6042rem] 2xl:text-[3.125rem] sm:leading-[3.75rem] tracking-0.08em">
-                    {r.page === '/usecases' ? <>USE STUDIES</> : 
+                    {r.page === '/usecases' ? <>USE CASES</> : 
                      r.page.includes('/twitter/') ? <>TWITTER</> :
                      r.page.includes('/linkedin/') ? <>LINKEDIN</> : <>OTHER</>}
                      {/*i resolved the home page bug , all three use case padding is done from my side and i started working on mobile
                       responsiveness for usecase page.
                      */}
                   </h2>
-                  <h2 className="text-[0.75rem] sm:text-3xl font-deca font-medium mb-2 md:text-[1.875rem] lg:text-[2.1375rem] xl92r:text-[2.3438rem] 2xl:text-[2.8125rem] sm:leading-[3.75rem] tracking-0.08em">
+                  <h2 className="text-[0.75rem] sm:text-3xl font-deca font-medium mb-3 sm:mb-2 md:text-[1.875rem] lg:text-[2.1375rem] xl92r:text-[2.3438rem] 2xl:text-[2.8125rem] leading-[1.75] sm:leading-[3.75rem] tracking-0.08em">
                     {highlightText(r.title)}
                   </h2>
-                  <p className="text-[0.75rem] sm:text-lg mb-4 font-deca md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] sm:leading-12 tracking-0.08em font-light">
+                  <p className="text-[0.75rem] sm:text-lg mb-4 font-deca md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] leading-[1.75] sm:leading-12 tracking-0.08em font-light">
                     {highlightText(r.excerpt)}
                   </p>
                 </div>
@@ -338,7 +338,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
         </div>
       
       </div>
-      <div className="mt-[100%]">
+      <div className={`${!results || results.length === 0 ? "mt-[100%]" : "mt-10 sm:mt-[20%]"}`}>
         <Footer/>
       </div>  
     </div>

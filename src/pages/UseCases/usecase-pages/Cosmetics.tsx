@@ -278,8 +278,8 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
 
       {/* Image and Caption Group */}
             <div className='flex flex-col items-center justify-center mt-5 sm:mt-2'>
-        <ResponsiveImage id="cosmetics2" alt="cosmetics2" className='w-full h-full sm:w-[55.90vw] sm:h-auto sm:pt-0 px-10 sm:px-0 mx-1 sm:mx-0' />
-              <p className="text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] xl92r:text-[0.875rem] 2xl:text-[0.9375rem] ml-2 text-[#000000] font-extralight font-deca pb-4 sm:pb-10 leading-[1.5] sm:leading-[2.61] mt-4 sm:mt-0 tracking-[0.03em] max-w-4xl text-center">
+        <ResponsiveImage id="cosmetics2" alt="cosmetics2" className='w-full h-full sm:w-[50vw] xl92r:w-[55.90vw] sm:h-auto sm:pt-0 px-10 sm:px-0 mx-1 sm:mx-0' />
+              <p className="w-full sm:w-[50vw] xl92r:w-[55.90vw] text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] xl92r:text-[0.875rem] 2xl:text-[0.9375rem] ml-2 sm:ml-0 text-[#000000] font-extralight font-deca pb-4 sm:pb-10 leading-[1.5] sm:leading-[2.61] mt-4 sm:mt-0 tracking-[0.03em] max-w-4xl text-center">
     {t('cosmetics.caseStudy.imageCaption')}
         </p>
       </div>
