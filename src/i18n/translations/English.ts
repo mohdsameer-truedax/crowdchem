@@ -506,7 +506,7 @@ const en = {
           ]
         }
       },
-      "finalQuote": "Don't let the complexity of sustainable materials slow you down. It's time to move beyond the traditional trial-and-error approach and innovate with the confidence of data"
+      "finalQuote": "Don't let the complexity of sustainable materials slow you down. It's time to move beyond the traditional trial-and-error approach and innovate with the confidence of data."
     }
   }
 };

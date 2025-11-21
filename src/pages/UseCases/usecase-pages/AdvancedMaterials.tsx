@@ -26,7 +26,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
   const tableTypes = ['triangle', 'cross', 'cross', 'cross', 'triangle', 'cross'];
   
   // Define common text styles
-  const baseTextStyle = 'ml-2 text-[#000000] font-deca leading-[1.5] sm:leading-[1.608] tracking-[0.03em]';
+  const baseTextStyle = 'ml-2 text-[#000000] font-deca leading-[1.75] sm:leading-[1.608] tracking-[0.03em]';
 
   // Component to define the styling for the bolded text (interpolation component)
   const BoldText = <span className='font-light' />;
@@ -99,7 +99,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
             </p>
 
             {/* Subtitle */}
-            <p className="text-xs sm:text-sm md:text-base lg:w-[33.68vw] lg:text-lg md:text-[1.0833rem] lg:text-[1.2350rem] xl92r:text-[1.3542rem] 2xl:text-[1.625rem] ml-2 text-[#000000] font-medium font-deca  leading-[1.5] sm:leading-[1.461] mt-2  sm:mt-[2.86vh] tracking-[0.01em]">
+            <p className="text-xs sm:text-sm md:text-base lg:w-[33.68vw] lg:text-lg md:text-[1.0833rem] lg:text-[1.2350rem] xl92r:text-[1.3542rem] 2xl:text-[1.625rem] ml-2 text-[#000000] font-medium font-deca  leading-[1.75] sm:leading-[1.461] mt-2  sm:mt-[2.86vh] tracking-[0.01em]">
               {t('advancedMaterials.caseStudy.subtitle')}
             </p>
 
@@ -247,16 +247,16 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
           />
         </li>
 </ul>
-     {code === "Japanese"?  <ResponsiveImage id="materialsj1" alt="materialsj1" className='w-full h-full px-0 py-0 sm:py-[2.04vh]' /> : <ResponsiveImage id="materials1" alt="materials1" className='w-full h-full mx-1 sm:mx-0 py-6 sm:py-[2.04vh]' />}  
+     {code === "Japanese"?  <ResponsiveImage id="materialsj1" alt="materialsj1" className='w-full h-full px-0 py-0 sm:py-[2.04vh]' /> : <ResponsiveImage id="materials1" alt="materials1" className='w-full h-full mx-1 sm:mx-0 py-8 sm:py-[2.04vh]' />}  
   <ul className="list-disc ml-[12.5px]  sm:ml-6">
-            <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.5] sm:leading-[1.695] mt-0 sm:mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
+            <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.75] sm:leading-[1.695] mt-0 sm:mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
         {/* AI Platform List 2 (Explainable shortlist) */}
     <TranslateHtml
             i18nKey="advancedMaterials.caseStudy.aiPlatformLook.list.1"
             components={{ 1: BoldText, 2: BoldText }}
           />
         </li>
-          <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.5] sm:leading-[1.695] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
+          <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.75] sm:leading-[1.695] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
         {/* AI Platform List 3 (Operating window + guardrails) */}
    <TranslateHtml
             i18nKey="advancedMaterials.caseStudy.aiPlatformLook.list.2"
@@ -266,7 +266,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
       </ul>
          <div className='flex flex-col items-center justify-center sm:mt-[7.16vh]'>
         <ResponsiveImage id="materials2" alt="materials2" className='w-full h-full sm:w-[55.90vw] sm:h-auto pt-6 sm:pt-[3.58vh] mx-1 px-10 sm:px-0 sm:mx-0' />
-        <p className="w-full sm:w-[55.90vw] text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] md:text-[0.6250rem] lg:text-[0.7125rem] xl92r:text-[0.7813rem] 2xl:text-[0.9375rem] ml-2 sm:ml-0 text-[#000000] font-extralight font-deca pb-0 sm:pb-10 leading-[1.5] sm:leading-[2.45] mt-4 tracking-[0.03em] max-w-4xl text-center">
+        <p className="w-full sm:w-[55.90vw] text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] md:text-[0.6250rem] lg:text-[0.7125rem] xl92r:text-[0.7813rem] 2xl:text-[0.9375rem] ml-2 sm:ml-0 text-[#000000] font-extralight font-deca pb-0 sm:pb-10 leading-[1.75] sm:leading-[2.45] mt-4 tracking-[0.03em] max-w-4xl text-center">
 
       {/* Image and Caption Group */}
       <TranslateHtml
@@ -286,12 +286,12 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
         {/* NOTE: List item 1 for meaning uses {createInterpListItem} */}
         {renderInterpListItem('meaning', 1)}
       </ul>
-      <p className="text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] ml-2 text-[#000000] font-extralight font-deca pb-10 leading-[1.5] sm:leading-[1.865] mt-4 tracking-[0.03em]">
+      <p className="text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.25rem] 2xl:text-[1.4375rem] ml-2 text-[#000000] font-extralight font-deca pb-10 leading-[1.75] sm:leading-[1.865] mt-4 tracking-[0.03em]">
         {t('advancedMaterials.caseStudy.meaning.context')}
       </p>
 
         <div className='pl-1.5 sm:pl-0 pr-3.5 sm:pr-0 flex flex-col items-center my-0 sm:my-[3.41vh]'>
-        <p className="pb-8 sm:pb-0 text-[1.5rem] sm:text-lg md:text-xl lg:text-2xl md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-[#000000B2] italic font-bold font-nunito leading-[1.5] sm:leading-[1.25] tracking-[0.01em] text-center max-w-6xl 2xl:max-w-7xl">
+        <p className="pb-8 sm:pb-0 text-[1.5rem] sm:text-lg md:text-xl lg:text-2xl md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-[#000000B2] italic font-bold font-nunito leading-[1.75] sm:leading-[1.25] tracking-[0.01em] text-center max-w-6xl 2xl:max-w-7xl">
 
 
       {/* Quote 2 */}
@@ -384,8 +384,8 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
 
       {/* Final Quote */}
       <div className='flex justify-center mt-4 sm:mt-12 pb-15 sm:pb-0'>
-        <p className="relative text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-7xl pb-5 sm:pb-40 font-bold font-nunito leading-[1.5] sm:leading-[1] mt-4 tracking-[0.02em] text-center">
-          {t('advancedMaterials.caseStudy.finalQuote')}.
+        <p className="relative text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-7xl pb-5 sm:pb-40 font-bold font-nunito leading-[1.75] sm:leading-[1] mt-4 tracking-[0.02em] text-center">
+          {t('advancedMaterials.caseStudy.finalQuote')}
           <div className=" sm:hidden justify-end">
                       <button onClick={() => onClose(caseStudy)} className="absolute  -bottom-8 -right-4 cursor-pointer text-gray-600 flex items-center justify-center  w-20 h-10 md:w-16 md:h-16 z-0">
                    

@@ -27,7 +27,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
   const tableTypes = ['triangle', 'cross', 'cross', 'cross', 'triangle'];
   
   // Define common text styles
-  const baseTextStyle = 'ml-2 text-[#000000] font-deca leading-[1.5] sm:leading-[1.608] tracking-[0.03em]';
+  const baseTextStyle = 'ml-2 text-[#000000] font-deca leading-[1.75] sm:leading-[1.608] tracking-[0.03em]';
 
   // Component to define the styling for the bolded text (interpolation component)
   const BoldText = <span className='font-light' />;
@@ -106,7 +106,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
             </p>
 
             {/* Subtitle */}
-            <p className="text-xs sm:text-sm md:text-base lg:text-lg md:text-[1.0833rem] lg:text-[1.2350rem] xl92r:text-[1.3542rem] 2xl:text-[1.625rem] ml-2 text-[#000000] font-medium font-deca leading-[1.5] sm:leading-[1.461] mt-2 sm:mt-[2.86vh] tracking-[0.01em]">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg md:text-[1.0833rem] lg:text-[1.2350rem] xl92r:text-[1.3542rem] 2xl:text-[1.625rem] ml-2 text-[#000000] font-medium font-deca leading-[1.75] sm:leading-[1.461] mt-2 sm:mt-[2.86vh] tracking-[0.01em]">
               {t('cosmetics.caseStudy.subtitle')}
             </p>
 
@@ -224,7 +224,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       </p>
 
       {/* What are we looking for Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[1.5] sm:leading-[1.865] mt-4 tracking-[0.03em] ml-2 text-[#000000] mb-0.5 sm:mb-0`}>
+      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[1.75] sm:leading-[1.865] mt-4 tracking-[0.03em] ml-2 text-[#000000] mb-0.5 sm:mb-0`}>
         {t('cosmetics.caseStudy.whatWeAreLookingFor.heading')}
       </p>
       <ul className="list-disc ml-4 sm:ml-6">
@@ -233,7 +233,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
         {renderSimpleListItem('whatWeAreLookingFor', 2)}
         {renderSimpleListItem('whatWeAreLookingFor', 3)}
       </ul>
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.5] sm:leading-[1.865] mt-4 tracking-[0.03em] ml-2 text-[#000000]`}>
+      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.75] sm:leading-[1.865] mt-4 tracking-[0.03em] ml-2 text-[#000000]`}>
         {t('cosmetics.caseStudy.targetStyleWindows.heading')}
       </p>
       <ul className="list-disc ml-4 sm:ml-6">
@@ -243,7 +243,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       </ul>
       
       {/* How it looks with our AI platform Section */}
-      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[1.5] sm:leading-[1.865] mt-4 tracking-[0.03em] ml-2 text-[#000000]`}>
+      <p className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-regular font-deca leading-[1.75] sm:leading-[1.865] mt-4 tracking-[0.03em] ml-2 text-[#000000]`}>
         {t('cosmetics.caseStudy.aiPlatformLook.heading')}
       </p>
       <ul className="list-disc ml-4 sm:ml-6">
@@ -255,11 +255,11 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
           />
         </li>
       </ul>
-        {code === "Japanese"?  <ResponsiveImage id="cosmeticsj1" alt="cosmeticsj1" className='w-full h-full py-10' /> : <ResponsiveImage id="cosmetics1" alt="cosmetics1" className='w-full h-full mx-1 sm:mx-0 py-4 sm:py-[2.14vh]' />} 
+        {code === "Japanese"?  <ResponsiveImage id="cosmeticsj1" alt="cosmeticsj1" className='w-full h-full py-10' /> : <ResponsiveImage id="cosmetics1" alt="cosmetics1" className='w-full h-full mx-1 sm:mx-0 py-6 pb-4 sm:py-[2.14vh]' />} 
   
 
       <ul className="list-disc ml-4 sm:ml-6">
-                <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.5] sm:leading-[1.865] mt-4 sm:mt-2 tracking-[0.03em] ml-4 text-[#000000]`}>
+                <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.75] sm:leading-[1.865] mt-4 sm:mt-2 tracking-[0.03em] ml-4 text-[#000000]`}>
         {/* Explainable shortlist (FIXED with TranslateHtml) */}
      <TranslateHtml
             i18nKey="cosmetics.caseStudy.aiPlatformLook.list.1"
@@ -268,7 +268,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
         </li>
         
         {/* Operating window + guardrails (FIXED with TranslateHtml) */}
-        <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.5] sm:leading-[1.865] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
+        <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.75] sm:leading-[1.865] mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
           <TranslateHtml
             i18nKey="cosmetics.caseStudy.aiPlatformLook.list.2"
             components={{ 1: BoldText }}
@@ -279,7 +279,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
       {/* Image and Caption Group */}
             <div className='flex flex-col items-center justify-center mt-5 sm:mt-2'>
         <ResponsiveImage id="cosmetics2" alt="cosmetics2" className='w-full h-full sm:w-[50vw] xl92r:w-[55.90vw] sm:h-auto sm:pt-0 px-10 sm:px-0 mx-1 sm:mx-0' />
-              <p className="w-full sm:w-[50vw] xl92r:w-[55.90vw] text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] xl92r:text-[0.875rem] 2xl:text-[0.9375rem] ml-2 sm:ml-0 text-[#000000] font-extralight font-deca pb-4 sm:pb-10 leading-[1.5] sm:leading-[2.61] mt-4 sm:mt-0 tracking-[0.03em] max-w-4xl text-center">
+              <p className="w-full sm:w-[50vw] xl92r:w-[55.90vw] text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] xl92r:text-[0.875rem] 2xl:text-[0.9375rem] ml-2 sm:ml-0 text-[#000000] font-extralight font-deca pb-4 sm:pb-10 leading-[1.75] sm:leading-[2.61] mt-4 sm:mt-0 tracking-[0.03em] max-w-4xl text-center">
     {t('cosmetics.caseStudy.imageCaption')}
         </p>
       </div>
@@ -409,7 +409,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
 
         {/* Final Quote */}
         <div className='flex justify-center mt-4 px-2 pb-20 sm:pb-0'>
-          <p className="relative text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-7xl pb-5 sm:pb-40 font-bold font-nunito leading-[1.5] sm:leading-[1] mt-4 tracking-[0.02em] text-center">
+          <p className="relative text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-7xl pb-5 sm:pb-40 font-bold font-nunito leading-[1.75] sm:leading-[1] mt-4 tracking-[0.02em] text-center">
             {t('cosmetics.caseStudy.finalQuote')}
             <div className=" sm:hidden justify-end">
                         <button onClick={() => onClose(caseStudy)} className="absolute  -bottom-15 -right-4 cursor-pointer text-gray-600 flex items-center justify-center  w-20 h-10 md:w-16 md:h-16 z-0">
