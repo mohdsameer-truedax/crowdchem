@@ -29,10 +29,10 @@ export const ResponsiveImage = ({ id, alt, className, languageSpecific = false }
     if (!languageSpecific) return "";
 
     const languageMap: Record<string, string> = {
-      "Japanese": "j",
-      "French": "f",
-      "Deutsch": "d",
-      "Spanish": "s",
+      "Japanese": "",
+      "Français": "french",
+      "Deutsch": "deutsch",
+      "Español": "spanish",
       "English": ""
     };
 
@@ -41,7 +41,6 @@ export const ResponsiveImage = ({ id, alt, className, languageSpecific = false }
 
   const languageSuffix = getLanguageSuffix();
   const finalId = languageSpecific && languageSuffix ? `${id}${languageSuffix}` : id;
-
   // Import all images from src/assets (Vite will bundle and hash them)
   const images = useMemo(
     () =>

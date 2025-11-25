@@ -247,7 +247,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
           />
         </li>
 </ul>
-     <ResponsiveImage id="materials1" alt="materials1" languageSpecific={true} className='w-full h-full mx-1 sm:mx-0 py-8 sm:py-[2.04vh]' />  
+     <ResponsiveImage id="materials1" alt="materials1" languageSpecific={true} className='w-full h-full bg-white mx-1 sm:mx-0 my-8 sm:my-0 py-0 sm:py-[2.04vh]' />  
   <ul className="list-disc ml-[12.5px]  sm:ml-6">
             <li className={`text-xs sm:text-sm md:text-base lg:text-lg xl92r:text-[1.125rem] 2xl:text-[1.3125rem] font-extralight font-deca leading-[1.75] sm:leading-[1.695] mt-0 sm:mt-4 tracking-[0.03em] ml-4 text-[#000000]`}>
         {/* AI Platform List 2 (Explainable shortlist) */}
@@ -264,8 +264,8 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
           />
         </li>
       </ul>
-         <div className='flex flex-col items-center justify-center sm:mt-[7.16vh]'>
-        <ResponsiveImage id="materials2" alt="materials2" className='w-full h-full sm:w-[55.90vw] sm:h-auto pt-6 sm:pt-[3.58vh] mx-1 px-10 sm:px-0 sm:mx-0' />
+         <div className='flex flex-col items-center justify-center mt-6 sm:mt-[7.16vh]'>
+        <ResponsiveImage id="materials2" alt="materials2" languageSpecific={true} className='w-[58.71vw] h-full bg-white sm:w-[55.90vw] sm:h-auto pt-0 sm:pt-[3.58vh] mx-1 sm:mx-0' />
         <p className="w-full sm:w-[55.90vw] text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] md:text-[0.6250rem] lg:text-[0.7125rem] xl92r:text-[0.7813rem] 2xl:text-[0.9375rem] ml-2 sm:ml-0 text-[#000000] font-extralight font-deca pb-0 sm:pb-10 leading-[1.75] sm:leading-[2.45] mt-4 tracking-[0.03em] max-w-4xl text-center">
 
       {/* Image and Caption Group */}
