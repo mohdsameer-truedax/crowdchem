@@ -10,8 +10,8 @@ const fr = {
     contact: "CONTACT" // CONTACT
   },
   hero: {
-    title: "Accélération de la découverte et de l'optimisation des produits chimiques et des matériaux grâce à la puissance de l'IA Deep-Tech",
-    subtitle: "Notre plateforme de pointe élimine les silos de données, permettant aux organisations de découvrir, de prédire et de créer des matériaux et des produits chimiques de nouvelle génération, plus rapidement et plus intelligemment.",
+    title: "Accélérer la découverte et l’optimisation en chimie et en science des matériaux grâce à la puissance de l’IA deep-tech.",
+    subtitle: "Notre plateforme de pointe brise les silos de données et permet aux organisations de découvrir, prédire et créer des matériaux et produits chimiques de nouvelle génération, plus vite et plus intelligemment.",
     cta: "NOUS CONTACTER",
     partners: "NOS PARTENAIRES MONDIAUX"
   },
@@ -32,8 +32,8 @@ const fr = {
   collaborate: {
     title: "Vous souhaitez collaborer ?",
     subtitle: "Nous aimons relever des défis complexes et les transformer en découvertes révolutionnaires.",
-    desc: "Contactez-nous pour voir comment nous pouvons résoudre les vôtres ensemble.",
-    cta: "COLLABORER AVEC NOUS"
+    desc: "Contactez-nous pour voir comment nous pouvons résoudre vos défis ensemble.",
+    cta: "CONTACTEZ-NOUS"
   },
   news: {
     title: "ACTUALITÉS", // NEWS
@@ -45,8 +45,8 @@ const fr = {
     title: "CAS D'USAGE", // USE CASES
     caseLabel: "CAS",
     subtitle: "Ces exemples montrent ce qui se passe lorsque l'IA de CrowdChem s'attaque de front à de réels défis scientifiques.",
-    subtitle2: "En utilisant des données accessibles au public, nous avons reproduit le type de problèmes complexes et critiques en termes de temps que rencontrent quotidiennement les chercheurs et les innovateurs. L'accent n'est pas mis sur la copie ou l'ajustement de solutions existantes, mais sur la découverte de voies et de solutions entièrement nouvelles.",
-    subtitle3: "Chaque cas démontre comment notre plateforme interprète les relations chimiques complexes, identifie les opportunités invisibles et transforme les données en une innovation plus rapide, plus intelligente et plus confiante.",
+    subtitle2: "En utilisant des données accessibles au public, nous avons reproduit les types de problèmes complexes et critiques en termes de délais que rencontrent quotidiennement les chercheurs et les innovateurs. L’accent n’est pas mis sur la copie ou l’ajustement de solutions existantes, mais sur la découverte de voies et de solutions entièrement nouvelles.",
+    subtitle3: "Chaque cas démontre comment notre plateforme interprète les relations chimiques complexes, identifie les opportunités invisibles et transforme les données en une innovation plus rapide, plus intelligente et plus fiable.",
     
     // Case Study Translations
     automotive_title: "AUTOMOBILE", // AUTOMOTIVE
@@ -59,7 +59,7 @@ const fr = {
     technology_subheading: "Modélisation IA avancée pour les matériaux semi-conducteurs de nouvelle génération",
     technology_description: "Dans le secteur technologique, nous exploitons l'IA et le Big Data pour accélérer la R&D pour les semi-conducteurs, l'électronique et les solutions de stockage d'énergie. Notre plateforme modélise les interactions moléculaires et matérielles, permettant aux ingénieurs de prédire les performances, d'identifier les formulations optimales et de réduire le temps de mise sur le marché. Des batteries haute performance aux revêtements avancés et aux composants électroniques, nous aidons à concevoir des matériaux qui répondent aux normes industrielles exigeantes. En intégrant la modélisation prédictive à la validation expérimentale, nous permettons aux entreprises technologiques d'innover plus rapidement, d'optimiser les processus de fabrication et d'améliorer la fiabilité des produits. Cette approche soutient des avancées technologiques plus intelligentes et plus durables dans l'électronique grand public, les applications industrielles et les secteurs technologiques émergents.",
 
-    healthcare_title: "SANTÉ", // HEALTHCARE
+    healthcare_title: "COSMÉTIQUES", // HEALTHCARE
     healthcare_heading: "Découverte de Médicaments", // Drug Discovery
     healthcare_subheading: "Modélisation moléculaire assistée par IA pour la recherche pharmaceutique",
     healthcare_description: "Dans le domaine de la santé, nous nous concentrons sur l'application de la modélisation moléculaire assistée par IA pour améliorer la découverte de médicaments, la formulation et les résultats pour les patients. Nous prédisons les interactions moléculaires, optimisons les propriétés des composés et identifions les candidats potentiels plus rapidement que les méthodes traditionnelles, réduisant ainsi les délais et les coûts de recherche. Notre plateforme aide les entreprises pharmaceutiques à conceiner des médicaments plus sûrs et plus efficaces, à analyser des données biologiques à grande échelle et à anticiper les effets secondaires ou les problèmes d'efficacité précocement. En intégrant l'analyse prédictive à la validation expérimentale, nous accélérons l'innovation dans la médecine personnalisée, le développement de vaccins et la recherche thérapeutique, permettant aux prestataires de soins de santé et aux chercheurs de fournir des traitements avancés qui améliorent les soins aux patients et les résultats globaux en matière de santé.",
@@ -133,23 +133,23 @@ const fr = {
       "subtitle": "Bandes de roulement qui adhèrent sur sol sec et maintiennent le contrôle sur neige sans compromettre la processabilité",
       "overview": {
         "heading": "Vue d'ensemble",
-        "content": "Sur les vraies routes, les pneus n'ont pas le luxe de choisir la météo. Un jour, c'est de l'asphalte chaud et sec, et le lendemain, c'est de la neige. Dans un pneu, la bande de roulement est le cœur du contrôle du véhicule : ce que vous décidez ici dicte la manière dont la voiture freine et trouve sa traction, à la fois sur asphalte sec et sur neige. Historiquement, une bande de roulement qui se sent extrêmement précise sur sol sec devient vague sur neige, et une recette orientée neige perd beaucoup de son mordant sur chaussée propre. Lorsque la formulation penche trop loin d'un côté, le risque est immédiat."
+        "content": "Sur les vraies routes, les pneus n’ont pas le luxe de choisir la météo. Un jour, c’est de l’asphalte chaud et sec, et le lendemain, c’est de la neige. Dans un pneu, la bande de roulement est le cœur du contrôle du véhicule : sa conception dicte la manière dont la voiture freine et génère son adhérence, à la fois sur asphalte sec et sur neige. Historiquement, une bande de roulement qui offre une précision extrême sur sol sec devient moins précise sur neige, et une formulation optimisée pour la neige perd beaucoup de son mordant sur chaussée sèche. Lorsque la formulation penche trop loin d’un côté, le risque est immédiat."
       },
       "challenge": {
         "heading": "Le Défi",
-        "content": "Si vous sur-priorisez le sec, la voiture « flotte » sur la neige : longues distances de freinage, perte de contrôle directionnel, problèmes de garantie et incidents. Si vous basculez à l'autre extrême, le caoutchouc devient trop « mou » pour le sec : la direction devient spongieuse, la température du composé augmente, et des écaillages (chipping) ainsi qu'une usure irrégulière apparaissent."
+        "content": "Si vous surpriorisez le sec, la voiture « flotte » sur la neige : longues distances de freinage, perte de contrôle directionnel, problèmes de garantie et incidents. Si vous basculez à l’autre extrême, le caoutchouc devient trop « mou » pour le sec : la direction devient spongieuse, la température du composé augmente, et des écaillages (chipping) et une usure irrégulière apparaissent."
       },
       "objective": {
         "heading": "Objectif",
-        "content": "Fournir un composé de bande de roulement qui réussit à la fois le maniement sur sol sec et la traction sur neige tout en maintenant une extrudabilité propre, afin que vous puissiez mettre à l'échelle un pneu toutes saisons équilibré."
+        "content": "Fournir un composé de bande de roulement qui réussit à la fois le maniement sur sol sec et la traction sur neige tout en maintenant une extrudabilité maîtrisée, afin que vous puissiez mettre à l’échelle un pneu toutes saisons équilibré."
       },
       "rdAssistance": {
         "heading": "Comment nous pouvons assister votre R&D",
-        "content": "Nous ne devinons pas les formules. Nous basons nos recherches sur les connaissances techniques publiques (brevets, revues, fiches) et, lorsque cela est autorisé, sur vos données pour prédire ce qui fonctionnera sur vos outils.",
+        "content": "Nous ne devinons pas les formules. Nous nous basons sur les connaissances techniques publiques (brevets, revues, fiches) et, lorsque cela est autorisé, sur vos données pour prédire ce qui fonctionnera avec vos outils",
         "list": [
-          "Avec notre plateforme d'IA, nous pouvons <1>standardiser automatiquement</1> les variables, les plages et les méthodes de test (architecture du caoutchouc, budget de charge, limites d'huile, vérification de l'extrusion ; écrans secs/neige/écaillage).",
-          "<1>Élargir et normaliser</1>. Si nécessaire, nous cartographions les sources connexes et vos résultats selon les mêmes critères, puis modélisons quels leviers déplacent le sec, la neige, l'écaillage et la processabilité pour vos lignes cibles.",
-          "<1>Fenêtre définie</1>. Les résultats sont une liste courte explicable et une fenêtre d'exploitation que vous pouvez exécuter."
+          "Avec notre plateforme d’IA, nous pouvons <1>standardiser automatiquement</1> les variables, les plages et les méthodes de test (architecture du caoutchouc, budget de charge, limites d’huile, vérification de l’extrusion ; conditions secs/neige/écaillage).",
+          "<1>Élargir et normaliser</1>. Si nécessaire, nous cartographions les sources connexes et vos résultats selon les mêmes critères, puis modélisons quels leviers influencent le sec, la neige, l’écaillage et la processabilité pour vos lignes cibles.",
+          "<1>Fenêtre définie</1>. Les résultats sont une liste courte et explicable, et une fenêtre d’exploitation directement exécutable que vous pouvez utiliser."
         ]
       },
       "levers": {
@@ -163,48 +163,48 @@ const fr = {
       },
       "traceability": {
         "heading": "Maintenir la confidentialité et la traçabilité",
-        "content": "Vos données brutes restent de votre côté ; seuls les apprentissages du modèle sont déplacés. Cela signifie une <1>traçabilité de bout en bout</1> ; vous pouvez suivre chaque essai, du lot au mélange, en passant par les tests jusqu'au résultat final. Cela rend le succès reproductible et les problèmes hors spécifications rapides à corriger."
+        "content": "Vos données brutes restent de votre côté ; seuls les apprentissages du modèle sont déplacés. Cela signifie une traçabilité de bout en bout : vous pouvez suivre chaque essai, du lot au mélangeage, en passant par les tests jusqu’au résultat final. Cela rend le succès reproductible et les problèmes hors spécifications rapides à corriger."
       },
       "aiPlatform": {
-        "heading": "À quoi ressemble cela avec notre plateforme d'IA",
+        "heading": "À quoi ressemble cela avec notre plateforme d’IA",
         "list": [
-          "Une carte d'importance automatisée (une page) : quels leviers (matières premières de caoutchouc, huile, silice, inorganiques) déplacent le sec, la neige, l'écaillage et la processabilité. Plus c'est rouge, plus l'impact est grand.",
-          "<1>Liste courte explicable (3-4 routes) :</1> pour votre marché/segment (UHP orienté sec, toutes saisons orienté neige ou tourisme équilibré), avec confiance et le « pourquoi ».",
-          "<1>Fenêtre d'exploitation + garde-fous :</1> plages pratiques pour la répartition de la charge + inorganiques spéciaux, tout en maintenant l'huile de rétention $\\leq 15\\%$ de la charge et l'équilibre Caoutchouc Naturel/BR-Ti, afin de voir des bords nets et de s'assurer que les tests confirment l'équilibre."
+          "Une carte d’importance automatisée (une page) : quels leviers (matières premières de caoutchouc, huile, silice, inorganiques) influencent le sec, la neige, l’écaillage et la processabilité. Plus c’est rouge, plus l’impact est grand.",
+          "<1>Liste courte explicable (3–4 voies) : </1> pour votre marché/segment (UHP orienté sec, toutes saisons orienté neige ou tourisme équilibré), avec confiance et le « pourquoi ».",
+          "<1>Fenêtre d’exploitation + garde-fous :</1> plages pratiques pour la répartition de la charge + additifs inorganiques spéciaux, tout en maintenant l’huile de rétention ≤15% de la charge et l’équilibre Caoutchouc Naturel/BR-Ti, afin de voir des bords nets et de s’assurer que les tests confirment l’équilibre"
         ]
       },
       "imageCaption": "Carte Sec vs. Neige : choisissez des routes classées sèches (A–B), classées neige (vert) ou polyvalentes (C), puis utilisez le paquet inorganique comme vis de réglage pour vous déplacer dans votre coin cible - sans rompre la processabilité.",
       "meaning": {
-        "heading": "Qu'est-ce que cela signifie ?",
+        "heading": "Qu’est-ce que cela signifie ?",
         "list": [
-          "Neige : plus à droite = meilleure traction/maniement sur neige",
+          "Neige : plus à droite = meilleure traction/tenue de route sur neige",
           "Sec : plus haut = meilleure adhérence/direction sur chaussée sèche"
         ]
       },
       "resultsManufacturing": {
         "heading": "Résultats en fabrication",
         "list": [
-          "En haut à droite = rares points « double victoire » Ces points offrent une forte performance sur sec ET sur neige",
+          "En haut à droite = rares points « double victoire ». Ces points offrent une forte performance sur sec ET sur neige",
           "A-B Leaders du classement sec : excellente réponse sur sec avec des performances neige acceptables",
-          "C : polyvalent solide tendant vers le coin « double victoire »"
+          "C : polyvalent solide se rapprochant du coin « double victoire »"
         ]
       },
-      "quote1": "La question n'est pas « quel agent de remplissage gagne ? » mais « quel paquet gagne pour ce marché et cette classe de pneu ? »",
+      "quote1": "La question n'est pas « quel agent de remplissage gagne ? » mais « quelle combinaison gagne pour ce marché et cette classe de pneu ? »",
       "productChoices": {
         "heading": "Choix de produits",
         "list": [
-          "<1>Marchés chauds :</1> commencez par les routes A-B. Validez l'écaillage/la résistance et maintenez l'extrusion propre.",
-          "<1>Marchés toutes saisons/du nord :</1> commencez par le cluster neige. Confirmez la sensation de direction sur chaussée propre.",
-          "<1>Tourisme équilibré :</1> les routes de type C sont le meilleur premier pari ; de petits ajustements peuvent les pousser vers votre coin cible."
+          "<1>Marchés chauds :</1>  commencez par les voies A-B. Validez l’écaillage/la résistance et maintenez l’extrusion propre.",
+          "<1>Marchés toutes saisons/du nord :</1>  commencez par le cluster neige. Confirmez la sensation de direction sur chaussée sèche.",
+          "<1>Tourisme équilibré :</1> les voies de type C sont le meilleur point de départ ; de petits ajustements peuvent les pousser vers votre coin cible."
         ]
       },
       "quote2": "Lorsque nous nous entraînons sur vos données sur site, la fiabilité prédictive s'améliore généralement de 20 % et plus par rapport à la base de référence publique uniquement (directionnel ; dépend de la profondeur des données).",
       "businessValue": {
         "heading": "Valeur commerciale",
         "list": [
-          "<1>Moins d'itérations à l'aveugle :</1> commencez à l'intérieur d'une fenêtre cible ; utilisez le paquet inorganique comme vis de réglage par climat et par segment.",
-          "<1>Confiance dans la fabrication :</1> le cadre BR-Ti + faible teneur en huile protège la qualité d'extrusion pendant que vous réglez la performance.",
-          "<1>Clarté de la ligne :</1> « pour l'hiver nordique, paquet A ; pour la performance sur sec, paquet B » – même ossature, lancements plus rapides."
+          "<1>Moins d'itérations à l'aveugle :</1> commencez à l’intérieur d’une fenêtre cible ; utilisez la combinaison inorganique comme vis de réglage par climat et par segment.",
+          "<1>Confiance dans la fabrication :</1>  le cadre BR-Ti + la faible teneur en huile protège la qualité d’extrusion pendant que vous réglez la performance.",
+          "<1>Clarté de la ligne :</1> « pour l’hiver nordique, combinaison A ; pour la performance sur sec, combinaison B » – même ossature, lancements plus rapides."
         ]
       },
       "finalResults": {
@@ -249,7 +249,7 @@ const fr = {
     ]
   }
       },
-      "finalQuote": "Ne laissez pas la complexité des environnements de modélisation complexes vous ralentir. Il est temps d'aller au-delà de l'approche traditionnelle par essais et erreurs et d'innover avec la confiance des données."
+      "finalQuote": "Ne laissez pas la complexité des environnements de modélisation avancés vous ralentir. Il est temps d'aller au-delà de l'approche traditionnelle par essais et erreurs et d'innover avec la confiance des données."
     }
   },
   "cosmetics": {
@@ -259,43 +259,43 @@ const fr = {
       "subtitle": "Cosmétiques couleur à base d'huile qui s'appliquent en douceur, restent stables et ne bavent pas",
       "overview": {
         "heading": "Vue d'ensemble",
-        "content": "La couleur à base d'huile n'offre pas seulement un éclat plus riche, elle résout trois problèmes à la fois : application soyeuse, fixation nette et stabilité pratique. Les huiles mouillent bien les pigments, de sorte que la couleur s'applique <1>uniformément et en douceur</1> avec un rendu élevé. Avec le bon système filmogène, le film <2>se fixe sans baver</2>, même en milieu humide. Et comme la base est anhydre et correctement structurée, elle reste stable sur l'étagère (pas de grumeaux granuleux) et <3>se redisperse après un simple mouvement.</3>"
+        "content": "La couleur à base d’huile n’offre pas seulement un rendu plus riche, elle résout trois problèmes à la fois : application soyeuse, fixation nette et stabilité fiable. Les huiles mouillent bien les pigments, de sorte que la couleur s’applique <1>uniformément et en douceur</1> avec un rendu élevé. Avec le bon système filmogène, le film <2>se fixe sans bavure</2>, même en milieu humide. Et comme la base est anhydre et correctement structurée, elle reste stable sur l’étagère (pas de grumeaux granuleux) et  <3>se redisperse d’un simple mouvement.</3>"
       },
       "challenge": {
         "heading": "Le Défi",
-        "content": "La réduction de la viscosité provoque l'agglomération et la sédimentation des pigments d'oxyde métallique. Pousser la charge pigmentaire pour le rendu peut nuire à la redispersabilité et à la stabilité. Épaissir pour empêcher le bavage risque de créer une sensation lourde et collante. En résumé, <1>le flux, la charge, la stabilité et l'anti-bavage tirent dans des directions différentes</1>"
+        "content": "La réduction de la viscosité provoque l'agglomération et la sédimentation des pigments d’oxyde métallique. Pousser la charge en pigments pour améliorer le rendu peut nuire à la redispersabilité et à la stabilité. Épaissir pour empêcher le bavage risque de créer une sensation lourde et collante. En résumé, <1>le flux, la charge en pigments, la stabilité et l’anti-bavure évoluent dans des directions opposées.</1>"
       },
       "objective": {
         "heading": "Objectif",
-        "content": "Fournir un maquillage à base d'huile qui glisse à faible viscosité, offre une forte charge pigmentaire pour un rendu riche, reste stable à la température et ne bave pas après la fixation, tout en restant reproductible sur vos lignes."
+        "content": "Fournir un maquillage à base d’huile qui glisse à faible viscosité, offre une forte charge pigmentaire pour un rendu riche, reste stable à la chaleur et ne bave pas après la fixation, tout en restant reproductible sur vos lignes."
       },
       "importance": {
         "heading": "Pourquoi est-ce important ?",
         "context": "Sur le marché, cela peut être observé comme suit :",
         "list": [
-          "Eyeliners liquides (+8 % par an) : lignes longue tenue et anti-bavage avec application nette.",
-          "Cosmétiques waterproof (+10 % par an) : stabilité à haute température sans film lourd.",
-          "Cosmétiques premium (+12 % par an) : rendu pigmentaire élevé avec étalement doux.",
-          "Maquillage à base d'huile (+7 % par an) : excellente redispersabilité et stabilité de conservation."
+          "Eyeliners liquides (+8 % par an) : traits à longue tenue et anti-bavure, avec une application nette.",
+          "Cosmétiques waterproof (+10 % par an) : stabilité à haute température sans film épais.",
+          "Cosmétiques premium (+12 % par an) : rendu pigmentaire élevé avec étalement fluide et doux.",
+          "Maquillage à base d’huile (+7 % par an) : excellente redispersabilité et stabilité en stockage."
         ]
       },
       "rdAssistance": {
         "heading": "Comment nous vous menons au résultat souhaité",
-        "content": "Avec notre plateforme d'IA, nous combinons les connaissances techniques publiques (brevets, articles, fiches de données) et, lorsque cela est autorisé, vos résultats de laboratoire/usine, pour prédire ce qui fonctionne sur vos outils.",
+        "content": "Avec notre plateforme d’IA, nous combinons les connaissances techniques publiques (brevets, articles, fiches de données) et, lorsque cela est autorisé, vos résultats de laboratoire/usine, pour prédire ce qui fonctionnera sur vos outils.",
         "list": [
-          "Nous encadrons automatiquement les variables, les plages, les étapes de processus et les méthodes de test.",
-          "Nous entraînons ensuite l'IA avec les données fusionnées et <1>prévoyons une fenêtre d'exploitation</1> pour les familles de composants les plus prometteuses et les garde-fous de processus."
+          "Nous standardisons automatiquement les variables, les plages, les étapes de processus et les méthodes de test.",
+          "Nous entraînons ensuite l’IA avec les données fusionnées et <1>déterminons une fenêtre d’exploitation</1> pour les familles de composants les plus prometteuses et les garde-fous de processus."
         ],
-        "context": "En ce qui concerne les cosmétiques à base d'huile, nous devons comprendre quels leviers sont les plus pertinents pour <1>la viscosité, la dispersion des pigments, la redispersabilité, la stabilité à haute température et le bavage</1>."
+        "context": "En ce qui concerne les cosmétiques à base d’huile, nous devons comprendre quels leviers sont les plus pertinents pour <1> la viscosité, la dispersion des pigments, la redispersabilité, la stabilité à haute température et la bavure</1>."
       },
       "levers": {
         "heading": "Les leviers qui font bouger l'aiguille",
         "list": [
-          "<1>Le traitement de surface des pigments</1> définit la netteté des bords et la redispersabilité. Les pigments traités et bien mouillés donnent des lignes nettes et sans bavage et nécessitent peu de mouvements pour se remélanger après un certain temps.",
-          "<1>La chimie du filmogène verrouille la fixation</1>. La bonne combinaison d'ossature/co-filmogène offre des bords stables à l'humidité (pas d'effet de plume) tout en gardant l'application soyeuse, pas rigide.",
-          "<1>Le système de structuration (force du réseau souple) régit la remise en suspension et la sensation</1>. Un réseau équilibré empêche une sédimentation dure, mais cède après 2-3 mouvements, évitant le grain ou la prise pâteuse.",
+          "<1>Le traitement de surface des pigments</1> définit la netteté des bords et la redispersabilité. Les pigments traités et bien mouillés donnent des lignes nettes et sans bavure et nécessitent peu de mouvements pour se remodeler après un certain temps.",
+          "<1>La chimie du filmogène verrouille la fixation</1>. La bonne combinaison de polymère structurant / co-filmogène offre des bords stables à l’humidité (pas d’effet de plume) tout en gardant l’application soyeuse, sans rigidifier l’application.",
+          "<1>Le système de structuration (force du réseau souple) régit la remise en suspension et la sensorialité</1>. Un réseau équilibré empêche une sédimentation compacte, mais cède après 2–3 mouvements, évitant le grain ou la prise pâteuse.",
           "<1>L'équilibre volatil/non volatil ajuste le glissement par rapport à la tenue finale</1>. Assez de glissement pour une application douce, assez de cohésion pour rester en place.",
-          "<1>Pourquoi est-ce important ? : </1> Un stick/liquide qui s'applique en douceur, se fixe proprement sans baver, et se redisperse rapidement signifie moins de plaintes clients, moins de retouches et de gaspillage, et un <2>produit qui gagne en rayon et à l'usage quotidien.</2>"
+          "<1>Pourquoi est-ce important ? : </1> Un stick/liquide qui s'applique en douceur, se fixe proprement sans baver, et se redisperse rapidement signifie moins de plaintes clients, moins de retouches et de gaspillage, et un <2>produit qui gagne en rayon comme à l’usage quotidien.</2>"
         ]
       },
       "traceability": {
@@ -405,35 +405,35 @@ const fr = {
         "content2": "<1>Surface vs. isolation :</1> des cellules plus grandes / une densité plus faible aident à l'isolation mais rendent la peau rugueuse et nuisent au scellement/ajustement ; des cellules très fines améliorent l'apparence mais peuvent s'effondrer pendant le formage si la masse fondue n'est pas réglée",
         "content3": "<1>Résistance à la chaleur vs. ténacité :</1> augmenter la résistance à la chaleur peut rendre le PLA cassant à moins que la cristallisation et les interfaces de particules ne soient contrôlées."
       },
-      "quote1": "Dans la quête de solutions durables, les biorésines d'acide polylactique (PLA) sont apparues comme un matériau prometteur pour les feuilles de mousse utilisées dans les contenants alimentaires. Mais si le marché du PLA est en croissance, le défi demeure :",
+      "quote1": "Dans la quête de solutions durables, les biorésines d'acide polylactique (PLA) sont apparues comme un matériau prometteur pour les feuilles de mousse utilisées dans les contenants alimentaires. Cependant, même si le marché du PLA est en croissance, le défi demeure.",
       "whyItMatters": {
         "heading": "Pourquoi c'est important",
-        "content": "La réalité est que la durabilité n'est plus un « plus ». C'est maintenant <1>une obligation</1> dictée par une puissante tendance mondiale. Les consommateurs et les gouvernements exigent des produits respectueux de l'environnement, et de nouvelles réglementations font des plastiques biodégradables un élément essentiel du marché. Votre capacité à innover avec des matériaux comme le PLA est désormais critique pour maintenir votre part de marché et la pertinence de votre marque."
+        "content": "La réalité est que la durabilité n’est plus un simple « plus ». C'est maintenant <1>une obligation</1> dictée par une tendance mondiale forte. Les consommateurs et les gouvernements exigent des produits respectueux de l’environnement, et de nouvelles réglementations font des plastiques biodégradables un élément essentiel du marché. Votre capacité à innover avec des matériaux comme le PLA est désormais critique pour maintenir votre part de marché et la pertinence de votre marque."
       },
       "objective": {
         "heading": "Objectif",
-        "content": "Créer une feuille de mousse PLA à faible impact qui reste <1>légère et stable en forme</1> tout en offrant une <2>surface lisse et scellable</2> adaptée à l'emballage alimentaire."
+        "content": "Créer une feuille de mousse PLA à faible impact qui reste  <1>légère  et stable dans sa forme</1> tout en offrant une <2>surface lisse et scellable adaptée à l'emballage alimentaire."
       },
       "marketShow": {
         "heading": "Comment cela se manifeste sur le marché",
         "list": [
-          "<1>Emballage alimentaire :</1> (+8 % par an) Alternative biodégradable à la mousse de polystyrène",
-          "<1>Matériaux écologiques :</1> (+15 % par an) Respecte les réglementations environnementales",
-          "<1>Contenants à emporter :</1> (+12 % par an) Résistant à la chaleur, compatible micro-ondes",
-          "<1>Barquettes pour aliments frais :</1> (+10 % par an) Propriétés d'isolation supérieures"
+          "<1>Emballage alimentaire :</1>  (+8 % par an) Alternative biodégradable à la mousse de polystyrène",
+          "<1>Matériaux écologiques :</1>(+15 % par an) Respectent les réglementations environnementales",
+          "<1>Contenants à emporter :</1>  (+12 % par an) Résistants à la chaleur, compatibles micro-ondes",
+          "<1>Barquettes pour aliments frais :</1>  (+10 % par an) Propriétés d’isolation supérieures"
         ]
       },
       "rdAssistance": {
         "heading": "Comment pouvons-nous vous aider à relever le défi",
-        "content1": "Nous utilisons notre plateforme d'IA entraînée sur des données techniques publiques, et si cela est autorisé, également sur vos propres essais. <1>Elle standardise automatiquement ce qu'il faut mesurer et comment</1> (variables, plages, méthodes de processus et de test), et prédit une fenêtre d'exploitation pour les familles de composants les plus prometteuses et les garde-fous de processus.",
-        "content2": "Dans les mousses PLA, notre modèle a systématiquement mis en évidence les paramètres de contrôle critiques qui correspondent directement à la qualité de la mousse, vous offrant ainsi une surface soyeuse et une rétention de chaleur fiable grâce à une résistance à la fusion ajustée, une nucléation contrôlée et des interfaces stables."
+        "content1": "Nous utilisons notre plateforme d’IA entraînée sur des données techniques publiques, et lorsque c’est autorisé, également sur vos propres essais.  <1>Elle standardise automatiquement ce qu’il faut mesurer et comment  le mesurer </1> (variables, plages, méthodes de procédé et de test), en prédit une fenêtre d’exploitation pour les familles de composants les plus prometteuses et les garde-fous de processus.",
+        "content2": "Dans les mousses PLA, notre modèle met systématiquement en évidence les paramètres de contrôle critiques qui correspondent directement à la qualité de la mousse, vous offrant ainsi une surface soyeuse et une faible perte de chaleur grâce à une résistance à la fusion ajustée, une nucléation contrôlée et des interfaces stables."
       },
       "levers": {
         "heading": "Les leviers qui font bouger l'aiguille",
         "list": [
-          "<1>Choix et traitement des particules minérales</1> (plus une quantité raisonnable) définissent la taille des bulles et la douceur de la surface.",
-          "<1>Les étapes de chauffage et les conditions de gaz/moussage</1> <2>ajustent principalement le poids/l'isolation global</2> et maintiennent la feuille stable à travers la filière et le formage.",
-          "<1>Pourquoi c'est important :</1> une feuille plus légère qui se thermoforme de manière prévisible, avec une surface lisse et scellable et moins de défauts, signifie moins de retouches, moins de gaspillage et un impact environnemental réduit."
+          "<1>Choix et traitement des particules minérales </1>  (ainsi qu’une quantité maîtrisée) définissent la taille des bulles et la douceur de la surface.",
+          "<1>Les étapes de chauffage et les conditions de gaz/moussage</1> <2> ajustent principalement le poids / l’isolation globale</2>  et maintiennent la feuille stable tout au long de la filière et du formage.",
+          "<1>Pourquoi c’est important :</1> une feuille plus légère, qui se thermoforme de manière prévisible, avec une surface lisse et scellable et moins de défauts, signifie moins de retouches, moins de gaspillage et un impact environnemental réduit."
         ]
       },
       "traceability": {
@@ -457,7 +457,7 @@ const fr = {
         ],
         "context": "La fenêtre d'exploitation est l'endroit où nos objectifs convergent : un thermoformage propre et une surface lisse et scellable. Atteint avec une densité moyenne-légère et des cellules petites et uniformes."
       },
-      "quote2": "Lorsque nous nous entraînons sur vos données sur site, la fiabilité prédictive s'améliore généralement de 20 % et plus par rapport à la base de référence publique uniquement (directionnel ; dépend de la profondeur des données).",
+      "quote2": "Lorsque nous nous entraînons sur vos données locales, la fiabilité prédictive s'améliore généralement de 20 % et plus par rapport à la base de référence publique uniquement (chiffre directionnel, dépendant de la profondeur des données).",
       "businessValue": {
         "heading": "Valeur commerciale",
         "list": [
@@ -508,7 +508,7 @@ const fr = {
     ]
   }
       },
-      "finalQuote": "Ne laissez pas la complexité des matériaux durables vous ralentir. Il est temps d'aller au-delà de l'approche traditionnelle par essais et erreurs et d'innover avec la confiance des données."
+      "finalQuote": "Ne laissez pas la complexité des environnements de modélisation avancés vous ralentir. Il est temps d'aller au-delà de l'approche traditionnelle par essais et erreurs et d'innover avec la confiance des données."
     }
   }
 };

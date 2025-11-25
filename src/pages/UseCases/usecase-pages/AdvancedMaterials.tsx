@@ -135,7 +135,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
         {/* Left Column: Quote 1 */}
         <div className='w-full sm:w-1/2 px-2 sm:px-0'>
           <p className={`text-[1rem] text-center sm:text-left sm:text-sm md:text-base lg:text-lg md:text-[1.0000rem] lg:text-[1.1400rem] xl92r:text-[1.2500rem] 2xl:text-[1.5rem] font-nunito italic font-bold mt-3 sm:mt-10 ${baseTextStyle} tracking-[0.03em]`}>
-            {t('advancedMaterials.caseStudy.quote1')}.
+            {t('advancedMaterials.caseStudy.quote1')}
           </p>
         </div>
         {/* Right Column: Overview Content 3 (Heat resistance) */}

@@ -403,7 +403,7 @@ const en = {
         "content2": "<1>Surface vs. insulation:</1> larger cells / lower density help insulation but roughen the skin and hurt sealing/fit; very fine cells improve appearance but can collapse during forming if the melt isn't tuned",
         "content3": "<1>Heat resistance vs. toughness:</1> raising heat resistance can make PLA brittle unless crystallization and particle interfaces are controlled."
       },
-      "quote1": "The fundamental problem isn't a lack of a biodegradable material, but a flaw in traditional R&D methods that can't balance critical properties. This results in an inevitable trade-off between a smooth surface and thermal insulation",
+      "quote1": "The fundamental problem isn't a lack of a biodegradable material, but a flaw in traditional R&D methods that can't balance critical properties. This results in an inevitable trade-off between a smooth surface and thermal insulation.",
       "whyItMatters": {
         "heading": "Why it matters",
         "content": "The reality is, sustainability is no longer a \"nice-to-have.\" It's now <1>a non-negotiable</1> driven by a powerful global trend. Consumers and governments alike are demanding environmentally friendly products, and new regulations are making biodegradable plastics a market essential. Your ability to innovate with materials like PLA is now critical for maintaining market share and brand relevance."
