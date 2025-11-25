@@ -6,6 +6,7 @@ import { useTranslation } from "../i18n/useTranslation";
 // import TranslationPage from "../i18n/TranslationPage";
 import { ResponsiveImage } from "../utils/ResponsiveImage";
 import SearchModal from "./SearchModal";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
