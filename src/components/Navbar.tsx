@@ -1,6 +1,6 @@
 //navbar
 import { useState, useEffect } from "react";
-import { FiMenu, FiSearch, FiX } from "react-icons/fi";
+import {  FiSearch } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "../i18n/useTranslation";
 // import TranslationPage from "../i18n/TranslationPage";
