@@ -11,7 +11,7 @@ import { FaChevronDown } from 'react-icons/fa';
 
 const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (caseStudy: CaseStudy) => void }) => {
   // Access the translation function
-  const { t, code, language } = useTranslation();
+  const { t, language } = useTranslation();
  const [moreMobileButon, setMoreMobileButon] = useState(false)
 
   interface TableRow {
@@ -255,7 +255,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
           />
         </li>
       </ul>
-        {code === "Japanese"?  <ResponsiveImage id="cosmeticsj1" alt="cosmeticsj1" className='w-full h-full py-10' /> : <ResponsiveImage id="cosmetics1" alt="cosmetics1" className='w-full h-full mx-1 sm:mx-0 py-6 pb-4 sm:py-[2.14vh]' />} 
+        <ResponsiveImage id="cosmetics1" alt="cosmetics1" languageSpecific={true} className=' bg-white w-full h-full mx-1 sm:mx-0 my-6 sm:my-0 mb-4 sm:py-[2.14vh]' /> 
   
 
       <ul className="list-disc ml-4 sm:ml-6">
@@ -278,7 +278,7 @@ const Cosmetics = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (cas
 
       {/* Image and Caption Group */}
             <div className='flex flex-col items-center justify-center mt-5 sm:mt-2'>
-        <ResponsiveImage id="cosmetics2" alt="cosmetics2" className='w-full h-full sm:w-[50vw] xl92r:w-[55.90vw] sm:h-auto sm:pt-0 px-10 sm:px-0 mx-1 sm:mx-0' />
+        <ResponsiveImage id="cosmetics2" alt="cosmetics2" languageSpecific={true} className='w-[58.71vw] bg-white h-full sm:w-[50vw] xl92r:w-[55.90vw] sm:h-auto sm:pt-0 sm:px-0 mx-1 sm:mx-0' />
               <p className="w-full sm:w-[50vw] xl92r:w-[55.90vw] text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] xl92r:text-[0.875rem] 2xl:text-[0.9375rem] ml-2 sm:ml-0 text-[#000000] font-extralight font-deca pb-4 sm:pb-10 leading-[1.75] sm:leading-[2.61] mt-4 sm:mt-0 tracking-[0.03em] max-w-4xl text-center">
     {t('cosmetics.caseStudy.imageCaption')}
         </p>

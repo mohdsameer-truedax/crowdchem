@@ -12,7 +12,7 @@ import { FaChevronDown } from 'react-icons/fa';
 
 const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (caseStudy: CaseStudy) => void }) => {
   // Access the translation function
-  const { t, code, language } = useTranslation();
+  const { t, language } = useTranslation();
    const [moreMobileButon, setMoreMobileButon] = useState(false)
   interface TableRow {
     area: string;
@@ -192,7 +192,9 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
           {t('automotive.caseStudy.aiPlatform.list.0')}
         </li>
       </ul>
-        {code === "Japanese"?  <ResponsiveImage id="automotivej1" alt="automotivej1" className=' w-full h-full py-[2.04vh]' /> :  <ResponsiveImage id="automotive1" alt="automotive1" className='w-full h-full pt-0 pb-4  sm:py-[2.04vh] px-1 sm:px-0' />}
+      <div className='px-2 sm:px-0'>
+        <ResponsiveImage id="automotive1" alt="automotive1" languageSpecific={true} className='w-full h-full bg-white pt-0 pb-4 sm:py-[2.04vh]' />
+        </div>
        <ul className="list-disc ml-5 sm:ml-6 pl-0.5 pr-3.5 sm:px-0">
 
         {/* Using TranslateHtml for AI Platform List 2 */}
@@ -223,8 +225,8 @@ const Automotive = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClose: (ca
       </ul>
 
       {/* Image and Caption Group */}
-      <div className='flex flex-col items-center justify-center sm:mt-[7.16vh]'>
-        <ResponsiveImage id="automotive2" alt="automotive2" className='w-full h-full sm:w-[55.90vw] sm:h-auto pt-6 sm:pt-[3.58vh] px-11 sm:px-0 ' />
+      <div className='flex flex-col items-center justify-center mt-6 sm:mt-[7.16vh]'>
+        <ResponsiveImage id="automotive2" alt="automotive2" languageSpecific={true} className='w-[58.71vw] h-full bg-white sm:w-[55.90vw] sm:h-auto pt-0 sm:pt-[3.58vh] mx-1 sm:mx-0' />
         <p className="w-full sm:w-[55.90vw] pl-1.5 pr-3.5 sm:px-0 text-[0.625rem] sm:text-sm md:text-[0.75rem] lg:text-[0.8125rem] xl92r:text-[0.875rem] 2xl:text-[0.9375rem] ml-2 sm:ml-0 text-[#000000] font-extralight font-deca pb-4 sm:pb-[3.41vh] leading-[1.75] sm:leading-[2.45] mt-3 sm:mt-4 tracking-[0.03em] max-w-4xl text-center">
           {t('automotive.caseStudy.imageCaption')}
         </p>
