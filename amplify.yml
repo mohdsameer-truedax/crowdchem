@@ -5,7 +5,7 @@ frontend:
       commands:
         - npm ci
         - npm install --prefix amplify
-        - cd amplify && npx ampx generate --branch $AWS_BRANCH --app-id $AWS_APP_ID && cd ..
+        - cd amplify && npx ampx generate outputs --branch $AWS_BRANCH --app-id $AWS_APP_ID && cd ..
     build:
       commands:
         - npm run build
