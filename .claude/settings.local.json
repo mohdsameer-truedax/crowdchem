@@ -2,7 +2,19 @@
   "permissions": {
     "allow": [
       "Bash(npx ampx deploy:*)",
-      "Bash(npx ampx sandbox --once)"
+      "Bash(npx ampx sandbox --once)",
+      "Bash(git add:*)",
+      "Bash(git restore:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(npm install)",
+      "Bash(aws --version:*)",
+      "Bash(npx ampx configure:*)",
+      "Bash(export AWS_ACCESS_KEY_ID=\"ASIA3FLDYMOL6X2EBVGZ\")",
+      "Bash(export AWS_SECRET_ACCESS_KEY=\"SglJdPMn/kipK0Py3Cd/Mb8+3vbZGSIAWmfy14Mo\")",
+      "Bash(export AWS_SESSION_TOKEN=\"IQoJb3JpZ2luX2VjELv//////////wEaCXVzLWVhc3QtMSJIMEYCIQD79MuvZXo5eTj5XtJZ4l88qxoI6IgeylqceAerMDGlPwIhALVjLLWYyIvAFtv1sspWZnFP2NdME8AvhuuvnLw65HN3KvgCCIT//////////wEQABoMNzY3Mzk3NzQ5NjU1Igze/hR/FC3o65lsVXUqzAJdP78WHjxas2Sp3tKf5oa1ntVNI/TAJZ/mLkEdpH/dkCBIOJQzMxZc7ubO+8TfMmDAsoJJQt3UqZOcmTtjLHQf2rsd+qEn4tTkP+T2ZY3LBqKkFwfYViwjcUe5NhzbrD3AS723ALilBYM6zLc192XCrLlrtt+b6bD0ADxJMnBXIK21yapXZqnbmGkQhpO8gKYZdtg7JHLe0wJ/uHsnuBLVpfUOLVIMdtfIMay3AVuNnvo3JzD8T80KVxlF+EMas0370aUnwzuLiivJEsmUodqvCa1zk2nCbNg4l4mQGe1jhQMWfW3k79eQVnGZ5YwPsZRBXNpXrIMjHlHCe68a8gkRMtXqlWj+qU4AU33RfjL4Zw9eVkyQi02DxV2MBhcahieIB+0XHzCGUN8Ywx5BCa5E9QWKjPmNu9Mm2Hyqkg8jgaIZ3acITmT/DuCF/jDWqpvJBjqkAXMtro5CYBV8+qmuu4Z2cOBw0Anv4LMniytkw8ayDH2SxKl06fbYuHOPwu2BU1ONIcUHhPTIhnVAJauBBsqOWH4/+rsm9j/lapMx5zWraU4E4Kv8XELnORJkMWB7nERsZ2Su6SoYoLDEsj13BKXHhp7/fV9DiLJUaSx+jdj9BWNc3QT9lbG3bU8AMCEVT4tPeVEfm4M8n+Wm6i12fBXkudLVgfV9\")",
+      "Bash(export AWS_REGION=\"eu-north-1\")",
+      "Bash(aws lambda list-functions:*)"
     ],
     "deny": [],
     "ask": []
