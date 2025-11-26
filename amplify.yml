@@ -4,7 +4,7 @@ frontend:
     preBuild:
       commands:
         - npm ci
-        - npm ci --prefix amplify
+        - npm install --prefix amplify
     build:
       commands:
         - npm run build
