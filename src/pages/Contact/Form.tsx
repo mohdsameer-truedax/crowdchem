@@ -6,7 +6,8 @@ import { Analytics } from "../../utils/Analytics";
 const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const Form = () => {
   const { t } = useTranslation();
-  const apiUrl = import.meta.env.VITE_API_URL || "";
+  // TODO: Replace with your actual Amplify Function URL after deployment
+  const AMPLIFY_FUNCTION_URL = "YOUR-FUNCTION-URL-HERE";
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
@@ -110,9 +111,9 @@ const Form = () => {
     setSuccess(null);
 
     try {
-      const res = await fetch(`${apiUrl}/api/send-email`, {
+      const res = await fetch(AMPLIFY_FUNCTION_URL, {
         method: "POST",
-        headers: { 
+        headers: {
           "Content-Type": "application/json",
           "Accept": "application/json"
         },

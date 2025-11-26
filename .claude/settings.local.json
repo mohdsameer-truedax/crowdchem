@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx ampx deploy:*)",
+      "Bash(npx ampx sandbox --once)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
