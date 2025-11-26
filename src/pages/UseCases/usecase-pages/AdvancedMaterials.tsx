@@ -291,7 +291,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
       </p>
 
         <div className='pl-1.5 sm:pl-0 pr-3.5 sm:pr-0 flex flex-col items-center my-0 sm:my-[3.41vh]'>
-        <p className="pb-8 sm:pb-0 text-[1.5rem] sm:text-lg md:text-xl lg:text-2xl md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-[#000000B2] italic font-bold font-nunito leading-[1.75] sm:leading-[1.25] tracking-[0.01em] text-center max-w-6xl 2xl:max-w-7xl">
+        <p className="pb-8 sm:pb-0 text-[1.5rem] sm:text-lg md:text-xl lg:text-2xl md:text-[1.6667rem] lg:text-[1.9000rem] xl92r:text-[2.0833rem] 2xl:text-[2.5rem] text-[#000000B2] italic font-bold font-nunito leading-[1.41] sm:leading-[1.25] tracking-[0.01em] text-center max-w-6xl 2xl:max-w-7xl">
 
 
       {/* Quote 2 */}
@@ -384,7 +384,7 @@ const AdvancedMaterials = ({ caseStudy, onClose }: { caseStudy: CaseStudy; onClo
 
       {/* Final Quote */}
       <div className='flex justify-center mt-4 sm:mt-12 pb-15 sm:pb-0'>
-        <p className="relative text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-7xl pb-5 sm:pb-40 font-bold font-nunito leading-[1.75] sm:leading-[1] mt-4 tracking-[0.02em] text-center">
+        <p className="relative text-[1.25rem] sm:text-lg md:text-xl lg:text-[1.5rem] md:text-[1.4583rem] lg:text-[1.6625rem] xl92r:text-[1.8229rem] 2xl:text-[2.1875rem] ml-2 text-[#000000B2] italic max-w-7xl pb-5 sm:pb-40 font-bold font-nunito leading-[1.7] sm:leading-[1] mt-4 tracking-[0.02em] text-center">
           {t('advancedMaterials.caseStudy.finalQuote')}
           <div className=" sm:hidden justify-end">
                       <button onClick={() => onClose(caseStudy)} className="absolute  -bottom-8 -right-4 cursor-pointer text-gray-600 flex items-center justify-center  w-20 h-10 md:w-16 md:h-16 z-0">
