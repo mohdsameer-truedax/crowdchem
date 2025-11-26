@@ -82,4 +82,7 @@ type LambdaProvidedEnvVars = {
 
 /** Amplify backend environment variables available at runtime, this includes environment variables defined in `defineFunction` and by cross resource mechanisms */
 type AmplifyBackendEnvVars = {
+  RESEND_API_KEY: string;
+  RESEND_RECEIVER_EMAIL: string;
+  ALLOWED_ORIGINS: string;
 };

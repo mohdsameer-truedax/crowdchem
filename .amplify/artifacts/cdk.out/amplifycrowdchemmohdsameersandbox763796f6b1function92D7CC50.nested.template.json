@@ -65,6 +65,9 @@
     },
     "Environment": {
      "Variables": {
+      "RESEND_API_KEY": "re_AuskpDJA_6soVDUazeuWBYbZdP87JvLUe",
+      "RESEND_RECEIVER_EMAIL": "mohdsameer@truedax.io",
+      "ALLOWED_ORIGINS": "https://main.d2uotc8zdi4vjb.amplifyapp.com,http://localhost:5173",
       "AMPLIFY_SSM_ENV_CONFIG": "{}"
      }
     },

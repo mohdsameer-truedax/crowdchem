@@ -9,6 +9,7 @@ const backend = defineBackend({
 // Add Function URL configuration to the Lambda function
 const sendEmailFunction = backend.sendEmail.resources.lambda;
 
+
 // Enable Function URL with CORS (OPTIONS is handled automatically by AWS)
 backend.addOutput({
   custom: {
