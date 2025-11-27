@@ -27,3 +27,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Amplify
+amplify/.env
+.amplify/
+amplify_outputs.json
+amplify/node_modules/
+amplify/data/amplify-data-schema.ts
+amplify/.config/
