@@ -15,8 +15,21 @@ import { z } from 'zod';
 import { parseOneAddress } from 'email-addresses';
 import { validate as isEmailValid } from 'isemail';
 import { Resend } from 'resend';
-import type { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
+import type { APIGatewayProxyResult } from 'aws-lambda';
 import punycode from 'punycode/';
+
+// Union type for both API Gateway and Lambda Function URL events
+type LambdaEvent = {
+  requestContext?: {
+    http?: {
+      method: string;
+    };
+  };
+  httpMethod?: string;
+  headers?: Record<string, string | undefined>;
+  body?: string;
+  isBase64Encoded?: boolean;
+};
 
 // Allowed contact categories matching the frontend
 const CONTACT_CATEGORIES = ["partnerships", "sales", "recruitment", "press"] as const;
@@ -42,17 +55,25 @@ function getAllowedOrigins(): string[] {
 function buildCorsHeaders(origin: string): Record<string, string> {
   const allowedOrigins = getAllowedOrigins();
   const headers: Record<string, string> = {};
-  if (origin && allowedOrigins.includes(origin)) {
-    headers["Access-Control-Allow-Origin"] = origin;
+
+  // Check if wildcard is allowed or if specific origin is in the list
+  const allowAll = allowedOrigins.includes('*');
+  const originAllowed = allowAll || (origin && allowedOrigins.includes(origin));
+
+  if (originAllowed) {
+    // If wildcard, use the actual origin; otherwise use the origin
+    headers["Access-Control-Allow-Origin"] = allowAll ? "*" : origin;
     headers["Access-Control-Allow-Methods"] = "POST, OPTIONS";
     headers["Access-Control-Allow-Headers"] = "Content-Type, Accept, Authorization, X-Requested-With";
-    headers["Access-Control-Allow-Credentials"] = "true";
-    headers["Vary"] = "Origin"; // avoid cache poisoning
+    if (!allowAll) {
+      headers["Access-Control-Allow-Credentials"] = "true";
+      headers["Vary"] = "Origin"; // avoid cache poisoning
+    }
   }
   return headers;
 }
 
-function parseBody(event: APIGatewayProxyEvent): Record<string, unknown> {
+function parseBody(event: LambdaEvent): Record<string, unknown> {
   if (!event || !event.body) return {};
   try {
     const raw = event.isBase64Encoded
@@ -137,9 +158,10 @@ async function sendWithResend({ from, to, subject, html }: { from: string; to: s
   return result;
 }
 
-export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
+export const handler = async (event: LambdaEvent): Promise<APIGatewayProxyResult> => {
   console.log("Incoming event:", JSON.stringify(event));
-  const method = event?.httpMethod || "";
+  // Lambda Function URLs use requestContext.http.method, API Gateway uses httpMethod
+  const method = event?.requestContext?.http?.method || event?.httpMethod || "";
   const origin = (event?.headers?.origin || event?.headers?.Origin || "").toString();
   const corsHeaders = buildCorsHeaders(origin);
 

@@ -117,8 +117,7 @@ const Form = () => {
           "Content-Type": "application/json",
           "Accept": "application/json"
         },
-        body: JSON.stringify(formData),
-        credentials: "include"
+        body: JSON.stringify(formData)
       });
 
       const data = await res.json();

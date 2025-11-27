@@ -1,6 +1,6 @@
 import { defineBackend } from '@aws-amplify/backend';
 import { sendEmail } from './sendEmail/resource';
-import { FunctionUrlAuthType, HttpMethod } from 'aws-cdk-lib/aws-lambda';
+import { FunctionUrlAuthType } from 'aws-cdk-lib/aws-lambda';
 
 const backend = defineBackend({
   sendEmail
@@ -10,17 +10,11 @@ const backend = defineBackend({
 const sendEmailFunction = backend.sendEmail.resources.lambda;
 
 
-// Enable Function URL with CORS (OPTIONS is handled automatically by AWS)
+// Enable Function URL without CORS (CORS is handled in the handler code to avoid duplicate headers)
 backend.addOutput({
   custom: {
     sendEmailFunctionUrl: sendEmailFunction.addFunctionUrl({
-      authType: FunctionUrlAuthType.NONE,
-      cors: {
-        allowedOrigins: ['https://main.d3ovp08c30y2h1.amplifyapp.com', 'http://localhost:5173'],
-        allowedMethods: [HttpMethod.POST],
-        allowedHeaders: ['Content-Type', 'Accept', 'Authorization', 'X-Requested-With'],
-        allowCredentials: true,
-      }
+      authType: FunctionUrlAuthType.NONE
     }).url
   }
 });
