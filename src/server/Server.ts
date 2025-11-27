@@ -14,6 +14,7 @@ export function configureAPIServer(server: ViteDevServer) {
 
     if (req.method === 'OPTIONS') {
       res.statusCode = 204;
+      
       res.end();
       return;
     }
