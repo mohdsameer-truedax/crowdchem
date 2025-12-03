@@ -2,12 +2,13 @@ import React, { useCallback, useEffect, useState } from "react";
 import { useTranslation } from "../../i18n/useTranslation";
 import { contactSchema, contactCategories, type ContactFormData } from "./schema/FormSchema";
 import { Analytics } from "../../utils/Analytics";
+import { amplifyConfig } from "../../config/amplify";
 
 const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const Form = () => {
   const { t } = useTranslation();
-  // Amplify Function URL for sending email
-  const AMPLIFY_FUNCTION_URL = import.meta.env.VITE_AMPLIFY_FUNCTION_URL;
+  // Amplify Function URL - auto-loaded from amplify_outputs.json or env var
+  const AMPLIFY_FUNCTION_URL = amplifyConfig.functionUrl;
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
