@@ -2,11 +2,11 @@
  * Amplify Configuration
  *
  * This file manages the Amplify backend configuration, including
- * the auto-generated Lambda function URLs from amplify_outputs.json
+ * the Lambda function URLs from amplify_outputs.json
  */
 
 // Import amplify_outputs.json directly
-// This file is auto-generated during deployment
+// This file is auto-generated during Amplify deployment
 import amplifyOutputs from '../../amplify_outputs.json';
 
 // Export configuration
