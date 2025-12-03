@@ -79,7 +79,8 @@ const de = {
     send: "Senden",
     description: "Für alle anderen Anfragen senden Sie bitte eine Nachricht an ",
     mail: "info@crowdchem.net",
-    ourheadquarter: "UNSER HAUPTSITZ",
+    ourheadquarter: "BÜROS",
+    europe:"EUROPA",
     globalheadquarter: "GLOBALER HAUPTSITZ",
     category1: "Partnerschaften",   // ⬅️ ADDED
     category2: "Vertrieb",         // ⬅️ ADDED
@@ -99,6 +100,7 @@ const de = {
     studies: "ANWENDUNGSFÄLLE",
     connect: "VERBINDEN",
     contactUs: "KONTAKTIEREN SIE UNS",
+    siteName:"JAPANISCHE WEBSITE",
     careers: "X",
     linkedin: "LINKEDIN",
     copyright: "2025 CrowdChem. Alle Rechte vorbehalten."

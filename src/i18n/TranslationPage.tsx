@@ -31,7 +31,7 @@ const TranslationPage = () => {
   // Width set to 91px, Padding reduced (px-2) to save space
   className="group bg-gray-900 font-bold border border-white px-0.5 cursor-pointer w-[4.6875rem] h-[1.125rem] sm:w-[5.6875rem] sm:h-[1.8125rem] 
              hover:border-yellow-800 hover:text-gray-900 text-white sm:px-2 py-0 
-             flex items-center justify-center rounded-t text-sm sm:text-base transition-all duration-200"
+             flex items-center justify-center rounded text-sm sm:text-base transition-all duration-200"
 >
   <span className="flex items-center h-full"> {/* 💡 Add h-full here for robust sizing */}
     {/* Globe Icon */}

@@ -7,6 +7,7 @@ import { useTranslation } from "../i18n/useTranslation";
 // import TranslationPage from "../i18n/TranslationPage";
 import { ResponsiveImage } from "../utils/ResponsiveImage";
 import Footer from "./Footer";
+// import TranslationPage from "../i18n/TranslationPage";
 
 type SearchDoc = {
   id: string;
@@ -250,21 +251,21 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
     <div className="fixed inset-0 z-50 bg-background1 overflow-y-auto h-full min-h-screen">
       {/* Header */}
 
-      <div className="flex items-start  sm:items-center justify-between px-2 sm:px-0 p-6 sm:p-6 lg:p-8 xl92r:p-0 px-0 sm:px-4 lg:px-8 xl92r:px-12 2xl:px-16">
+      <div className="flex items-start  sm:items-center justify-between px-2 sm:px-0 pb-2 sm:p-6 lg:p-8 xl92r:p-0 px-0 sm:px-4 lg:px-8 xl92r:px-12 2xl:px-16">
         <Link to={buildRoute("/")} onClick={onClose}>
           <ResponsiveImage
             id="logo" 
             alt={t("alt.logo")}
-            className="h-8 w-auto sm:h-20 sm:w-60 lg:h-auto lg:w-[20rem] xl92r:h-auto xl92r:w-[21.25rem] 2xl:h-auto 2xl:w-[22.75rem] transition-all duration-200"
+            className="h-[3rem] w-auto sm:h-20 sm:w-60 lg:h-auto lg:w-[20rem] xl92r:h-auto xl92r:w-[21.25rem] 2xl:h-auto 2xl:w-[22.75rem] transition-all duration-200"
           />
         </Link>
-        <div className="flex items-center space-x-6 pr-4 sm:pr-0">
+        <div className="flex items-center space-x-4 pr-4 sm:pr-0 pt-2 sm:pt-0">
           <div  onClick={onClose} className="text-[1.15rem] sm:text-[3.75rem] pt-2 sm:pt-0 xl92r:text-[4.0625rem] font-deca font-light cursor-pointer text-[#FCA311] hover:text-yellow-800 leading-[1] sm:leading-[1.5] transition-colors duration-200">X</div>
           {/* <FiX
            
             className="text-[60px] xl:text-[65px] font-deca font-light cursor-pointer text-yellow-600 hover:text-yellow-800 transition-colors duration-200"
           /> */}
-         {/* <div className="pt-1 sm:pt-0"> <TranslationPage /></div> */}
+         {/* <div className="pt-1 sm:pt-5"> <TranslationPage /></div> */}
 
         </div>
       </div>

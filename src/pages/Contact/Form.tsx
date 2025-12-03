@@ -7,7 +7,7 @@ const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const Form = () => {
   const { t } = useTranslation();
   // Amplify Function URL for sending email
-  const AMPLIFY_FUNCTION_URL = "https://rrizrod4zz76k2i37ujasraqva0ziwaj.lambda-url.eu-north-1.on.aws/";
+  const AMPLIFY_FUNCTION_URL = import.meta.env.VITE_AMPLIFY_FUNCTION_URL;
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",

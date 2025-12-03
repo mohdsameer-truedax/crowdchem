@@ -46,16 +46,16 @@ npx ampx sandbox --once
 
 ### Step 4: Update Function URL in Code
 
-Open [src/pages/Contact/Form.tsx](src/pages/Contact/Form.tsx) and update **line 10**:
+Open (.env) and update:
 
 **Replace:**
 ```typescript
-const AMPLIFY_FUNCTION_URL = "YOUR-FUNCTION-URL-HERE";
+VITE_AMPLIFY_FUNCTION_URL = "YOUR-FUNCTION-URL-HERE";
 ```
 
 **With your actual Function URL from Step 2:**
 ```typescript
-const AMPLIFY_FUNCTION_URL = "https://abc123xyz.lambda-url.eu-north-1.on.aws/";
+VITE_AMPLIFY_FUNCTION_URL = "https://abc123xyz.lambda-url.eu-north-1.on.aws/";
 ```
 
 ### Step 5: Commit and Deploy

@@ -1,6 +1,0 @@
-{
-  "version": "1.4",
-  "custom": {
-    "sendEmailFunctionUrl": "https://rrizrod4zz76k2i37ujasraqva0ziwaj.lambda-url.eu-north-1.on.aws/"
-  }
-}

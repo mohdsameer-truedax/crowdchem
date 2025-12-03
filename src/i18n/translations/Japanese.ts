@@ -79,7 +79,8 @@ const ja = {
     send: "送信",
     description: "その他すべてのお問い合わせは、こちらへメッセージを送信してください: ",
     mail: "info@crowdchem.net",
-    ourheadquarter: "当社の本社",
+    ourheadquarter: "オフィス",
+    europe:"ヨーロッパ",
     globalheadquarter: "グローバル本社",
     category1: "パートナーシップ", // ⬅️ ADDED (Pātonāshippu)
     category2: "販売",           // ⬅️ ADDED (Hanbai)
@@ -100,6 +101,7 @@ const ja = {
     connect: "つながる",
     contactUs: "お問い合わせ",
     careers: "X",
+    siteName:"日本語サイト",
     linkedin: "LinkedIn",
     copyright: "2025 CrowdChem. 無断複写・転載を禁じます。"
   },

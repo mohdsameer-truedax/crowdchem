@@ -78,7 +78,8 @@ const es = {
     send: "Enviar",
     description: "Para todas las demás consultas, enviar un mensaje a",
     mail: "info@crowdchem.net",
-    ourheadquarter: "Nuestra Sede",
+    ourheadquarter: "OFICINAS",
+    europe:"EUROPA",
     globalheadquarter: "Sede Global",
     category1: "Asociaciones",
     category2: "Ventas",
@@ -99,6 +100,7 @@ const es = {
     connect: "Conectar",
     contactUs: "Contáctenos",
     careers: "X",
+    siteName:"SITIO WEB JAPONÉS",
     linkedin: "LinkedIn",
     copyright: "2025 CrowdChem. Todos los derechos reservados."
   },
@@ -156,8 +158,8 @@ const es = {
         "list": [
            "<1>Paquete inorgánico (superficie y “orden” de contacto):</1> talco tratado, TiO₂ rutilo tratado con alúmina y sílice esférica fina agudizan el manejo en seco cuando se ajustan en dosis bajas de un solo dígito, sin aumentar el desprendimiento.",
           "Inorgánicos para la nieve (anclaje micromecánico): grafito expandido, alúmina esférica fusionada y talco tratado con silano elevan sistemáticamente el indicador de nieve en dosis bajas de un solo dígito mientras respetan el equilibrio aceite/relleno.",
-          "<1>Reglas de la estructura y del aceite (capacidad de fabricación):</1> el marco de caucho de Ti-catalyzed Butadiene Rubber + caucho natural mantiene la calidad de extrusión con poco aceite; cambiar los catalizadores de caucho de butadieno rompe la procesabilidad incluso si otras perillas “parecen correctas”.",
-          "Porqué es importante: se vende confianza en el frenado y la dirección, con la durabilidad y un compuesto que la planra realmente puede producir. Traducción comercial: menos defectos, menos reelaboración, menos desperdicio y menos ejecuciones."
+          "<1>Reglas de la estructura y del aceite (capacidad de fabricación):</1> el marco de Caucho de butadieno catalizado con Ti Rubber + caucho natural mantiene la calidad de extrusión con poco aceite; cambiar los catalizadores de caucho de butadieno rompe la procesabilidad incluso si otras perillas “parecen correctas”.",
+          "Porqué es importante: se vende confianza en el frenado y la dirección, con la durabilidad y un compuesto que la planta realmente puede producir. Traducción comercial: menos defectos, menos reelaboración, menos desperdicio y menos ejecuciones."
         ]
       },
       "traceability": {
@@ -165,7 +167,7 @@ const es = {
         "content": "Los datos de la empresa sin procesar permanecen de ese lado; sólo se mueven los aprendizajes del modelo. Esto significa linaje de extremo a extremo; se puede rastrear cada ejecución, desde el lote hasta la mezcla, pasando por las pruebas hasta el resultado final. Eso hace que el éxito sea repetible y los problemas fuera de especificación sean rápidos de solucionar."
       },
       "aiPlatform": {
-        "heading": "Aspecto con nuestra plataforma de IA",
+        "heading": "Cómo se ve con nuestra plataforma IA",
         "list": [
           "Un mapa de importancia automatizado (una página): qué palancas (materias primas de caucho, aceite, sílice, inorgánicos) mueven el seco, la nieve, el desprendimiento y la procesabilidad. Cuanto más rojo, mayor es el impacto que tiene.",
           "<1>Lista corta explicable (3-4 rutas):</1> para cada mercado/segmento (UHP sesgado al seco, todas las estaciones sesgado a la nieve o touring equilibrado), con confianza y el “por qué”.",
@@ -192,16 +194,16 @@ const es = {
       "productChoices": {
         "heading": "Opciones de producto",
         "list": [
-          "<1>Menos iteraciones a ciegas:</1> comenzar dentro de una ventana objetivo; se debe de usar el paquete inórganico como tornillo de ajuste por clima y segmento.",
-          "<1>Confianza de fabricación: </1> el marco BR-Ti + bajo aceite protege la calidad de extrusión mientras ajusta el rendimiento.",
-          "<1>Claridad de la línea: </1>“para el invierno del norte, paquete A; para el rendimiento en seco, paquete B” - la misma estructura, lanzamientos más rápidos"
+          "<1>Mercados cálidos:</1> empezar con las rutas tipo A–B. Validar el astillado/resistencia y mantener la extrusión limpia.",
+          "<1>Mercados de todo el año / regiones del norte: </1>  empezar con el grupo de nieve. Confirmar la sensación de dirección sobre pavimento limpio.",
+          "<1>Turismo equilibrado: </1>las rutas tipo C son la mejor primera opción; pequeños ajustes pueden moverlas hacia el punto objetivo que buscas."
         ]
       },
       "quote2": "Cuando entrenamos con sus datos in situ, la fiabilidad predictiva generalmente mejora en un 20% o más sobre la línea base solo pública (direccional; depende de la profundidad de los datos).",
       "businessValue": {
-        "heading": "Valor Empresarial",
+        "heading": "Valor empresarial",
         "list": [
-          "<1>Menos iteraciones ciegas:</1> comience dentro de una ventana objetivo; use el paquete inorgánico como tornillo de ajuste por clima y segmento.",
+          "<1>Menos iteraciones a ciegas:</1> se empieza dentro de una ventana objetivo; use el paquete inorgánico como tornillo de ajuste por clima y segmento.",
           "<1>Confianza de fabricación:</1> el marco BR-Ti + bajo aceite protege la calidad de extrusión mientras ajusta el rendimiento.",
           "<1>Claridad de la línea:</1> “para el invierno del norte, paquete A; para el rendimiento en seco, paquete B” – la misma estructura, lanzamientos más rápidos."
         ]
@@ -248,7 +250,7 @@ const es = {
     ]
   }
       },
-      "finalQuote": "Que la complejidad de los entornos de modelado no detengo el progreso. Es hora de it más allá del enfoque tradicional de prueba y error e innovar con la confianza de los datos."
+      "finalQuote": "Que la complejidad de los entornos de modelado no detenga el progreso. Es hora de ir más allá del enfoque tradicional de prueba y error e innovar con la confianza de los datos."
     }
   },
   "cosmetics": {
@@ -350,7 +352,7 @@ const es = {
           "<1>Mejor experiencia de usuario:</1> deslizamiento sedoso, rico rendimiento de color, sin granulosidad, sin migración.",
           "<1>Menos reformulaciones y devoluciones:</1> una estabilidad y redispersión más fuertes reducen la reelaboración y los retrasos.",
           "<1>Escalabilidad con confianza:</1> una vez que se establece la ventana, se replica; el linaje la mantiene allí.",
-          "Apendemos in situ, <1>los datos sin procesar nunca se van.</1> Sólo se comparten las actualizaciones del modelo."
+          "Aprendemos in situ, <1>los datos sin procesar nunca se van.</1> Sólo se comparten las actualizaciones del modelo."
         ]
       },
       "finalResults": {
@@ -440,11 +442,11 @@ const es = {
         "content": "Los datos de la empresa sin procesar permanecen de su lado; sólo se mueven los aprendizajes del modelo. Esto significa <1>linaje de extremo a extremo;</1> se puede rastrear cada ejecución, desde el lote hasta la mezcla, pasando por las pruebas hasta el resultado final. Eso hace que el éxito sea repetible y los problemas fuera de especificación sean rápidos de solucionar. "
       },
       "aiPlatformLook": {
-        "heading": "Cómo se le presenta",
+        "heading": "Cómo se presenta",
         "list": [
-          "<1>Un mapa de importancia automatizado de una página.</1> Mostramos las palancas que más importan para los objetivos, qué ajustar, dóde de sitúa en la fórmula y cómo afecta <2>la suavidad de la superficie, el laminado/sellado y el aislamiento.</2> Es un visual simple: cuanto más roja es la palanca, más mueve los objetivos.",
+          "<1>Un mapa de importancia automatizado de una página.</1> Mostramos las palancas que más importan para los objetivos, qué ajustar, dónde se sitúa en la fórmula y cómo afecta <2>la suavidad de la superficie, el laminado/sellado y el aislamiento.</2> Es un visual simple: cuanto más roja es la palanca, más mueve los objetivos.",
           "Una <1>lista corta explicable (3–5 rutas)</1> de un mar de opciones, a un pequeño conjunto de <2>familias de componentes</2> con confianza y un breve “por qué esto funciona”. Opciones claras, sin caja negra.",
-          "Una <1>ventana operativa</1>  lista para pruebas de ejecición (cómo se alienan <2>el tamaño de las celdas, la densidad </2> y <3>la formabilidad</3>) y <4>un plan de validación</4> compacto que el equipo ya conoce: verificar la densidad aparente, confirmar el tamaño de las celdas y ejecutar pantallas básicas de compresión/termoformado. Rápido de probar, fácil de escalar."
+          "Una <1>ventana operativa</1>  lista para pruebas de ejecución (cómo se alienan <2>el tamaño de las celdas, la densidad </2> y <3>la formabilidad</3>) y <4>un plan de validación</4> que el equipo ya conoce: verificar la densidad aparente, confirmar el tamaño de las celdas y ejecutar pantallas básicas de compresión/termoformado. Rápido de probar, fácil de escalar."
         ]
       },
       "imageCaption": "Las rutas de la lista corta A–C aterrizan dentro de la ventana operativa (roja) donde <1>las burbujas finas + la densidad media-ligera</1> ofrecen <2>superficies suaves y sellables y un formado limpio</2>. La ruta D se sitúa fuera y degrada la apariencia/sellado.",
