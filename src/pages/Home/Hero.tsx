@@ -42,7 +42,7 @@ const Hero = () => {
         <button
           id="signup"
           onClick={() => { navigate(`/contact?lang=${code || 'eng'}`); }}
-          className="inline-flex items-center border-2 text-white font-deca border-white py-1 sm:py-2 px-2 sm:px-3  rounded-lg text-[0.75rem] lg:text-[1.125rem] hover:bg-background1 tracking-[0.04em] transition-colors duration-300"
+          className="inline-flex items-center border-2 text-white font-deca border-white py-1 sm:py-2 px-2 sm:px-3  rounded-lg text-[0.75rem] lg:text-[1.125rem] hover:bg-white/20 tracking-[0.04em] transition-colors duration-300"
         >
           <span className="font-deca">{t("hero.cta")}</span>
           <FaArrowRight className="ml-2" />

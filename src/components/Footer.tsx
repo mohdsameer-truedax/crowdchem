@@ -6,7 +6,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="px-2  md:px-8 lg:px-12 xl92r:px-16 font-deca text-white bg-background2  ">
+    <footer className="px-2  md:px-8 lg:px-12 xl92r:px-16 font-deca text-textColor bg-background2 border-t border-gray-200">
        <div>
          <Link to="/" className="inline-block">
              <ResponsiveImage
@@ -55,7 +55,7 @@ const Footer = () => {
         <li className="">
           <Link
              to="/usecases" 
-            className="bg-transparent text-white hover:text-gray-300 cursor-pointer transition-colors duration-200"
+            className="bg-transparent text-textColor hover:text-background4 cursor-pointer transition-colors duration-200"
             aria-label="Scroll to Case Studies section"
           >
             {t("footer.studies")}
@@ -64,7 +64,7 @@ const Footer = () => {
           {/* <li className="pt-2 sm:pt-3 md:pt-[1.79vh]">
            <Link
              to="/" 
-            className="bg-transparent text-white hover:text-gray-300  cursor-pointer transition-colors duration-200"
+            className="bg-transparent text-textColor hover:text-background4  cursor-pointer transition-colors duration-200"
             aria-label="Scroll to Case Studies section"
           >
            CROWDCHEM.NET
@@ -80,7 +80,7 @@ const Footer = () => {
     </h2>
     <ul className="list-none font-normal text-[0.625rem] md:text-[0.6667rem] lg:text-[0.7600rem] xl92r:text-[0.8333rem] 2xl:text-[1rem] lg:leading-[1.875rem] tracking-[0.08em]">
       <li className="pb-2 sm:pb-3 md:pb-[1.79vh]">
-        <Link to="/contact" className="hover:text-gray-300 cursor-pointer">
+        <Link to="/contact" className="hover:text-background4 cursor-pointer">
           {t("footer.contactUs")}
         </Link>
       </li>
@@ -89,7 +89,7 @@ const Footer = () => {
           href="https://www.linkedin.com/company/crowdchem"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-gray-300 cursor-pointer "
+          className="hover:text-background4 cursor-pointer "
         >
           {t("footer.linkedin")}
         </a>
@@ -99,7 +99,7 @@ const Footer = () => {
           href="https://x.com/CrowdChem"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-gray-300 cursor-pointer "
+          className="hover:text-background4 cursor-pointer "
         >
           {t("footer.careers")}
         </a>
@@ -107,7 +107,7 @@ const Footer = () => {
     </ul>
   </div>
    <div className="flex-1 w-1/3 ">
-    <div className="title-font inline-block font-normal border px-2 sm:px-5 py-1 sm:py-0.5 border-white sm:font-normal font-deca  sm:mb-0 text-[0.625rem] md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] lg:leading-[1.875rem]">
+    <div className="title-font inline-block font-normal border px-2 sm:px-5 py-1 sm:py-0.5 border-textColor sm:font-normal font-deca  sm:mb-0 text-[0.625rem] md:text-[0.8333rem] lg:text-[0.9500rem] xl92r:text-[1.0417rem] 2xl:text-[1.25rem] lg:leading-[1.875rem]">
       {t("footer.siteName")}
     </div>
 
@@ -117,7 +117,7 @@ const Footer = () => {
       </div></div>
 
       {/* Bottom Bar */}
-      <p className="text-white text-[0.6875rem] sm:text-sm text-center font-light sm:font-normal border-gray-700 pt-[1.7rem] sm:pt-[1rem] lg:pt-[5.15rem] xl92r:pt-[5.72rem] 2xl:pt-[6.875rem]  pb-1 sm:pb-2">
+      <p className="text-gray-500 text-[0.6875rem] sm:text-sm text-center font-light sm:font-normal border-gray-200 pt-[1.7rem] sm:pt-[1rem] lg:pt-[5.15rem] xl92r:pt-[5.72rem] 2xl:pt-[6.875rem]  pb-1 sm:pb-2">
         {t("footer.copyright")}
       </p>
     </footer>

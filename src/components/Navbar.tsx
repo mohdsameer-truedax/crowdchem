@@ -85,7 +85,7 @@ const Navbar = () => {
       }}
       onMouseLeave={() => setIsHovering(false)}
       // use isVisible to control transform/opacity (so the variable is read)
-      className={`text-white shadow-md pl-[0rem] sm:pl-0 pr-[0.91rem] sm:pr-0 px-0 md:px-6 lg:px-8 xl92r:px-12 2xl:px-16 fixed z-9999 py-0 sm:py-0 flex flex-col justify-end sm:justify-between  md:h-[6.875rem] xl92r:h-[6.875rem] 2xl:h-[7.8125rem] w-full bg-background1 transition-transform duration-300 ease-in-out ${
+      className={`text-textColor shadow-sm border-b border-gray-200 pl-[0rem] sm:pl-0 pr-[0.91rem] sm:pr-0 px-0 md:px-6 lg:px-8 xl92r:px-12 2xl:px-16 fixed z-9999 py-0 sm:py-0 flex flex-col justify-end sm:justify-between  md:h-[6.875rem] xl92r:h-[6.875rem] 2xl:h-[7.8125rem] w-full bg-background1 transition-transform duration-300 ease-in-out ${
         isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
       }`}
     >
@@ -105,25 +105,25 @@ const Navbar = () => {
         <div className="flex items-center mt-1 sm:mt-0  space-x-2.5 lg:space-x-10 xl92r:space-x-15 text-[0.625rem] md:text-[1rem] lg:text-[1.08rem] xl92r:text-[1.2rem] 2xl:text-[1.25rem]  leading-[1] font-light sm:font-normal font-deca">
           {/* <Link
             to={buildRoute("usecases")}
-            className="hover:text-gray-300 transition-colors duration-200"
+            className="hover:text-background4 transition-colors duration-200"
           >
           VISION
           </Link>
           <Link
             to={buildRoute("contact")}
-            className="hover:text-gray-300 transition-colors duration-200"
+            className="hover:text-background4 transition-colors duration-200"
           >
             TEAM
           </Link> */}
             <Link
             to={buildRoute("usecases")}
-            className="hover:text-gray-300 transition-colors duration-200"
+            className="hover:text-background4 transition-colors duration-200"
           >
             {t("nav.useCases")}
           </Link>
           <Link
             to={buildRoute("contact")}
-            className="hover:text-gray-300 transition-colors duration-200"
+            className="hover:text-background4 transition-colors duration-200"
           >
             {t("nav.contact")}
           </Link>
