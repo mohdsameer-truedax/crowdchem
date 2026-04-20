@@ -24,10 +24,10 @@ jobs:
           python-version: '3.11'
 
       - name: Install Graphify
-        run: pip install graphifyy
+        run: pip install graphifyy anthropic
 
       - name: Run Graphify
-        run: graphify build
+        run: python .github/scripts/build_graph.py .
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
