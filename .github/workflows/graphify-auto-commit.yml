@@ -34,10 +34,20 @@ jobs:
           npm install -g @anthropic-ai/claude-code
           graphify claude install
 
+      - name: Debug environment
+        run: |
+          echo "Claude version: $(claude --version 2>&1 || echo 'not found')"
+          echo "Claude help flags: $(claude --help 2>&1 | grep -E 'turns|print|max' || echo 'none')"
+          echo "API key set: ${{ secrets.ANTHROPIC_API_KEY != '' }}"
+          rm -rf graphify-out/
+
       - name: Run Graphify
-        run: claude -p "/graphify ." --dangerously-skip-permissions --max-turns 100 --verbose
+        run: claude -p "/graphify ." --dangerously-skip-permissions
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Verify output
+        run: ls -la graphify-out/ 2>&1 || echo "ERROR graphify-out was not created"
 
       - name: Check for changes
         id: check_changes
