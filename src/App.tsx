@@ -7,6 +7,7 @@ import Contact from "./pages/Contact/Index";
 import NotFound from "./pages/ErrorPage/NotFound";
 import ServerError from "./pages/ErrorPage/ServerError";
 import Offline from "./pages/ErrorPage/Offline";
+
 import NewsPost from "./pages/News/NewsPost";
 import CertRedirect from "./pages/CertRedirect";
 import ScrollToTop from "./utils/ScrolltoTop";

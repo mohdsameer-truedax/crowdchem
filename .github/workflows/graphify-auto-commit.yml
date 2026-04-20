@@ -27,7 +27,7 @@ jobs:
         run: pip install graphifyy
 
       - name: Run Graphify
-        run: graphify . --no-viz
+        run: graphify --no-viz
 
       - name: Check for changes
         id: check_changes
