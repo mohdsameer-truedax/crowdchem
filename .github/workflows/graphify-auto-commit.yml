@@ -32,14 +32,10 @@ jobs:
         run: |
           pip install graphifyy
           npm install -g @anthropic-ai/claude-code
-          graphify claude install
-
-      - name: Debug environment
-        run: |
-          echo "Claude version: $(claude --version 2>&1 || echo 'not found')"
-          echo "Claude help flags: $(claude --help 2>&1 | grep -E 'turns|print|max' || echo 'none')"
-          echo "API key set: ${{ secrets.ANTHROPIC_API_KEY != '' }}"
-          rm -rf graphify-out/
+          graphify install
+          echo "--- skill files ---"
+          ls ~/.claude/skills/ 2>&1 || echo "no ~/.claude/skills"
+          cat ~/.claude/CLAUDE.md 2>&1 || echo "no ~/.claude/CLAUDE.md"
 
       - name: Run Graphify
         run: claude -p "/graphify ." --dangerously-skip-permissions
