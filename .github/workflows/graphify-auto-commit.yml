@@ -1,59 +1,48 @@
 name: Graphify Auto-Commit
 
-# Trigger on PR merge to main branch
 on:
   pull_request:
-      types: [closed]
-          branches: [main]
+    types: [closed]
+    branches: [main]
 
-          jobs:
-            graphify-commit:
-                # Only run if PR was merged (not just closed)
-                    if: github.event.pull_request.merged == true
+jobs:
+  graphify-commit:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-                            runs-on: ubuntu-latest
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
 
-                                    permissions:
-                                          contents: write
-                                                pull-requests: read
+      - name: Install Graphify
+        run: pip install graphifyy
 
-                                                        steps:
-                                                              # 1. Checkout the code at the merge commit
-                                                                    - name: Checkout code
-                                                                            uses: actions/checkout@v4
-                                                                                    with:
-                                                                                              fetch-depth: 0  # Full history for accurate graph building
-                                                                                                    
-                                                                                                          # 2. Set up Python 3.11 or higher (required by Graphify)
-                                                                                                                - name: Set up Python
-                                                                                                                        uses: actions/setup-python@v4
-                                                                                                                                with:
-                                                                                                                                          python-version: '3.11'
-                                                                                                                                                
-                                                                                                                                                      # 3. Install Graphify
-                                                                                                                                                            - name: Install Graphify
-                                                                                                                                                                    run: pip install graphifyy
-                                                                                                                                                                          
-                                                                                                                                                                                # 4. Run Graphify to generate/update the knowledge graph
-                                                                                                                                                                                      - name: Run Graphify
-                                                                                                                                                                                              run: graphify . --no-viz
-                                                                                                                                                                                                    
-                                                                                                                                                                                                          # 5. Check if there are changes to commit
-                                                                                                                                                                                                                - name: Check for changes
-                                                                                                                                                                                                                        id: check_changes
-                                                                                                                                                                                                                                run: |
-                                                                                                                                                                                                                                          if git diff --quiet graphify-out/; then
-                                                                                                                                                                                                                                                      echo "has_changes=false" >> $GITHUB_OUTPUT
-                                                                                                                                                                                                                                                                else
-                                                                                                                                                                                                                                                                            echo "has_changes=true" >> $GITHUB_OUTPUT
-                                                                                                                                                                                                                                                                                      fi
-                                                                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                                                                                  # 6. Commit and push changes if there are any
-                                                                                                                                                                                                                                                                                                        - name: Commit and push Graphify output
-                                                                                                                                                                                                                                                                                                                if: steps.check_changes.outputs.has_changes == 'true'
-                                                                                                                                                                                                                                                                                                                        run: |
-                                                                                                                                                                                                                                                                                                                                  git config user.name "github-actions[bot]"
-                                                                                                                                                                                                                                                                                                                                            git config user.email "github-actions[bot]@users.noreply.github.com"
-                                                                                                                                                                                                                                                                                                                                                      git add graphify-out/
-                                                                                                                                                                                                                                                                                                                                                                git commit -m "docs: update knowledge graph [skip ci]"
-                                                                                                                                                                                                                                                                                                                                                                          git push
+      - name: Run Graphify
+        run: graphify . --no-viz
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet graphify-out/; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push Graphify output
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add graphify-out/
+          git commit -m "docs: update knowledge graph [skip ci]"
+          git push
