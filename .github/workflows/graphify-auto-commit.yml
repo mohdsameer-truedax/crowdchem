@@ -18,16 +18,24 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
-      - name: Install Graphify
-        run: pip install graphifyy
+      - name: Install Graphify and Claude Code
+        run: |
+          pip install graphifyy
+          npm install -g @anthropic-ai/claude-code
+          graphify claude-code install
 
-      - name: Run Graphify
-        run: graphify .
+      - name: Run Graphify via Claude Code
+        run: claude -p "/graphify ."
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
