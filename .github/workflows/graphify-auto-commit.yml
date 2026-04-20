@@ -32,7 +32,8 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          if git diff --quiet graphify-out/; then
+          git add --force graphify-out/ 2>/dev/null || true
+          if git diff --staged --quiet; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
           else
             echo "has_changes=true" >> $GITHUB_OUTPUT
@@ -43,6 +44,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add graphify-out/
           git commit -m "docs: update knowledge graph [skip ci]"
           git push
