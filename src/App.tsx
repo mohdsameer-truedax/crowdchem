@@ -28,7 +28,7 @@ const LegacyLangRedirect = () => {
   const targetHash = hash ? `#${hash}?lang=${lang}` : `?lang=${lang}`;
   return <Navigate to={`${targetPath}${targetHash}`} replace />;
 };
-
+// hfwekhkgre
 
 
 function App() {
