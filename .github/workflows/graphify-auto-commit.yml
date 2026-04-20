@@ -35,7 +35,7 @@ jobs:
           graphify claude install
 
       - name: Run Graphify
-        run: claude -p "/graphify ." --dangerously-skip-permissions
+        run: claude -p "/graphify ." --dangerously-skip-permissions --max-turns 100 --verbose
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
