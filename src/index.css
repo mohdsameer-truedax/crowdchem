@@ -16,10 +16,10 @@
 
 
 @theme{
-  --color-background1: #0C1821;
-  --color-background2: #14213D;
-  --color-background3: #1B2A41;
-  --color-background4: #205882;
+  --color-background1: #FFFFFF;
+  --color-background2: #F0F4F8;
+  --color-background3: #E8EFF7;
+  --color-background4: #2D6A9F;
   --color-textColor:#1D3F59;
   --font-nunito: "Nunito" ,"sans-serif";
   --font-deca: "Lexend Deca","sans-serif";
@@ -40,8 +40,8 @@
 .custom-dash {
   border-image: repeating-linear-gradient(
     to right,
-    white 0,
-    white 8px,
+    #1D3F59 0,
+    #1D3F59 8px,
     transparent 8px,
     transparent 20px
   ) 1;

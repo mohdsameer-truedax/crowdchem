@@ -35,3 +35,11 @@ amplify_outputs.json
 amplify/node_modules/
 amplify/data/amplify-data-schema.ts
 amplify/.config/
+
+
+# ------------------------------------------------------------------------------
+# Graphify — generated knowledge graph output
+# ------------------------------------------------------------------------------
+graphify-out/
+packages/graphify-out/
+.graphify_*
