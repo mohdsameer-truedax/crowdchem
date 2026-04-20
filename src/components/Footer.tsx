@@ -120,6 +120,7 @@ const Footer = () => {
       <p className="text-gray-500 text-[0.6875rem] sm:text-sm text-center font-light sm:font-normal border-gray-200 pt-[1.7rem] sm:pt-[1rem] lg:pt-[5.15rem] xl92r:pt-[5.72rem] 2xl:pt-[6.875rem]  pb-1 sm:pb-2">
         {t("footer.copyright")}
       </p>
+      {/* kjwhlkoetgwj */}
     </footer>
   );
 };
