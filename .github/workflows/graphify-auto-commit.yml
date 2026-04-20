@@ -33,14 +33,17 @@ jobs:
           pip install graphifyy
           npm install -g @anthropic-ai/claude-code
           graphify install
-
-      - name: Replace skill with CI-optimized version
-        run: cp .github/scripts/ci-skill.md ~/.claude/skills/graphify/SKILL.md
+          echo "--- skill files ---"
+          ls ~/.claude/skills/ 2>&1 || echo "no ~/.claude/skills"
+          cat ~/.claude/CLAUDE.md 2>&1 || echo "no ~/.claude/CLAUDE.md"
 
       - name: Run Graphify
-        run: claude -p "/graphify ." --dangerously-skip-permissions --model claude-haiku-4-5-20251001
+        run: claude -p "/graphify ." --dangerously-skip-permissions --model claude-3-5-haiku-20241022
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Verify output
+        run: ls -la graphify-out/ 2>&1 || echo "ERROR graphify-out was not created"
 
       - name: Check for changes
         id: check_changes
