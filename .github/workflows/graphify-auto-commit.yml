@@ -38,7 +38,7 @@ jobs:
           cat ~/.claude/CLAUDE.md 2>&1 || echo "no ~/.claude/CLAUDE.md"
 
       - name: Run Graphify
-        run: claude -p "/graphify ." --dangerously-skip-permissions
+        run: claude -p "/graphify ." --dangerously-skip-permissions --model claude-haiku-4-5-20251001
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
